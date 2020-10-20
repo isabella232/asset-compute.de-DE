@@ -1,12 +1,16 @@
 ---
-source-git-commit: 83bc0c58ce23d755a82a4b4e4fff44cdc237c74d
+source-git-commit: a55ebe5108c5a61f53ae0ffc7e625d8b93f8a813
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '69'
-ht-degree: 76%
+source-wordcount: '151'
+ht-degree: 39%
 
 ---
 # Dokumentation zum Adobe Asset Computing-Dienst
+
+| EXL-PR | EXL | Vorschau | Aktivieren | Veröffentlichte  | Hilfe |
+|--- |--- |--- |--- |--- |--- |
+| [![Build-Status](https://docs.ci.corp.adobe.com/view/exl-pr/job/asset-compute.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/asset-compute.en_pr-exl/lastBuild/) | [![Build-Status](https://docs.ci.corp.adobe.com/view/exl-pr/job/asset-compute.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/asset-compute.en_exl/lastBuild/lastBuild) | [Vorschauen-URL](https://experienceleague.corp.adobe.com/docs/asset-compute/using/home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [Live-URL](https://experienceleague.adobe.com/docs/asset-compute/using/home.html?lang=en) | [Autorenanleitung](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 Dies ist das Repository für die Dokumentation von [!DNL Adobe Asset Compute Service].
 
