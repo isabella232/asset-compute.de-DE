@@ -1,18 +1,20 @@
 ---
 cloud: experience-cloud
 product: Asset Compute Service
+solution: Experience Manager
+type: Documentation
 audience: end-user
 user-guide-title: Handbuch zum Asset Computing-Dienst
 user-guide-description: In dieser Dokumentation werden [!DNL Asset Compute Service] Fragen wie die Entwicklung, Verwaltung, Bereitstellung und Fehlerbehebung von benutzerspezifischem Code behandelt.
 breadcrumb-title: Handbuch zum Asset Computing-Dienst
 breadcrumb-url: /docs/asset-compute/using/home.html
 solution-title: AEM Assets
-solution-hub-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/home.html
+solution-hub-url: https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/assets/home.html
 getting-started-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/asset-microservices-overview.html
 tutorials-title: AEM-Tutorials
 tutorials-url: https://docs.adobe.com/content/help/en/experience-manager-learn/assets/overview.html
 translation-type: tm+mt
-source-git-commit: 5e2fa370db65a6dc727a2735f6b44aa49d7a8e48
+source-git-commit: ec2fd2e7c20ad9d104f95724a3970a433ac7d50f
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 17%
