@@ -1,42 +1,42 @@
 ---
-title: Architektur von [!DNL Asset Compute Service].
-description: ' [!DNL Asset Compute Service] WieAPI, Anwendungen und SDK zusammenarbeiten, um einen Cloud-nativen Asset-Verarbeitungsdienst bereitzustellen.'
-translation-type: tm+mt
+title: Architektur von  [!DNL Asset Compute Service].
+description: So arbeiten  [!DNL Asset Compute Service] -API, Anwendungen und SDK zusammen, um einen Cloud-nativen Asset-Verarbeitungs-Service bereitzustellen.
+translation-type: ht
 source-git-commit: 0fb256f7d9f83fbae564d9fd52ee6b2f34c5d7e9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '496'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Architektur [!DNL Asset Compute Service] {#overview}
+# Architektur von [!DNL Asset Compute Service] {#overview}
 
-Der [!DNL Asset Compute Service] ist auf einer serverllosen Adobe I/O Runtime-Plattform aufgebaut. Es bietet Adobe Sensei Content Services-Unterstützung für Assets. Der aufrufende Client (nur [!DNL Experience Manager] da ein Cloud Service unterstützt wird) erhält die Adobe Sensei-generierten Informationen, die er für den Asset gesucht hat. Die zurückgegebenen Informationen haben das JSON-Format.
+[!DNL Asset Compute Service] basiert auf der Server-losen Adobe I/O Runtime-Plattform. Der Service bietet Unterstützung mit Adobe Sensei-Inhalts-Services für Assets. Der aufrufende Client (es wird nur [!DNL Experience Manager] as a Cloud Service unterstützt) erhält die von Adobe Sensei generierten Informationen, nach denen er für das Asset gesucht hat. Die zurückgegebenen Informationen liegen im JSON-Format vor.
 
-[!DNL Asset Compute Service] kann erweitert werden, indem benutzerdefinierte Anwendungen basierend auf [!DNL Project Firefly]. Diese benutzerdefinierten Anwendungen sind [!DNL Project Firefly] kopflose Apps und führen Aufgaben wie das Hinzufügen benutzerdefinierter Konvertierungstools oder den Aufruf externer APIs durch, um Bildvorgänge durchzuführen.
+[!DNL Asset Compute Service] kann erweitert werden, indem benutzerdefinierte Anwendungen basierend auf [!DNL Project Firefly] erstellt werden. Diese benutzerdefinierten Anwendungen sind Headless-[!DNL Project Firefly]-App und führen Aufgaben wie das Hinzufügen benutzerdefinierter Konvertierungs-Tools oder den Aufruf externer APIs durch, um Bildvorgänge auszuführen.
 
-[!DNL Project Firefly] ist ein Framework zum Erstellen und Bereitstellen von benutzerdefinierten Webanwendungen zur [!DNL Adobe I/O] Laufzeit. Um benutzerdefinierte Anwendungen zu erstellen, können die Entwickler das [!DNL React Spectrum] (UI-Toolkit der Adobe) nutzen, Mikrodienste erstellen, benutzerdefinierte Ereignis erstellen und APIs für die Orchestrierung erstellen. Siehe [Dokumentation des Projekts Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html).
+[!DNL Project Firefly] ist ein Framework zum Erstellen und Bereitstellen von benutzerdefinierten Web-Anwendungen zur [!DNL Adobe I/O]-Laufzeit. Um benutzerdefinierte Anwendungen zu erstellen, können die Entwickler [!DNL React Spectrum] (das Toolkit von Adobe für Benutzeroberflächen) nutzen, Microservices erstellen, benutzerdefinierte Ereignisse erstellen und APIs koordinieren. Weitere Informationen finden Sie in der [Dokumentation zu Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html).
 
-Die Grundlage, auf der die Architektur basiert, umfasst:
+Die Architektur basiert auf dem Folgenden:
 
-* Die Modularität der Applikationen - die nur das enthalten, was für eine bestimmte Aufgabe benötigt wird - ermöglicht es, die Applikationen voneinander zu trennen und so gering wie möglich zu halten.
+* Die Modularität der Anwendungen – sie enthalten nur das, was für eine bestimmte Aufgabe benötigt wird – erlaubt es, die Anwendungen voneinander zu entkoppeln und sie einfach zu halten.
 
-* Das serverllose Konzept von Adobe I/O Runtime bietet zahlreiche Vorteile: asynchrone, hochskalierbare, isolierte, auftragsbasierte Verarbeitung, die perfekt zur Asset-Verarbeitung geeignet ist.
+* Das Server-lose Konzept von Adobe I/O Runtime bietet zahlreiche Vorteile: asynchrone, hochskalierbare, isolierte, vorgangsbasierte Verarbeitung, die sich ideal für die Asset-Verarbeitung eignet.
 
-* Die binäre Cloud-Datenspeicherung bietet die erforderlichen Funktionen zum Speichern und Zugriff auf Asset-Dateien und Darstellungen einzeln, ohne dass dafür Vollzugriff auf die Datenspeicherung erforderlich ist. Dazu werden vorab signierte URL-Verweise verwendet. Übertragungsbeschleunigung, CDN-Zwischenspeicherung und das gemeinsame Auffinden von Computeranwendungen mit Cloud-Datenspeicherung ermöglichen einen optimalen Zugriff auf Inhalte mit niedriger Latenz. AWS- und Azurblauer-Wolken werden unterstützt.
+* Der binäre Cloud-Speicher bietet die erforderlichen Funktionen zum individuellen Speichern von und Zugreifen auf Asset-Dateien und -Ausgabedarstellungen, ohne dass volle Zugriffsberechtigungen auf den Speicher erforderlich sind, und zwar unter Verwendung von vorab signierten URL-Referenzen. Übertragungsbeschleunigung, CDN-Caching und die gemeinsame Speicherung von Compute-Anwendungen im Cloud-Speicher ermöglichen einen optimalen Zugriff auf Inhalte mit geringer Latenz. Es werden sowohl AWS- als auch Azure-Clouds unterstützt.
 
-![Architektur des Asset Compute Service](assets/architecture-diagram.png)
+![Architektur von Asset Compute Service](assets/architecture-diagram.png)
 
-*Abbildung: Architektur [!DNL Asset Compute Service] und Integration in [!DNL Experience Manager], Datenspeicherung und Verarbeitungsanwendungen.*
+*Abbildung: Architektur von [!DNL Asset Compute Service] und wie der Service mit [!DNL Experience Manager], Datenspeicherung und Verarbeitungsanwendungen zusammenarbeitet.*
 
 Die Architektur besteht aus folgenden Teilen:
 
-* **Eine API- und Orchesterebene** empfängt Anforderungen (im JSON-Format), die den Dienst anweisen, ein Quellelement in mehrere Darstellungen umzuwandeln. Diese Anforderungen sind asynchron und werden mit einer Aktivierungen-ID (auch &quot;Job-ID&quot;genannt) zurückgegeben. Anweisungen sind rein deklarativ, und für alle Standardverarbeitungsvorgänge (z. B. Miniaturansichten, Textdarstellung) geben die Extraktionen nur das gewünschte Ergebnis an, nicht jedoch die Anwendungen, die bestimmte Darstellungen bearbeiten. Generische API-Funktionen wie Authentifizierung, Analyse, Ratenbegrenzung werden mit dem Adobe API Gateway vor dem Dienst verarbeitet und verwaltet alle Anfragen, die zur I/O-Laufzeit gehen. Das Routing der Anwendung wird dynamisch von der Orchestrierungsebene ausgeführt. Benutzerdefinierte Anwendungen können von Clients für bestimmte Darstellungen angegeben werden und benutzerdefinierte Parameter enthalten. Die Anwendungsausführung kann vollständig parallelisiert werden, da es sich um separate serverlesene Funktionen in der I/O-Laufzeit handelt.
+* **Eine API- und Orchestrierungsebene** empfängt Anforderungen (im JSON-Format), die den Service anweisen, ein Quellelement in mehrere Ausgabedarstellungen umzuwandeln. Diese Anfragen sind asynchron und werden mit einer Aktivierungs-ID (auch Vorgangs-ID genannt) zurückgegeben. Die Anweisungen sind rein deklarativ. Bei allen Standardverarbeitungsvorgängen (z. B. Miniaturansichten, Textdarstellung) geben die Verbraucher nur das gewünschte Ergebnis an, nicht jedoch die Anwendungen, die bestimmte Ausgabedarstellungen bearbeiten. Generische API-Funktionen wie Authentifizierung, Analyse, Ratenbegrenzung werden über das Adobe API Gateway vor dem Service abgewickelt und verwalten alle Anfragen, die an I/O Runtime gesendet werden. Das Anwendungs-Routing wird dynamisch von der Orchestrierungsebene ausgeführt. Benutzerdefinierte Anwendungen können von Clients für bestimmte Ausgabedarstellungen angegeben werden und benutzerdefinierte Parameter enthalten. Die Anwendungsausführung kann vollständig parallelisiert werden, da es sich um separate Server-lose Funktionen in I/O Runtime handelt.
 
-* **Anwendungen zur Verarbeitung von Assets** , die auf bestimmte Dateiformate oder Darstellungen von Zielgruppen spezialisiert sind. Eine Anwendung ähnelt dem Unix-Pipe-Konzept: eine Eingabedatei in eine oder mehrere Ausgabedateien umgewandelt wird.
+* **Anwendungen zur Verarbeitung von Assets**, die auf bestimmte Dateiformate oder Zieldarstellungen spezialisiert sind. Eine Anwendung ähnelt dem Unix-Pipe-Konzept: eine Eingabedatei wird in eine oder mehrere Ausgabedateien umgewandelt.
 
-* **Eine [gängige Anwendungsbibliothek](https://github.com/adobe/asset-compute-sdk)** verarbeitet gängige Aufgaben wie das Herunterladen der Quelldatei, das Hochladen der Ausgabeformate, den Berichte von Fehlermeldungen, das Senden und Überwachen von Ereignissen. Dies wurde so konzipiert, dass die Entwicklung einer Anwendung so einfach wie möglich bleibt, entsprechend der serverllosen Idee, und auf lokale Dateisysteminteraktionen beschränkt werden kann.
+* **Eine [gemeinsame Anwendungsbibliothek](https://github.com/adobe/asset-compute-sdk)** verarbeitet allgemeine Aufgaben wie das Herunterladen der Quelldatei, das Hochladen der Ausgabedarstellungen, die Fehlerberichterstellung, das Senden und Überwachen von Ereignissen. Dies wurde so entwickelt, dass die Entwicklung einer Anwendung so einfach wie möglich bleibt, der Server-losen Idee folgt und auf lokale Dateisysteminteraktionen beschränkt werden kann.
 
 <!-- TBD:
 
