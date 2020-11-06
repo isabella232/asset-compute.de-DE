@@ -1,11 +1,11 @@
 ---
-title: Versionshinweise [!DNL Asset Compute Service].
-description: Neue Funktionen, Verbesserungen und bekannte Probleme in [!DNL Asset Compute Service].
-translation-type: tm+mt
+title: Versionshinweise zu  [!DNL Asset Compute Service].
+description: Neue Funktionen, Verbesserungen und bekannte Probleme in  [!DNL Asset Compute Service].
+translation-type: ht
 source-git-commit: 68d910cd092fccb599c361f24daff80460129e1c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '193'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
@@ -23,22 +23,22 @@ To test your custom applications with the [developer tool](https://github.com/ad
 >Cloud storage access is only required for using the developer tool. You can still create, test and deploy custom applications with out using the developer tool.
 -->
 
-## What is new {#what-is-new}
+## Neue Funktionen {#what-is-new}
 
-Dies ist die erste Version von [!DNL Asset Compute Service]. Es handelt sich um einen skalierbaren und erweiterbaren Dienst [!DNL Adobe Experience Cloud] zur Verarbeitung digitaler Assets. Sie können Bild-, Video-, Dokument- und andere Dateiformate in verschiedene Darstellungen umwandeln, einschließlich Miniaturansichten, extrahiertem Text und Metadaten sowie Archiven.
+Dies ist die erste Version von [!DNL Asset Compute Service]. Es handelt sich um einen skalierbaren und erweiterbaren Service von [!DNL Adobe Experience Cloud] zur Verarbeitung digitaler Assets. Sie können Bild-, Video-, Dokument- und andere Dateiformate in verschiedene Ausgabedarstellungen umwandeln, einschließlich Miniaturansichten, extrahiertem Text und Metadaten sowie Archiven.
 
-Zurzeit [!DNL Asset Compute Service] kann das nur in [!DNL Experience Manager] einem Cloud Service verwendet werden.
+Zurzeit kann [!DNL Asset Compute Service] nur in [!DNL Experience Manager] as a Cloud Service verwendet werden.
 
 ## Einschränkungen und bekannte Probleme {#known-limitations}
 
-Um Ihre benutzerdefinierte Anwendung mit dem [Developer Tool](https://github.com/adobe/asset-compute-devtool)zu testen, benötigen Sie Zugriff auf einen [Cloud-Datenspeicherung-Container](https://github.com/adobe/asset-compute-devtool#prerequisites).
+Um Ihre benutzerdefinierte Anwendung mit dem [Entwickler-Tool](https://github.com/adobe/asset-compute-devtool) zu testen, benötigen Sie Zugriff auf einen [Cloud-Speicher-Container](https://github.com/adobe/asset-compute-devtool#prerequisites).
 
-* Der Zugriff auf die Cloud-Datenspeicherung (anders als auf den [!DNL Experience Manager] Blob Store) ist nur für das Developer Tool erforderlich. Sie können benutzerdefinierte Anwendungen auch ohne das Developer Tool erstellen, testen und bereitstellen.
+* Der Zugriff auf den Cloud-Speicher (anders als auf den [!DNL Experience Manager]-Blob-Speicher) ist nur für das Entwickler-Tool erforderlich. Sie können benutzerdefinierte Anwendungen auch ohne das Entwickler-Tool erstellen, testen und bereitstellen.
 * Es kann sich um einen freigegebenen Container handeln, der von mehreren Entwicklern in verschiedenen Projekten verwendet wird.
 
 ## Beitragen {#contribute-open-source}
 
-[!DNL Asset Compute Service] Erweiterbarkeit wird unter einem offenen Entwicklungsmodell auf github.com/adobe entwickelt, das Beiträge von Entwicklern von Erweiterungen [begrüßt](https://github.com/adobe) . Alle Komponenten, die für die Entwicklung, Erstellung, Prüfung und Bereitstellung von benutzerdefinierten Anwendungen relevant sind, sind Open Source. Erfahren Sie, [wie und wo Sie zum Compute Service](contribute-to-compute-service.md)beitragen können.
+Die Erweiterbarkeit von [!DNL Asset Compute Service] wird im Rahmen eines offenen Entwicklungsmodells auf [github.com/adobe](https://github.com/adobe) entwickelt, das Beiträge von Erweiterungsentwicklern begrüßt. Alle Komponenten, die für die Entwicklung, Erstellung, Prüfung und Bereitstellung von benutzerdefinierten Anwendungen relevant sind, sind Open Source. Erfahren Sie, [wie und wo Sie zu Compute Service beitragen können](contribute-to-compute-service.md).
 
 <!-- **TBD:**
 * Are we versioning the releases?
