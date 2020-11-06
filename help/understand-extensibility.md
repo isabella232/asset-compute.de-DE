@@ -1,35 +1,35 @@
 ---
-title: Verstehen Sie, wie Sie erweitern [!DNL Asset Compute Service].
-description: Wann und wie die Funktionalität [!DNL Asset Compute Service] für die Verarbeitung benutzerdefinierter Assets erweitert wird.
-translation-type: tm+mt
+title: Lernen Sie, wie Sie  [!DNL Asset Compute Service] erweitern.
+description: Wann und wie die Funktionalität von  [!DNL Asset Compute Service]  für die Verarbeitung benutzerdefinierter Assets erweitert wird.
+translation-type: ht
 source-git-commit: 54afa44d8d662ee1499a385f504fca073ab6c347
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '275'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 
 # Einführung in die Erweiterbarkeit {#introduction-to-extensibilty}
 
-Viele Darstellungsanforderungen, wie die Konvertierung in Formate und die Größenanpassung von Bildern, werden von [Verarbeitungswerkzeugen [!DNL Experience Manager] als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/asset-microservices-overview.html)behandelt. Komplexere Geschäftsanforderungen erfordern möglicherweise eine benutzerdefinierte Lösung, die den Anforderungen eines Unternehmens entspricht. [!DNL Asset Compute Service] können erweitert werden, indem Sie benutzerdefinierte Anwendungen erstellen, die von &quot;Verarbeitungsanwendungen&quot;in [!DNL Experience Manager]aufgerufen werden. Diese benutzerdefinierten Anwendungen entsprechen den [unterstützten Anwendungsfällen](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html).
+Viele Ausgabedarstellungsanforderungen, wie die Konvertierung in Formate und die Größenanpassung von Bildern, erfolgen über [Verarbeitungsprofile in  [!DNL Experience Manager]  as a Cloud Service](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/assets/asset-microservices-overview.html). Komplexere Geschäftsanforderungen erfordern möglicherweise eine individuell erstellte Lösung, die den Anforderungen eines Unternehmens entspricht. [!DNL Asset Compute Service] kann erweitert werden, indem Sie benutzerdefinierte Anwendungen erstellen, die von den Verarbeitungsprofilen in [!DNL Experience Manager] aufgerufen werden. Diese benutzerdefinierten Anwendungen decken die [unterstützten Anwendungsfälle](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html) ab.
 
 >[!NOTE]
 >
->[!DNL Asset Compute Service] ist nur zur Verwendung mit [!DNL Experience Manager] als Cloud Service verfügbar.
+>[!DNL Asset Compute Service] ist nur zur Verwendung mit [!DNL Experience Manager] as a Cloud Service verfügbar.
 
-Bei den benutzerdefinierten Anwendungen handelt es sich um kopflose [Project Firefly](https://github.com/AdobeDocs/project-firefly) -Apps. Die Erweiterung [!DNL Asset Compute Service] mit benutzerdefinierten Anwendungen wird durch die Werkzeuge [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk) und Project Firefly Developer vereinfacht. Dadurch können sich Entwickler auf Geschäftslogik konzentrieren. Das Erstellen benutzerdefinierter Anwendungen ist so einfach wie das Erstellen einer reinen serverllosen Adobe I/O Runtime-Aktion. Es handelt sich dabei um eine einzige JavaScript-Funktion von Node.js. Das [Beispiel](https://github.com/adobe/asset-compute-example-workers/blob/master/projects/worker-basic/worker-basic.js) einer benutzerdefinierten Anwendung veranschaulicht dies.
+Bei den benutzerdefinierten Anwendungen handelt es sich um Headless-[Project Firefly](https://github.com/AdobeDocs/project-firefly)-Apps. Die Erweiterung von [!DNL Asset Compute Service] mit benutzerdefinierten Anwendungen wird durch das [Asset Compute-SDK](https://github.com/adobe/asset-compute-sdk) und die Entwickler-Tools von Project Firefly vereinfacht. Dadurch können sich Entwickler auf Geschäftslogik konzentrieren. Das Erstellen benutzerdefinierter Anwendungen ist so einfach wie das Erstellen einer Server-losen Adobe I/O Runtime-Aktion. Es handelt sich dabei um eine einzige JavaScript-Funktion von Node.js. Dies wird durch das [grundlegende Beispiel einer benutzerdefinierten Anwendung](https://github.com/adobe/asset-compute-example-workers/blob/master/projects/worker-basic/worker-basic.js) veranschaulicht.
 
 ## Voraussetzungen und Bereitstellungsanforderungen {#prerequisites-and-provisioning}
 
 Stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-* Auf Ihrem Computer sind Project Firefly-Werkzeuge installiert.
-* Eine [!DNL Experience Cloud] Organisation. Weitere Informationen [hier](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/setup.md#acquire-access-and-credentials).
-* Die Experience Organisation muss [!DNL Experience Manager] als Cloud Service aktiviert sein.
-* [!DNL Adobe Experience Cloud] ist Teil des Programms zur [!DNL Project Firefly] Vorschau von Entwicklern. Erfahren Sie, [wie Sie den Zugriff beantragen](https://github.com/AdobeDocs/project-firefly/blob/master/overview/getting_access.md).
-* Stellen Sie sicher, dass die Rolle des Entwicklers oder die Administratorrechte im Unternehmen für den Entwickler gelten.
-* Stellen Sie sicher, dass die [Adobe-I/O-CLI](https://github.com/adobe/aio-cli) lokal installiert ist.
+* Auf Ihrem Computer sind die Project Firefly-Tools installiert.
+* Eine [!DNL Experience Cloud]-Organisation. Weitere Informationen finden Sie [hier](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/setup.md#acquire-access-and-credentials).
+* [!DNL Experience Manager] as a Cloud Service muss für die Experience-Organisation aktiviert sein.
+* Die [!DNL Adobe Experience Cloud]-Organisation ist Teil des Developer Preview-Programms von [!DNL Project Firefly]. Lernen Sie, [wie Sie den Zugriff beantragen](https://github.com/AdobeDocs/project-firefly/blob/master/overview/getting_access.md).
+* Stellen Sie für den Entwickler eine Entwicklerrolle oder Administratorberechtigungen in der Organisation sicher.
+* Stellen Sie sicher, dass [Adobe I/O CLI](https://github.com/adobe/aio-cli) lokal installiert ist.
 
 <!-- TBD for later:
 
