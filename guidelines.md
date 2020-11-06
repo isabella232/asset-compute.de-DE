@@ -1,40 +1,40 @@
 ---
 source-git-commit: 0a0feacbcd6456e01a6d451f9954ab21c1a8bce3
-workflow-type: tm+mt
-translation-type: tm+mt
+workflow-type: ht
+translation-type: ht
 source-wordcount: '650'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
-# Leitlinien für den Beitrag zur Dokumentation
+# Richtlinien für Beiträge zur Dokumentation
 
 ## Dokumentationsphilosophie
 
-Wir wissen, dass die Nutzer in einer äußerst wettbewerbsfähigen Umgebung arbeiten, die darauf abzielt, digitale Erfahrungen zu entwickeln, die sie von ihren Konkurrenten unterscheiden. Daher ist es wichtig, dass die Adobe bei der Bereitstellung neuer Werkzeuge mit einer präzisen und klaren Dokumentation versehen wird, damit der Kunde seine Investition sofort einsetzen und den ROI maximieren kann.
+Wir wissen, dass die Benutzer in extrem wettbewerbsorientierten Umgebungen arbeiten und sich bemühen, digitale Erlebnisse zu schaffen, die sie von ihren Mitbewerbern abheben. Deshalb ist es wichtig, wenn Adobe erweiterte neue Tools bereitstellt, dass diese durch genaue und klare Dokumentation ergänzt werden, damit der Kunde sofort seine AEM-Investition nutzen und den ROI maximieren kann.
 
-Das Ziel ist es, die Dokumentation so schnell wie möglich den Nutzern zur Verfügung zu stellen. Daher steht bei uns eine genaue und nutzbare Dokumentation im Vordergrund und wir bemühen uns ständig um eine aktualisierte und bessere Dokumentation.
+Das Ziel besteht darin, die Benutzer schnellstmöglich mit der Dokumentation vertraut zu machen. Daher steht bei uns eine genaue und nutzbare Dokumentation im Vordergrund und wir bemühen uns ständig um eine aktualisierte und bessere Dokumentation.
 
 ## Beiträge zur Dokumentation
 
-Zur kontinuierlichen Verbesserung der Dokumentation ist die gesamte Community der Benutzer herzlich eingeladen, sich an der Dokumentation zu beteiligen. Sei es durch Pull-Anforderungen oder Probleme, bei den Verbesserungen der Dokumentation kann es sich um Korrekturen, Klarstellungen, Erweiterungen und weitere Beispiele handeln.
+Um die Dokumentation kontinuierlich zu verbessern, kann die gesamte Benutzer-Community zur Dokumentation beitragen. Sei es durch Pull-Anforderungen oder Probleme, bei den Verbesserungen der Dokumentation kann es sich um Korrekturen, Klarstellungen, Erweiterungen und weitere Beispiele handeln.
 
 ## Dokumentationsstandards
 
-Während wir Beiträge zu unserer Dokumentation begrüßen, sollte jeder Beitrag zur Dokumentation, entweder in Form einer Pull-Anfrage oder einer Ausgabe, unseren Beitrags- und Dokumentationsstandards entsprechen. Beiträge, die diesen Standards nicht entsprechen, können abgelehnt werden.
+Auch wenn wir Beiträge zu unserer Dokumentation begrüßen, sollte jeder Beitrag zur Dokumentation in Form einer Pull-Anforderung oder eines Problems mit unseren Beitrags- und Dokumentationsstandards übereinstimmen. Beiträge, die diesen Standards nicht entsprechen, können abgelehnt werden.
 
-### Wir Dokument Standardanwendungsfälle und keine Problemumgehungen
+### Wir dokumentieren Standardanwendungsfälle und keine Problemumgehungen
 
-In der Dokumentation werden Standardverwendungsfälle behandelt. Anwendungsfälle, die über den Rahmen der standardmäßigen und unterstützten Installation und Verwendung des Produkts hinausgehen, sind nicht Teil der Dokumentation. Aus diesem Grund werden Mängel, Defekte durch Defekte und Problemumgehungen im Allgemeinen nicht dokumentiert.
+Die Dokumentation umfasst Standardanwendungsfälle. Anwendungsfälle, die über den Umfang der unterstützten standardmäßigen Installation und Nutzung des Produkts hinausgehen, sind nicht Teil der Dokumentation. Aus diesem Grund werden Mängel, durch Mängel verursachte Auswirkungen und Problemumgehungen für Mängel im Allgemeinen nicht dokumentiert.
 
-Ausnahmen von dieser Regel sind Versionshinweise, in denen bekannte Probleme mit möglichen von der Adobe genehmigten Problemumgehungen aufgelistet werden können.
+Ausnahmen von dieser Regel sind die Versionshinweise, in denen bekannte Probleme mit möglichen Problemumgehungen aufgelistet werden können, die von Adobe genehmigt wurden.
 
-### Dokumentationsbeiträge dienen nicht zur Beantwortung von Abfragen von Kunden
+### Beiträge zur Dokumentation dienen nicht zur Beantwortung von Kundenanfragen
 
-Alle Ideen, die Sie zur Verbesserung der Dokumentation benötigen, sind als Beiträge willkommen. Kommentare, Probleme und Pull-Anforderungen sind jedoch nur für *Beiträge* vorgesehen. Sie sind nicht dazu gedacht, Ihre Fragen zur Verwendung des Produkts zu beantworten, Projekte zu implementieren oder technische Probleme zu lösen.
+Alle Ideen, die Sie möglicherweise zur Verbesserung der Dokumentation haben, sind als Beiträge willkommen. Kommentare, Probleme und Pull-Anforderungen sind jedoch nur für *Beiträge* vorgesehen. Sie sind nicht zur Beantwortung Ihrer Fragen über die Verwendung des Produkts, die Implementierung von Projekten oder zur Lösung technischer Probleme gedacht.
 
-Any questions about the usage or technical errors you may have should be reported through the normal support process via the [Experience Cloud Enterprise Support portal](https://helpx.adobe.com/de/contact/enterprise-support.ec.html) or discussed in the [Experience Manager community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community).
+Fragen zur Verwendung oder zu technischen Fehlern, die möglicherweise bei Ihnen auftreten, sollten entsprechend dem herkömmlichen Support-Vorgang über das [Enterprise-Support-Portal für Experience Cloud](https://helpx.adobe.com/de/contact/enterprise-support.ec.html) gemeldet oder in der [Experience Manager-Community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) diskutiert werden.
 
-Die Dokumentationsbeiträge sind kein Ersatz für die Adobe Customer Care*** und solche Beiträge, die Antworten auf Supportfragen suchen, werden abgelehnt.
+Dokumentationsbeiträge sind kein Ersatz für die Adobe-Kundenunterstützung und Beiträge, die Antworten auf Support-Fragen suchen, werden abgelehnt.
 
 ### Die Beiträge müssen sich eindeutig auf die betroffenen Dokumentationsseiten beziehen.
 
@@ -52,15 +52,15 @@ Durch das Befolgen dieser Richtlinien erleichtern Sie die Überprüfung Ihres Be
 
 #### Sprache
 
-* Die Dokumentation wird verfasst und in US-Englisch gepflegt.
+* Die Dokumentation wird in englischer Sprache verfasst und verwaltet.
 * Ausdrücke sollten so einfach wie möglich sein.
 * Drücken Sie sich klar und bündig aus.
 
-Denken Sie daran, dass die Leser der Dokumentation weltweit sind und man nicht erwarten kann, dass sie Muttersprachler oder fließende Englisch-Sprecher sind. Vermeiden Sie umgangssprachliche Wendungen und verwenden Sie eine klare und einfache Sprache wie möglich.
+Denken Sie daran, dass die wir internationale Leser der Dokumentation haben und von ihnen nicht erwartet werden kann, dass sie fließend Englisch beherrschen oder Muttersprachler sind. Vermeiden Sie umgangssprachliche Wendungen und verwenden Sie eine klare und einfache Sprache wie möglich.
 
 #### Befolgen Sie das Stil-Handbuch von Microsoft.
 
-[Das Microsoft Manual of Style](https://docs.microsoft.com/de-de/style-guide/welcome/) ist ein frei verfügbarer Dokumentationsstil-Leitfaden, der sich auf die Softwaredokumentation konzentriert.
+Das [Microsoft Manual of Style](https://docs.microsoft.com/de-de/style-guide/welcome/) ist ein frei verfügbarer Dokumentations-Styleguide, der sich auf Software-Dokumentation konzentriert.
 
 ### Formatierung
 
@@ -74,8 +74,8 @@ Denken Sie daran, dass die Leser der Dokumentation weltweit sind und man nicht e
 
 Screenshots sollen mit Bedacht und nur dann verwendet werden, wenn eine Textbeschreibung nicht ausreicht.
 
-Verwenden Sie keine Markierungen oder anderen Anmerkungen wie rote Rahmen, Pfeile oder Text in den Screenshots. Auf diese Weise sind die Screenshots einfacher wiederzuverwenden und in lokalisierten Versionen der Dokumentation zu replizieren.
+Verwenden Sie keine Markierungen oder anderen Anmerkungen wie rote Rahmen, Pfeile oder Text in den Screenshots. Auf diese Weise können die Screenshots in lokalisierten Versionen der Dokumentation einfacher wiederverwendet und repliziert werden.
 
-### Versionsspezifische Referenzen
+### Versionsspezifische Verweise
 
 Versuchen Sie nach Möglichkeit direkte Verweise auf eine bestimmte Version im gesamten Dokumentationsinhalt zu vermeiden. Dadurch wird die Dokumentation für künftige Versionen flexibler und erweiterbarer.
