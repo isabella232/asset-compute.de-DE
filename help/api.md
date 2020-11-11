@@ -1,18 +1,18 @@
 ---
 title: '[!DNL Asset Compute Service] HTTP-API.'
 description: '[!DNL Asset Compute Service] HTTP-API zum Erstellen benutzerdefinierter Anwendungen.'
-translation-type: ht
-source-git-commit: 18e97e544014933e9910a12bc40246daa445bf4f
-workflow-type: ht
-source-wordcount: '2931'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 79630efa8cee2c8919d11e9bb3c14ee4ef54d0f3
+workflow-type: tm+mt
+source-wordcount: '2925'
+ht-degree: 99%
 
 ---
 
 
 # [!DNL Asset Compute Service] HTTP-API {#asset-compute-http-api}
 
-Die Verwendung der API ist auf Entwicklungszwecke beschränkt. Die API wird bei der Entwicklung benutzerdefinierter Anwendungen als Kontext bereitgestellt. [!DNL Adobe Experience Manager] as a Cloud Service verwendet die API, um die Verarbeitungsinformationen an eine benutzerdefinierte Anwendung zu übergeben. Weitere Informationen finden Sie unter [Verwenden von Asset-Microservices und Verarbeitungsprofilen](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html).
+Die Verwendung der API ist auf Entwicklungszwecke beschränkt. Die API wird bei der Entwicklung benutzerdefinierter Anwendungen als Kontext bereitgestellt. [!DNL Adobe Experience Manager] as a Cloud Service verwendet die API, um die Verarbeitungsinformationen an eine benutzerdefinierte Anwendung zu übergeben. Weitere Informationen finden Sie unter [Verwenden von Asset-Microservices und Verarbeitungsprofilen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html).
 
 >[!NOTE]
 >
@@ -374,7 +374,7 @@ Dies sind die verfügbaren Optionen für das `renditions`-Array in [/process](#p
 
 | Name | Typ | Beschreibung | Beispiel |
 |-------------------|----------|-------------|---------|
-| `fmt` | `string` | Das Zielformat der Ausgabedarstellung kann auch `text` zum Extrahieren von Text und `xmp` zum Extrahieren von XMP-Metadaten als XML sein. Siehe [Unterstützte Formate](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/assets/file-format-support.html). | `png` |
+| `fmt` | `string` | Das Zielformat der Ausgabedarstellung kann auch `text` zum Extrahieren von Text und `xmp` zum Extrahieren von XMP-Metadaten als XML sein. Siehe [Unterstützte Formate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html). | `png` |
 | `worker` | `string` | URL einer [benutzerdefinierten Anwendung](develop-custom-application.md). Muss eine `https://`-URL sein. Wenn dieses Feld vorhanden ist, wird die Ausgabedarstellung von einer benutzerdefinierten Anwendung erstellt. Jedes andere festgelegte Ausgabedarstellungsfeld wird dann in der benutzerdefinierten Anwendung verwendet. | `"https://1234.adobeioruntime.net`<br>`/api/v1/web`<br>`/example-custom-worker-master/worker"` |
 | `target` | `string` | URL, auf die die generierte Ausgabedarstellung mit HTTP-PUT hochgeladen werden soll. | `http://w.com/img.jpg` |
 | `target` | `object` | Mehrteilige vorsignierte URL-Upload-Informationen für die generierte Ausgabedarstellung. Dies gilt für den [direkten binären AEM-/Oak-Upload](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) mit diesem [mehrteiligen Upload-Verhalten](http://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html).<br>Felder:<ul><li>`urls`: Array von Zeichenfolgen, eine für jede vorsignierte Teil-URL</li><li>`minPartSize`: die Mindestgröße für eine Teil-URL</li><li>`maxPartSize`: die Maximalgröße für eine Teil-URL</li></ul> | `{ "urls": [ "https://part1...", "https://part2..." ], "minPartSize": 10000, "maxPartSize": 100000 }` |
@@ -382,7 +382,7 @@ Dies sind die verfügbaren Optionen für das `renditions`-Array in [/process](#p
 
 ### Ausgabedarstellungsspezifische Felder {#rendition-specific-fields}
 
-Eine Liste der derzeit unterstützten Dateiformate finden Sie unter [Unterstützte Dateiformate](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/assets/file-format-support.html).
+Eine Liste der derzeit unterstützten Dateiformate finden Sie unter [Unterstützte Dateiformate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html).
 
 | Name | Typ | Beschreibung | Beispiel |
 |-------------------|----------|-------------|---------|
