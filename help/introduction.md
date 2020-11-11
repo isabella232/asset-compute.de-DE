@@ -1,11 +1,11 @@
 ---
 title: Einführung in  [!DNL Asset Compute Service].
 description: '[!DNL Asset Compute Service] ist ein Cloud-nativer Asset-Verarbeitungs-Service, der die Komplexität reduziert und die Skalierbarkeit verbessert.'
-translation-type: ht
-source-git-commit: 54afa44d8d662ee1499a385f504fca073ab6c347
-workflow-type: ht
-source-wordcount: '332'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 79630efa8cee2c8919d11e9bb3c14ee4ef54d0f3
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 90%
 
 ---
 
@@ -20,13 +20,13 @@ Entwickler können benutzerdefinierte Asset-Anwendungen (auch als benutzerdefini
 
 >[!NOTE]
 >
->Zurzeit kann [!DNL Asset Compute Service] nur über [!DNL Experience Manager] as a Cloud Service verwendet werden. Administratoren erstellen Verarbeitungsprofile, die [!DNL Asset Compute Service] aufrufen können, um Assets zur Verarbeitung zu übergeben. Weitere Informationen finden Sie unter [Verwenden von Asset-Microservices und Verarbeitungsprofilen](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html).
+>Zurzeit kann [!DNL Asset Compute Service] nur über [!DNL Experience Manager] as a Cloud Service verwendet werden. Administratoren erstellen Verarbeitungsprofile, die [!DNL Asset Compute Service] aufrufen können, um Assets zur Verarbeitung zu übergeben. Weitere Informationen finden Sie unter [Verwenden von Asset-Microservices und Verarbeitungsprofilen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html).
 
 ## Unterstützte Anwendungsfälle von [!DNL Asset Compute Service] {#possible-use-cases-benefits}
 
 [!DNL Asset Compute Service] unterstützt einige gängige Geschäftsanwendungsfälle wie die grundlegende Bildverarbeitung, Adobe-anwendungsspezifische Konvertierungen und das Erstellen benutzerdefinierter Anwendungen, die komplexe Geschäftsanforderungen koordinieren.
 
-Sie können den Webservice [!DNL Asset Compute] verwenden, um Miniaturansichten für verschiedene Dateitypen und hochwertige Bildwiedergaben für die [unterstützten Dateiformate](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/assets/file-format-support.html) zu generieren. Weitere Informationen finden Sie unter [Anwendungsfälle, die von der benutzerdefinierten Konfiguration unterstützt werden](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#custom-config).
+Sie können den Webservice [!DNL Asset Compute] verwenden, um Miniaturansichten für verschiedene Dateitypen und hochwertige Bildwiedergaben für die [unterstützten Dateiformate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html) zu generieren. Weitere Informationen finden Sie unter [Anwendungsfälle, die von der benutzerdefinierten Konfiguration unterstützt werden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html).
 
 >[!NOTE]
 >
@@ -45,9 +45,9 @@ Sie können den Webservice [!DNL Asset Compute] verwenden, um Miniaturansichten 
 
 >[!MORELIKETHIS]
 >
->* [Übersicht über die Asset-Verarbeitung mit Asset-Microservices in Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/assets/asset-microservices-overview.html).
+>* [Übersicht über die Asset-Verarbeitung mit Asset-Microservices in Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html).
 >* [Dokumentation zu Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html).
->* [Für die Verarbeitung unterstützte Dateiformate](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/assets/file-format-support.html).
+>* [Für die Verarbeitung unterstützte Dateiformate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html).
 >* [Versionshinweise zu Asset Compute Service](release-notes.md)
 
 
