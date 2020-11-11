@@ -1,9 +1,9 @@
 ---
-source-git-commit: 324f414164ccbb712e7197ddc68075ea9c238cae
-workflow-type: ht
-translation-type: ht
-source-wordcount: '519'
-ht-degree: 100%
+source-git-commit: 79630efa8cee2c8919d11e9bb3c14ee4ef54d0f3
+workflow-type: tm+mt
+translation-type: tm+mt
+source-wordcount: '518'
+ht-degree: 98%
 
 ---
 # Beiträge zur Dokumentation
@@ -50,7 +50,7 @@ Für Pull-Anforderungen muss eine [Lizenzvereinbarung für Mitwirkende (CLA) unt
 
 Im folgenden Video erhalten Sie einen schnellen Überblick darüber, wie Probleme erstellt und Anforderungen abgerufen werden.
 
->[!VIDEO](https://video.tv.adobe.com/v/27069?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/27069)
 
 ### Beiträge von Adobe-Mitarbeitern
 
@@ -60,4 +60,4 @@ Wir freuen uns natürlich über Ihren Beitrag und überprüfen ihn, wenn er im �
 
 ## Weiterführende Informationen
 
-Weitere Informationen zur Verwendung der GitHub-Authoring-Plattform und der unterstützten Markdown-Syntax finden Sie im [Adobe Docs Contributor Guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html).
+Weitere Informationen zur Verwendung der GitHub-Authoring-Plattform und der unterstützten Markdown-Syntax finden Sie im [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
