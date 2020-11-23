@@ -1,11 +1,11 @@
 ---
 title: '[!DNL Asset Compute Service] HTTP-API.'
 description: '[!DNL Asset Compute Service] HTTP-API zum Erstellen benutzerdefinierter Anwendungen.'
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 79630efa8cee2c8919d11e9bb3c14ee4ef54d0f3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2925'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
