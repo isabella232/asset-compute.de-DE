@@ -1,11 +1,11 @@
 ---
 title: Entwickeln für  [!DNL Asset Compute Service].
 description: Erstellen Sie benutzerdefinierte Anwendungen mit  [!DNL Asset Compute Service].
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6de4e3cde9c38f2e23838f5d728dae23e15d2147
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1559'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -96,13 +96,13 @@ Fügen Sie der ENV-Datei im Stammverzeichnis Ihres Firefly-Projekts die folgende
    ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=
    ```
 
-1. Wenn sich die Datei nicht direkt im Stammordner Ihrer Firefly-App befindet, fügen Sie den absoluten Pfad zur JSON-Adobe zur Developer Console-Integration hinzu. `console.json` Hierbei handelt es sich um dieselbe [`console.json`](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user) Datei, die Sie in Ihren Projektarbeitsbereich heruntergeladen haben. Alternativ können Sie auch den Befehl verwenden, `aio app use <path_to_console_json>` anstatt den Pfad zu Ihrer ENV-Datei hinzuzufügen.
+1. Wenn sich die `console.json`-Datei nicht direkt im Stammverzeichnis Ihrer Firefly-App befindet, fügen Sie den absoluten Pfad zur JSON-Integrationsdatei für die Adobe Developer Console hinzu. Hierbei handelt es sich um dieselbe [`console.json`](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user)-Datei, die Sie in Ihrem Projektarbeitsbereich heruntergeladen haben. Alternativ können Sie auch den Befehl `aio app use <path_to_console_json>` verwenden, anstatt den Pfad zu Ihrer ENV-Datei hinzuzufügen.
 
    ```conf
    ASSET_COMPUTE_INTEGRATION_FILE_PATH=
    ```
 
-1. hinzufügen entweder S3- oder Azurblauer Datenspeicherung-Anmeldeinformationen. Sie benötigen nur Zugriff auf eine Cloud-Speicherlösung.
+1. Fügen Sie entweder S3- oder Azure-Speicheranmeldeinformationen hinzu. Sie benötigen nur Zugriff auf eine Cloud-Speicherlösung.
 
    ```conf
    # S3 credentials
