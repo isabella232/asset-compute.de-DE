@@ -1,9 +1,9 @@
 ---
 title: Machen Sie sich mit der Funktionsweise einer benutzerdefinierten Anwendung vertraut.
 description: Interne Funktionsweise einer benutzerdefinierten  [!DNL Asset Compute Service] -Anwendung, um deren Funktionsweise besser zu verstehen.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 54afa44d8d662ee1499a385f504fca073ab6c347
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 100%
 
