@@ -2,9 +2,9 @@
 title: Entwickeln für  [!DNL Asset Compute Service].
 description: Erstellen Sie benutzerdefinierte Anwendungen mit  [!DNL Asset Compute Service].
 translation-type: tm+mt
-source-git-commit: 6de4e3cde9c38f2e23838f5d728dae23e15d2147
+source-git-commit: c392b8588929f7b13db13e42a3f17bbc4f68a376
 workflow-type: tm+mt
-source-wordcount: '1559'
+source-wordcount: '1557'
 ht-degree: 100%
 
 ---
@@ -82,7 +82,7 @@ Das Entwickler-Tool zum Testen benutzerdefinierter Anwendungen mit dem eigentlic
 
 >[!NOTE]
 >
->Dabei handelt es sich um einen anderen Speicher als den Cloud-Speicherplatz von [!DNL Adobe Experience Manager] as a Cloud Service. Dies gilt nur für das Entwickeln und Testen mit dem Asset Compute-Entwickler-Tool.
+>Dabei handelt es sich um einen anderen Speicher als den Cloud-Speicherplatz von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. Dies gilt nur für das Entwickeln und Testen mit dem Asset Compute-Entwickler-Tool.
 
 Stellen Sie sicher, dass Sie Zugriff auf einen [unterstützten Cloud-Speicher-Container](https://github.com/adobe/asset-compute-devtool#prerequisites) haben. Dieser Container kann bei Bedarf von mehreren Entwicklern in verschiedenen Projekten gemeinsam genutzt werden.
 
