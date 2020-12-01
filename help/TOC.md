@@ -13,9 +13,9 @@ solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-clo
 getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html
 tutorials-title: AEM-Tutorials
 tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 79630efa8cee2c8919d11e9bb3c14ee4ef54d0f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 100%
 
