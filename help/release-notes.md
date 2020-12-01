@@ -1,9 +1,9 @@
 ---
 title: Versionshinweise zu  [!DNL Asset Compute Service].
 description: Neue Funktionen, Verbesserungen und bekannte Probleme in  [!DNL Asset Compute Service].
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 68d910cd092fccb599c361f24daff80460129e1c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 100%
 
