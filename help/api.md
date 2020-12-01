@@ -1,9 +1,9 @@
 ---
 title: '[!DNL Asset Compute Service] HTTP-API.'
 description: '[!DNL Asset Compute Service] HTTP-API zum Erstellen benutzerdefinierter Anwendungen.'
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 79630efa8cee2c8919d11e9bb3c14ee4ef54d0f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2925'
 ht-degree: 100%
 
@@ -183,7 +183,7 @@ Die Status-Codes sind:
    }
    ```
 
-* **429 Zu viele Anfragen**: Tritt auf, wenn das System überlastet ist. Clients sollten es mit einem [exponentiellen Backoff](https://de.wikipedia.org/wiki/Binary_Exponential_Backoff) erneut versuchen. Der Hauptteil ist leer.
+* **429 Zu viele Anfragen**: Tritt auf, wenn das System überlastet ist. Clients sollten es mit einem [exponentiellen Backoff](https://en.wikipedia.org/wiki/Exponential_backoff) erneut versuchen. Der Hauptteil ist leer.
 
 * **4xx-Fehler**: Tritt auf, wenn ein anderer Client-Fehler aufgetreten ist und die Aufhebung der Registrierung fehlgeschlagen ist. Normalerweise wird eine JSON-Antwort wie diese zurückgegeben, obwohl dies nicht für alle Fehler garantiert ist:
 
@@ -322,7 +322,7 @@ Status-Codes:
 
 * **401 Nicht autorisiert**: Wenn die Anfrage keine gültige [Authentifizierung](#authentication-and-authorization) aufweist. Ein Beispiel könnte ein ungültiges Zugriffs-Token oder ein ungültiger API-Schlüssel sein.
 * **403 Verboten**: Wenn die Anfrage keine gültige [Autorisierung](#authentication-and-authorization) aufweist. Beispielsweise könnte ein gültiges Zugriffs-Token vorliegen, aber das Adobe Developer Console-Projekt (technisches Konto) hat nicht alle erforderlichen Services abonniert.
-* **429 Zu viele Anfragen**: Wenn das System durch diesen Client oder allgemein überlastet ist. Die Clients können es mit einem [exponentiellen Backoff](https://de.wikipedia.org/wiki/Binary_Exponential_Backoff) erneut versuchen. Der Hauptteil ist leer.
+* **429 Zu viele Anfragen**: Wenn das System durch diesen Client oder allgemein überlastet ist. Die Clients können es mit einem [exponentiellen Backoff](https://en.wikipedia.org/wiki/Exponential_backoff) erneut versuchen. Der Hauptteil ist leer.
 * **4xx-Fehler**: Wenn ein anderer Client-Fehler aufgetreten ist. Normalerweise wird eine JSON-Antwort wie diese zurückgegeben, obwohl dies nicht für alle Fehler garantiert ist:
 
    ```json
@@ -343,7 +343,7 @@ Status-Codes:
    }
    ```
 
-Die meisten Clients neigen wahrscheinlich dazu, genau dieselbe Anfrage mit [exponentiellem Backoff](https://de.wikipedia.org/wiki/Binary_Exponential_Backoff) bei Fehlern zu wiederholen, mit *Ausnahme* von Konfigurationsproblemen wie 401 oder 403 oder ungültigen Anfragen wie 400. Abgesehen von der regulären Ratenbegrenzung über 429-Antworten kann ein vorübergehender Service-Ausfall oder eine vorübergehende Service-Beschränkung zu 5xx-Fehlern führen. Es wäre dann ratsam, es nach einer gewissen Zeit erneut zu versuchen.
+Die meisten Clients neigen wahrscheinlich dazu, genau dieselbe Anfrage mit [exponentiellem Backoff](https://en.wikipedia.org/wiki/Exponential_backoff) bei Fehlern zu wiederholen, mit *Ausnahme* von Konfigurationsproblemen wie 401 oder 403 oder ungültigen Anfragen wie 400. Abgesehen von der regulären Ratenbegrenzung über 429-Antworten kann ein vorübergehender Service-Ausfall oder eine vorübergehende Service-Beschränkung zu 5xx-Fehlern führen. Es wäre dann ratsam, es nach einer gewissen Zeit erneut zu versuchen.
 
 Alle JSON-Antworten (sofern vorhanden) enthalten die `requestId`, die dem Wert der `X-Request-Id`-Kopfzeile entspricht. Es wird empfohlen, aus der Kopfzeile zu lesen, da diese immer vorhanden ist. Die `requestId` wird auch in allen Ereignissen, die mit Verarbeitungsanfragen zusammenhängen, als `requestId` zurückgegeben. Kunden dürfen keine Annahmen über das Format dieser Zeichenfolge treffen, es handelt sich um eine undurchsichtige Zeichenfolgenkennung.
 
