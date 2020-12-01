@@ -1,9 +1,9 @@
 ---
 title: Fehlerbehebung [!DNL Asset Compute Service].
 description: Fehlerbehebung und Debugging von benutzerdefinierten Anwendungen mit  [!DNL Asset Compute Service].
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 68d910cd092fccb599c361f24daff80460129e1c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 100%
 
