@@ -1,9 +1,9 @@
 ---
 title: Lernen Sie, wie Sie  [!DNL Asset Compute Service] erweitern.
 description: Wann und wie die Funktionalität von  [!DNL Asset Compute Service]  für die Verarbeitung benutzerdefinierter Assets erweitert wird.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 79630efa8cee2c8919d11e9bb3c14ee4ef54d0f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 100%
 
