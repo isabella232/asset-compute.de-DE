@@ -9,15 +9,15 @@ user-guide-description: In dieser Dokumentation werden Aufgaben, wie z. B. die E
 breadcrumb-title: Handbuch zu Asset Compute Service
 breadcrumb-url: /docs/asset-compute/using/home.html
 solution-title: AEM Assets
-solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html
-getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html
+solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=de
+getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=de
 tutorials-title: AEM-Tutorials
-tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html
-translation-type: tm+mt
+tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=de
+translation-type: ht
 source-git-commit: c392b8588929f7b13db13e42a3f17bbc4f68a376
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '120'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 95%
 + [Benutzerhandbuch zu Asset Compute Service](home.md)
 + [Übersicht](introduction.md)
 + [Versionshinweise](release-notes.md)
-+ [Unterstützte Dateiformate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html)
++ [Unterstützte Dateiformate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=de)
 + [Architektur](architecture.md)
 + [API-Referenzen](api.md)
 + Erweitern von Asset Compute Service {#extend}
@@ -37,6 +37,6 @@ ht-degree: 95%
    + [Entwickeln einer benutzerdefinierten Anwendung](develop-custom-application.md)
    + [Testen einer benutzerdefinierten Anwendung](test-custom-application.md)
    + [Bereitstellen einer benutzerdefinierten Anwendung](deploy-custom-application.md)
-   + [Integrieren und Verwenden  [!DNL Experience Manager] in einer [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html)
+   + [Integration und Verwendung in  [!DNL Experience Manager]  as a  [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=de)
 + [Fehlerbehebung](troubleshooting.md)
 + [Beiträge zum Open-Source-Projekt](contribute-to-compute-service.md)
