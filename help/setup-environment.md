@@ -14,7 +14,7 @@ ht-degree: 95%
 
 Befolgen Sie diese Anforderungen und Anweisungen, um eine Entwicklungsumgebung für [!DNL Asset Compute Service] einzurichten.
 
-1. [Erhalten Sie Zugriff auf und Anmeldeinformationen für](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/setup.md#acquire-access-and-credentials) Project Firefly.
+1. [Erhalten Sie Zugriff auf und Anmeldeinformationen](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/setup.md#acquire-access-and-credentials) für Project Firefly.
 
 1. [Richten Sie die lokale Umgebung](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/setup.md#local-environment-set-up) und die erforderlichen Tools ein.
 
