@@ -1,11 +1,11 @@
 ---
 title: '[!DNL Adobe Asset Compute Service] Benutzerhandbuch.'
 description: In dieser Dokumentation werden Aufgaben, wie z. B. die Einführung, Entwicklung, Verwaltung, Bereitstellung und Fehlerbehebung von benutzerdefiniertem Code, in  [!DNL Asset Compute Service]  behandelt.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 78c1246f5fc42006013701a6cf4d375a1d8c9fd8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '190'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 90%
 
 In dieser Dokumentation werden Themen, wie z. B. die Entwicklung, Verwaltung, Bereitstellung und Fehlerbehebung von benutzerdefiniertem Code, in [!DNL Asset Compute Service] behandelt. Informationen zum [!DNL Asset Compute Service]-Angebot finden Sie in dieser [Einführung](introduction.md). Sehen Sie sich an, [was der Service für Sie tun kann](introduction.md#possible-use-cases-benefits).
 
-[!DNL Asset Compute Service] unterstützt die Konvertierung vieler Dateiformate und die Nutzung mit vielen Adobe-Services. Weitere Informationen finden Sie in der Liste der [unterstützten Dateiformate und Service-Integrationen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html).
+[!DNL Asset Compute Service] unterstützt die Konvertierung vieler Dateiformate und die Nutzung mit vielen Adobe-Services. Weitere Informationen finden Sie in der Liste der [unterstützten Dateiformate und Service-Integrationen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=de).
 
 Informationen zur Version und aktuelle Informationen finden Sie in den [Versionshinweisen](/help/release-notes.md).
 
-Sehen Sie sich eine Übersicht über [Asset-Mikroservices-Funktionen an, die unter [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html) verfügbar sind, und wie die Mikrodienste in [!DNL Experience Manager] verwendet werden.
+Hier erhalten Sie eine Übersicht über die [Funktionen der Asset-Microservices, die in  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] verfügbar sind](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=de), und über die Verwendung der Microservices in [!DNL Experience Manager].
 
 <!--
 Possible to record the below info here in this landing page to centralize the miscellaneous info about Asset Compute Service?
