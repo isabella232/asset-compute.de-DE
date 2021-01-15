@@ -2,10 +2,10 @@
 title: Entwickeln für  [!DNL Asset Compute Service].
 description: Erstellen Sie benutzerdefinierte Anwendungen mit  [!DNL Asset Compute Service].
 translation-type: tm+mt
-source-git-commit: 576936cc7527fc4cb43c0859a61df5fecc0bc3a8
+source-git-commit: d26ae470507e187249a472ececf5f08d803a636c
 workflow-type: tm+mt
-source-wordcount: '1569'
-ht-degree: 98%
+source-wordcount: '1560'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ Bevor Sie mit der Entwicklung einer benutzerdefinierten Anwendung beginnen:
 
 ## Erstellen einer benutzerdefinierten Anwendung {#create-custom-application}
 
-Stellen Sie sicher, dass [Adobe I/O CLI](https://github.com/adobe/aio-cli) lokal installiert ist.
+Stellen Sie sicher, dass [[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli) lokal installiert ist.
 
 1. [Erstellen Sie eine Firefly-App](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#4-bootstrapping-new-app-using-the-cli), um eine benutzerdefinierte Anwendung zu erstellen. Führen Sie dazu im Terminal `aio app init <app-name>` aus.
 
@@ -32,7 +32,7 @@ Stellen Sie sicher, dass [Adobe I/O CLI](https://github.com/adobe/aio-cli) lokal
 
    ```sh
    $ aio app init <app-name>
-   Retrieving information from Adobe I/O Console..
+   Retrieving information from [!DNL Adobe I/O] Console.
    ? Select Org My Adobe Org
    ? Select Project MyFireflyProject
    ? Select Workspace myworkspace
@@ -121,7 +121,7 @@ Fügen Sie der ENV-Datei im Stammverzeichnis Ihres Firefly-Projekts die folgende
 
 Bevor Sie die Anwendung mit dem Asset Compute-Entwickler-Tool ausführen, müssen Sie die [Anmeldeinformationen](#developer-tool-credentials) ordnungsgemäß konfigurieren.
 
-Um die Anwendung im Entwickler-Tool auszuführen, verwenden Sie den Befehl `aio app run`. Die Aktion wird in Adobe I/O Runtime bereitgestellt und das Entwickler-Tool wird auf Ihrem lokalen Computer gestartet. Dieses Tool wird zum Testen von Anwendungsanforderungen während der Entwicklung verwendet. Hier finden Sie ein Beispiel für eine Ausgabedarstellungsanforderung:
+Um die Anwendung im Entwickler-Tool auszuführen, verwenden Sie den Befehl `aio app run`. Es stellt die Aktion für die [!DNL Adobe I/O]-Laufzeit bereit und Beginn das Entwicklungstool auf Ihrem lokalen Computer. Dieses Tool wird zum Testen von Anwendungsanforderungen während der Entwicklung verwendet. Hier finden Sie ein Beispiel für eine Ausgabedarstellungsanforderung:
 
 ```json
 "renditions": [
@@ -266,7 +266,7 @@ const key = params.secretKey;
 
 ## Dimensionieren von Anwendungen {#sizing-workers}
 
-Eine Anwendung wird in einem Container in Adobe I/O Runtime mit [Beschränkungen](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) ausgeführt, die über `manifest.yml` konfiguriert werden können:
+Eine Anwendung wird in einem Container in [!DNL Adobe I/O] Laufzeit mit [limits](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) ausgeführt, der über `manifest.yml` konfiguriert werden kann:
 
 ```yaml
     actions:
