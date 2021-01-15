@@ -2,10 +2,10 @@
 title: Entwickeln für  [!DNL Asset Compute Service].
 description: Erstellen Sie benutzerdefinierte Anwendungen mit  [!DNL Asset Compute Service].
 translation-type: tm+mt
-source-git-commit: d26ae470507e187249a472ececf5f08d803a636c
+source-git-commit: 7e520921ebb459c963d61d70c66497b8e62521cf
 workflow-type: tm+mt
-source-wordcount: '1560'
-ht-degree: 96%
+source-wordcount: '1562'
+ht-degree: 94%
 
 ---
 
@@ -282,7 +282,7 @@ Aufgrund der umfangreicheren Verarbeitung, die normalerweise von Asset Compute-A
 
 Der Standard-Timeout für Aktionen in Runtime ist eine Minute, kann jedoch durch Setzen der `timeout`-Beschränkung (in Millisekunden) erhöht werden. Wenn Sie mit der Verarbeitung größerer Dateien rechnen, erhöhen Sie diese Zeit. Berücksichtigen Sie die Gesamtzeit, die zum Herunterladen der Quelle, zum Verarbeiten der Datei und zum Hochladen der Ausgabedarstellung erforderlich ist. Wenn eine Aktion eine Zeitüberschreitung aufweist, d. h. die Aktivierung nicht vor der angegebenen Timeout-Beschränkung zurückgibt, verwirft Runtime den Container und verwendet ihn nicht erneut.
 
-Asset Compute-Anwendungen sind von Natur aus eher an Netzwerk- und Datenträger-E/A-Vorgänge gebunden. Die Quelldatei muss zuerst heruntergeladen werden, die Verarbeitung ist häufig E/A-lastig und die resultierenden Ausgabedarstellungen werden dann erneut hochgeladen.
+Asset compute-Anwendungen sind naturgemäß eher an Netzwerk- und Festplatteneingabe oder -ausgabe gebunden. Die Quelldatei muss zuerst heruntergeladen werden, die Verarbeitung ist häufig ressourcenintensiv und die resultierenden Darstellungen werden dann erneut hochgeladen.
 
 Der für einen Aktions-Container verfügbare Speicher wird über `memorySize` in MB angegeben. Derzeit wird hiermit auch festgelegt, wie viel CPU-Zugriff der Container erhält. Vor allem ist dies ein Schlüsselelement der Kosten für die Verwendung von Runtime (größere Container kosten mehr). Verwenden Sie hier einen größeren Wert, wenn Ihre Verarbeitung mehr Speicher oder CPU erfordert. Achten Sie jedoch darauf, keine Ressourcen zu verschwenden, da der Gesamtdurchsatz umso geringer ist, je größer die Container sind.
 
