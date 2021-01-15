@@ -2,10 +2,10 @@
 title: Fehlerbehebung [!DNL Asset Compute Service].
 description: Fehlerbehebung und Debugging von benutzerdefinierten Anwendungen mit  [!DNL Asset Compute Service].
 translation-type: tm+mt
-source-git-commit: d26ae470507e187249a472ececf5f08d803a636c
+source-git-commit: 7e520921ebb459c963d61d70c66497b8e62521cf
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 79%
+source-wordcount: '288'
+ht-degree: 80%
 
 ---
 
@@ -19,7 +19,7 @@ Einige allgemeine Tipps, die Ihnen bei der Fehlerbehebung mit Asset Compute Serv
 * Stellen Sie sicher, dass alle Fehler, die von der Bereinigung eines Fehlers herrühren können, keine eigenen Fehler erzeugen, die das ursprüngliche Problem verdecken.
 
 * Beim erstmaligen Starten des Entwickler-Tools mit einer neuen [!DNL Asset Compute Service]-Integration kann es vorkommen, dass die erste Verarbeitungsanfrage fehlschlägt, da das Asset Compute-Ereignisjournal möglicherweise nicht vollständig eingerichtet wurde. Warten Sie einige Zeit, bis das Journal eingerichtet ist, bevor Sie eine weitere Anfrage senden.
-* Wenn beim Senden von Asset compute-`/register`- oder `/process`-Anforderungen Fehler auftreten, stellen Sie sicher, dass alle erforderlichen APIs dem [!DNL Adobe I/O]-Projekt und Arbeitsbereich hinzugefügt werden, d. h. Asset compute, IO-Ereignis, IO-Ereignisse-Verwaltung und Laufzeit.
+* Wenn beim Senden von Asset compute- `/register`- oder `/process`-Anforderungen Fehler auftreten, stellen Sie sicher, dass alle erforderlichen APIs dem [!DNL Adobe I/O]-Projekt und Arbeitsbereich hinzugefügt werden, d. h. Asset compute, [!DNL Adobe I/O]-Ereignis, [!DNL Adobe I/O]-Ereignisse-Management und [!DNL Adobe I/O]-Laufzeit.
 
 ## Anmeldungsprobleme über [!DNL Adobe I/O] CLI {#login-via-aio-cli}
 
