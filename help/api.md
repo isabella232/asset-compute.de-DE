@@ -2,7 +2,7 @@
 title: '[!DNL Asset Compute Service] HTTP-API.'
 description: '[!DNL Asset Compute Service] HTTP-API zum Erstellen benutzerdefinierter Anwendungen.'
 translation-type: tm+mt
-source-git-commit: d26ae470507e187249a472ececf5f08d803a636c
+source-git-commit: 7e520921ebb459c963d61d70c66497b8e62521cf
 workflow-type: tm+mt
 source-wordcount: '2906'
 ht-degree: 98%
@@ -38,7 +38,7 @@ Für alle APIs ist eine Zugriffs-Token-Authentifizierung erforderlich. Die Anfra
 
 1. `Authorization`-Kopfzeile mit Träger-Token, dem technischen Konto-Token, das über den [JWT-Austausch](https://www.adobe.io/authentication/auth-methods.html) vom Adobe Developer Console-Projekt empfangen wurde. Die [Bereiche](#scopes) sind nachfolgend beschrieben.
 
-<!-- TBD: Change the existing URL to a new path when a new path for docs is available. The current path contains master word that is not an inclusive term. Logged ticket in AIO's GitHub repo to get a new URL.
+<!-- TBD: Change the existing URL to a new path when a new path for docs is available. The current path contains master word that is not an inclusive term. Logged ticket in Adobe I/O's GitHub repo to get a new URL.
 -->
 
 1. `x-gw-ims-org-id`-Kopfzeile mit der IMS-Organisations-ID.
