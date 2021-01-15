@@ -2,10 +2,10 @@
 title: Machen Sie sich mit der Funktionsweise einer benutzerdefinierten Anwendung vertraut.
 description: Interne Funktionsweise einer benutzerdefinierten  [!DNL Asset Compute Service] -Anwendung, um deren Funktionsweise besser zu verstehen.
 translation-type: tm+mt
-source-git-commit: 54afa44d8d662ee1499a385f504fca073ab6c347
+source-git-commit: d26ae470507e187249a472ececf5f08d803a636c
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 100%
+source-wordcount: '751'
+ht-degree: 88%
 
 ---
 
@@ -20,7 +20,7 @@ Verwenden Sie die folgende Abbildung, um den durchgängigen Workflow zu verstehe
 
 ## Registrierung {#registration}
 
-Der Client muss [`/register`](api.md#register) vor der ersten Anfrage an [`/process`](api.md#process-request) einmal aufrufen, um die Journal-URL für den Empfang von Adobe I/O-Ereignissen für Adobe Asset Compute einzurichten und abzurufen.
+Der Client muss [`/register`](api.md#register) einmal vor der ersten Anforderung an [`/process`](api.md#process-request) aufrufen, um die Protokoll-URL für den Empfang von [!DNL Adobe I/O]-Ereignissen für die Adobe-Asset compute einzurichten und abzurufen.
 
 ```sh
 curl -X POST \
@@ -49,7 +49,7 @@ curl -X POST \
 
 Der Client ist für die korrekte Formatierung der Ausgabedarstellungen mit vorab signierten URLs verantwortlich. Die JavaScript-Bibliothek [`@adobe/node-cloud-blobstore-wrapper`](https://github.com/adobe/node-cloud-blobstore-wrapper#presigned-urls) kann in NodeJS-Anwendungen zum Vorsignieren von URLs verwendet werden. Derzeit unterstützt die Bibliothek nur Azure Blob-Speicher und AWS S3-Container.
 
-Die Verarbeitungsanfrage gibt eine `requestId` zurück, die für die Abfrage von Adobe I/O-Ereignissen verwendet werden kann.
+Die Verarbeitungsanforderung gibt ein `requestId` zurück, das für die Abfrage von [!DNL Adobe I/O]-Ereignissen verwendet werden kann.
 
 Nachfolgend finden Sie eine Beispielanfrage zur Verarbeitung benutzerdefinierter Anwendungen.
 
@@ -71,7 +71,7 @@ Nachfolgend finden Sie eine Beispielanfrage zur Verarbeitung benutzerdefinierter
 
 [!DNL Asset Compute Service] sendet die Ausgabedarstellungsanfragen für die benutzerdefinierte Anwendung an die benutzerdefinierte Anwendung. Es wird ein HTTP-POST an die angegebene Anwendungs-URL verwendet, bei der es sich um die gesicherte Web-Aktions-URL von Project Firefly handelt. Alle Anfragen verwenden das HTTPS-Protokoll, um die Datensicherheit zu maximieren.
 
-Das von einer benutzerdefinierten Anwendung verwendete [Asset Compute-SDK](https://github.com/adobe/asset-compute-sdk#adobe-asset-compute-worker-sdk) verarbeitet die HTTP-POST-Anfrage. Es übernimmt auch das Herunterladen der Quelle, das Hochladen von Ausgabedarstellungen, das Senden von I/O-Ereignissen und die Fehlerbehandlung.
+Das von einer benutzerdefinierten Anwendung verwendete [Asset Compute-SDK](https://github.com/adobe/asset-compute-sdk#adobe-asset-compute-worker-sdk) verarbeitet die HTTP-POST-Anfrage. Es verarbeitet auch das Herunterladen der Quelle, das Hochladen von Darstellungen, das Senden von [!DNL Adobe I/O]-Ereignissen und die Fehlerbehandlung.
 
 <!-- TBD: Add the application diagram. -->
 
@@ -115,13 +115,13 @@ Nachdem jede Ausgabedarstellung erstellt und in einer Datei mit dem in `renditio
 
 Das Verhalten von `batchWorker()` unterscheidet sich, da sie tatsächlich alle Ausgabedarstellungen verarbeitet und diese erst hochlädt, nachdem alle verarbeitet wurden.
 
-## Adobe I/O-Ereignisse {#aio-events}
+## [!DNL Adobe I/O] Ereignisse {#aio-events}
 
-Das SDK sendet Adobe I/O-Ereignisse für jede Ausgabedarstellung. Diese Ereignisse sind je nach Ergebnis entweder vom Typ `rendition_created` oder `rendition_failed`. Weitere Informationen zu Ereignissen finden Sie unter [Asynchrone Asset Compute-Ereignisse](api.md#asynchronous-events).
+Das SDK sendet [!DNL Adobe I/O]-Ereignis für jede Darstellung. Diese Ereignisse sind je nach Ergebnis entweder vom Typ `rendition_created` oder `rendition_failed`. Weitere Informationen zu Ereignissen finden Sie unter [Asynchrone Asset Compute-Ereignisse](api.md#asynchronous-events).
 
-## Empfangen von Adobe I/O-Ereignissen {#receive-aio-events}
+## [!DNL Adobe I/O] Ereignis {#receive-aio-events} empfangen
 
-Der Client fragt das [Adobe I/O-Ereignisjournal](https://www.adobe.io/apis/experienceplatform/events/ioeventsapi.html#/Journaling) gemäß seiner Verbrauchslogik ab. Die anfängliche Journal-URL ist die in der `/register`-API-Antwort angegebene. Ereignisse können mit der in den Ereignissen vorhandenen `requestId` identifiziert werden, die mit der in `/process` zurückgegebenen übereinstimmt. Jede Ausgabedarstellung verfügt über ein separates Ereignis, das gesendet wird, sobald die Ausgabedarstellung hochgeladen wurde (oder fehlgeschlagen ist). Sobald der Client ein passendes Ereignis erhält, kann er die resultierenden Ausgabedarstellungen anzeigen oder anderweitig verarbeiten.
+Der Client fragt das [[!DNL Adobe I/O] Ereignisses-Protokoll](https://www.adobe.io/apis/experienceplatform/events/ioeventsapi.html#/Journaling) gemäß seiner Verbrauchslogik ab. Die anfängliche Journal-URL ist die in der `/register`-API-Antwort angegebene. Ereignisse können mit der in den Ereignissen vorhandenen `requestId` identifiziert werden, die mit der in `/process` zurückgegebenen übereinstimmt. Jede Ausgabedarstellung verfügt über ein separates Ereignis, das gesendet wird, sobald die Ausgabedarstellung hochgeladen wurde (oder fehlgeschlagen ist). Sobald der Client ein passendes Ereignis erhält, kann er die resultierenden Ausgabedarstellungen anzeigen oder anderweitig verarbeiten.
 
 Die JavaScript-Bibliothek [`asset-compute-client`](https://github.com/adobe/asset-compute-client#usage) vereinfacht die Journalabfrage mithilfe der `waitActivation()`-Methode zum Abrufen aller Ereignisse.
 
@@ -141,7 +141,7 @@ await Promise.all(events.map(event => {
 }));
 ```
 
-Weitere Informationen zum Abrufen von Journalereignissen finden Sie unter [Adobe I/O Events-API](https://www.adobe.io/apis/experienceplatform/events/ioeventsapi.html#!adobedocs/adobeio-events/master/events-api-reference.yaml).
+Weitere Informationen zum Abrufen von Protokoll-Ereignissen finden Sie unter [[!DNL Adobe I/O] Ereignisses-API](https://www.adobe.io/apis/experienceplatform/events/ioeventsapi.html#!adobedocs/adobeio-events/master/events-api-reference.yaml).
 
 <!-- TBD:
 * Illustration of the controls/data flow.
