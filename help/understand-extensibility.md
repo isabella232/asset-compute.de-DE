@@ -1,11 +1,11 @@
 ---
 title: Lernen Sie, wie Sie  [!DNL Asset Compute Service] erweitern.
 description: Wann und wie die Funktionalität von  [!DNL Asset Compute Service]  für die Verarbeitung benutzerdefinierter Assets erweitert wird.
-translation-type: ht
-source-git-commit: c392b8588929f7b13db13e42a3f17bbc4f68a376
-workflow-type: ht
-source-wordcount: '265'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: d26ae470507e187249a472ececf5f08d803a636c
+workflow-type: tm+mt
+source-wordcount: '259'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ Viele Ausgabedarstellungsanforderungen, wie die Konvertierung in Formate und die
 >
 >[!DNL Asset Compute Service] ist nur zur Verwendung mit [!DNL Experience Manager] as a [!DNL Cloud Service] verfügbar.
 
-Bei den benutzerdefinierten Anwendungen handelt es sich um Headless-[Project Firefly](https://github.com/AdobeDocs/project-firefly)-Apps. Die Erweiterung von [!DNL Asset Compute Service] mit benutzerdefinierten Anwendungen wird durch das [Asset Compute-SDK](https://github.com/adobe/asset-compute-sdk) und die Entwickler-Tools von Project Firefly vereinfacht. Dadurch können sich Entwickler auf Geschäftslogik konzentrieren. Das Erstellen benutzerdefinierter Anwendungen ist so einfach wie das Erstellen einer Server-losen Adobe I/O Runtime-Aktion. Es handelt sich dabei um eine einzige JavaScript-Funktion von Node.js. Dies wird durch das [grundlegende Beispiel einer benutzerdefinierten Anwendung](https://github.com/adobe/asset-compute-example-workers/blob/master/projects/worker-basic/worker-basic.js) veranschaulicht.
+Bei den benutzerdefinierten Anwendungen handelt es sich um Headless-[Project Firefly](https://github.com/AdobeDocs/project-firefly)-Apps. Die Erweiterung von [!DNL Asset Compute Service] mit benutzerdefinierten Anwendungen wird durch das [Asset Compute-SDK](https://github.com/adobe/asset-compute-sdk) und die Entwickler-Tools von Project Firefly vereinfacht. Dadurch können sich Entwickler auf Geschäftslogik konzentrieren. Das Erstellen benutzerdefinierter Anwendungen ist so einfach wie das Erstellen einer reinen, serverlosen [!DNL Adobe I/O]-Laufzeitaktion. Es handelt sich dabei um eine einzige JavaScript-Funktion von Node.js. Dies wird durch das [grundlegende Beispiel einer benutzerdefinierten Anwendung](https://github.com/adobe/asset-compute-example-workers/blob/master/projects/worker-basic/worker-basic.js) veranschaulicht.
 
 ## Voraussetzungen und Bereitstellungsanforderungen {#prerequisites-and-provisioning}
 
@@ -29,7 +29,7 @@ Stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 * [!DNL Experience Manager] as a [!DNL Cloud Service] muss für die Experience-Organisation aktiviert sein.
 * Die [!DNL Adobe Experience Cloud]-Organisation ist Teil des Developer Preview-Programms von [!DNL Project Firefly]. Lernen Sie, [wie Sie den Zugriff beantragen](https://github.com/AdobeDocs/project-firefly/blob/master/overview/getting_access.md).
 * Stellen Sie für den Entwickler eine Entwicklerrolle oder Administratorberechtigungen in der Organisation sicher.
-* Stellen Sie sicher, dass [Adobe I/O CLI](https://github.com/adobe/aio-cli) lokal installiert ist.
+* Stellen Sie sicher, dass [[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli) lokal installiert ist.
 
 <!-- TBD for later:
 
