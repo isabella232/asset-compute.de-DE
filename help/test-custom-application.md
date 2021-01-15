@@ -2,10 +2,10 @@
 title: Testen und Debuggen von benutzerdefinierten  [!DNL Asset Compute Service] -Anwendungen.
 description: Testen und Debuggen von benutzerdefinierten  [!DNL Asset Compute Service] -Anwendungen.
 translation-type: tm+mt
-source-git-commit: 54afa44d8d662ee1499a385f504fca073ab6c347
+source-git-commit: 7e520921ebb459c963d61d70c66497b8e62521cf
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 100%
+source-wordcount: '787'
+ht-degree: 98%
 
 ---
 
@@ -36,7 +36,7 @@ Mit dem Asset Compute-Test-Framework für Anwendungskomponenten können Sie Anwe
 
 ### Hinzufügen von Tests {#add-tests}
 
-Tests werden im `test`-Ordner auf der Stammebene des AIO-Projekts erwartet. Die Testfälle für jede Anwendung sollten sich im Pfad `test/asset-compute/<worker-name>` befinden, wobei für jeden Testfall ein Ordner vorhanden sein muss:
+Tests werden im Ordner `test` auf der Stammebene des Projekts [!DNL Adobe I/O] erwartet. Die Testfälle für jede Anwendung sollten sich im Pfad `test/asset-compute/<worker-name>` befinden, wobei für jeden Testfall ein Ordner vorhanden sein muss:
 
 ```yaml
 action/
