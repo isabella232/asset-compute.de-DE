@@ -1,11 +1,11 @@
 ---
 title: Legen Sie die erforderliche Entwicklungsumgebung für  [!DNL Asset Compute Service] fest.
 description: Einrichten einer Entwicklungsumgebung für  [!DNL Asset Compute Service] , um benutzerdefinierten Code zu erstellen und zu testen.
-translation-type: ht
-source-git-commit: 0ecf2c044c7847029fb10ce37f4b831c58b93fe9
-workflow-type: ht
-source-wordcount: '373'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 7e520921ebb459c963d61d70c66497b8e62521cf
+workflow-type: tm+mt
+source-wordcount: '372'
+ht-degree: 99%
 
 ---
 
@@ -24,7 +24,7 @@ Befolgen Sie diese Anforderungen und Anweisungen, um eine Entwicklungsumgebung f
    * [Docker Desktop](https://www.docker.com/get-started).
    * [NodeJS](https://nodejs.org) (Versionen 10 bis 12 LTS, ungerade Versionen werden nicht empfohlen) und [NPM](https://www.npmjs.com). Benutzer von OSX HomeBrew können `brew install node` ausführen, um beide zu installieren. Andernfalls laden Sie das Tool von der [NodeJS-Download-Seite](https://nodejs.org/de/) herunter.
    * Als IDE, die für NodeJS geeignet ist, empfehlen wir [Visual Studio Code (VS Code)](https://code.visualstudio.com), da dies die unterstützte IDE für den Debugger ist. Sie können jede andere IDE als Code-Editor verwenden, die erweiterte Verwendung (z. B. Debugger) wird jedoch noch nicht unterstützt.
-   * [AIO CLI](https://github.com/adobe/aio-cli) (`aio`) – Installieren Sie mithilfe von `npm install -g @adobe/aio-cli`.
+   * [[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli) (`aio`) - Installation mit  `npm install -g @adobe/aio-cli`.
 
 1. Stellen Sie sicher, dass Sie die [Voraussetzungen](/help/understand-extensibility.md#prerequisites-and-provisioning) erfüllen.
 
