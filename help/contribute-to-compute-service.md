@@ -2,10 +2,10 @@
 title: Tragen Sie zu den Open-Source-Komponenten von  [!DNL Asset Compute Service] bei.
 description: Tragen Sie zu den Open-Source-Komponenten von  [!DNL Asset Compute Service] bei.
 translation-type: tm+mt
-source-git-commit: 127895cf1bab59546f9ba0be2b3b7a935627effb
+source-git-commit: d26ae470507e187249a472ececf5f08d803a636c
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 100%
+source-wordcount: '203'
+ht-degree: 91%
 
 ---
 
@@ -22,11 +22,11 @@ Detaillierte Richtlinien finden Sie in den [Beitragsrichtlinien](https://github.
 
 ## Verfügbare Ressourcen und Bibliotheken {#available-resources}
 
-Weitere Informationen finden Sie in dieser Liste von [Open-Source-Bibliotheken](https://github.com/adobe/asset-compute-sdk#available-resources-and-libraries) für [!DNL Asset Compute Service]. Darüber hinaus stehen folgende Adobe I/O Runtime- und OpenWhisk-Ressourcen zur Verfügung:
+Weitere Informationen finden Sie in dieser Liste von [Open-Source-Bibliotheken](https://github.com/adobe/asset-compute-sdk#available-resources-and-libraries) für [!DNL Asset Compute Service]. Darüber hinaus stehen die folgenden [!DNL Adobe I/O]-Ressourcen zur Laufzeit und zu OpenWhisk zur Verfügung:
 
 * [Erste Schritte mit Apache OpenWhisk](https://github.com/apache/incubator-openwhisk/tree/master/docs#getting-started-with-openwhisk).
-* [Lab: Erstellen einer zusammenstellbaren KI mit Adobe Sensei-Funktionen und Adobe I/O Runtime](https://opensource.adobe.com/adobe-sensei-ai-functions/index.html).
-* [Häufig gestellte Fragen zu Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/resources/faq.md)
+* [Lab: Erstellen Sie  [!DNL Adobe Sensei] functions and [!DNL Adobe I/O] mit Runtime](https://opensource.adobe.com/adobe-sensei-ai-functions/index.html) eine Composable AI.
+* [[!DNL Adobe I/O] Häufig gestellte Fragen zur Laufzeit](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/resources/faq.md)
 
 <!-- **TBD** for post-release:
 * Link to Firefly open-source components.
