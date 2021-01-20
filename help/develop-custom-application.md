@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 7e520921ebb459c963d61d70c66497b8e62521cf
 workflow-type: tm+mt
 source-wordcount: '1562'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -39,7 +39,7 @@ Stellen Sie sicher, dass [[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli
    create console.json
    ```
 
-1. Wenn Sie mit `Which Adobe I/O App features do you want to enable for this project?` aufgefordert werden, wählen Sie `Actions`. Deaktivieren Sie unbedingt die Option `Web Assets`, da Web-Assets andere Authentifizierungs- und Autorisierungsüberprüfungen verwenden.
+1. Wenn `Which Adobe I/O App features do you want to enable for this project?` aufgefordert angezeigt wird, wählen Sie `Actions`. Deaktivieren Sie unbedingt die Option `Web Assets`, da Web-Assets andere Authentifizierungs- und Autorisierungsüberprüfungen verwenden.
 
    ```bash
    ? Which Adobe I/O App features do you want to enable for this project?
