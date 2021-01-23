@@ -1,8 +1,8 @@
 ---
-title: '[!DNL Adobe Asset Compute Service] Benutzerhandbuch.'
+title: '[!DNL Adobe Asset Compute Service] Benutzerhandbuch'
 description: In dieser Dokumentation werden Aufgaben, wie z. B. die Einführung, Entwicklung, Verwaltung, Bereitstellung und Fehlerbehebung von benutzerdefiniertem Code, in  [!DNL Asset Compute Service]  behandelt.
 translation-type: tm+mt
-source-git-commit: d26ae470507e187249a472ececf5f08d803a636c
+source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 100%
