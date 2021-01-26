@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
 workflow-type: tm+mt
 source-wordcount: '259'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Viele Ausgabedarstellungsanforderungen, wie die Konvertierung in Formate und die
 >
 >[!DNL Asset Compute Service] ist nur zur Verwendung mit [!DNL Experience Manager] as a [!DNL Cloud Service] verfügbar.
 
-Bei den benutzerdefinierten Anwendungen handelt es sich um Headless-[Project Firefly](https://github.com/AdobeDocs/project-firefly)-Apps. Die Erweiterung von [!DNL Asset Compute Service] mit benutzerdefinierten Anwendungen wird durch das [Asset Compute-SDK](https://github.com/adobe/asset-compute-sdk) und die Entwickler-Tools von Project Firefly vereinfacht. Dadurch können sich Entwickler auf Geschäftslogik konzentrieren. Das Erstellen benutzerdefinierter Anwendungen ist so einfach wie das Erstellen einer reinen, serverlosen [!DNL Adobe I/O]-Laufzeitaktion. Es handelt sich dabei um eine einzige JavaScript-Funktion von Node.js. Dies wird durch das [grundlegende Beispiel einer benutzerdefinierten Anwendung](https://github.com/adobe/asset-compute-example-workers/blob/master/projects/worker-basic/worker-basic.js) veranschaulicht.
+Bei den benutzerdefinierten Anwendungen handelt es sich um Headless-[Project Firefly](https://github.com/AdobeDocs/project-firefly)-Apps. Die Erweiterung von [!DNL Asset Compute Service] mit benutzerdefinierten Anwendungen wird durch das [Asset Compute-SDK](https://github.com/adobe/asset-compute-sdk) und die Entwickler-Tools von Project Firefly vereinfacht. Dadurch können sich Entwickler auf Geschäftslogik konzentrieren. Das Erstellen benutzerdefinierter Anwendungen ist so einfach wie das Erstellen einer Server-losen [!DNL Adobe I/O] Runtime-Aktion. Es handelt sich dabei um eine einzige JavaScript-Funktion von Node.js. Dies wird durch das [grundlegende Beispiel einer benutzerdefinierten Anwendung](https://github.com/adobe/asset-compute-example-workers/blob/master/projects/worker-basic/worker-basic.js) veranschaulicht.
 
 ## Voraussetzungen und Bereitstellungsanforderungen {#prerequisites-and-provisioning}
 
