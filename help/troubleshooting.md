@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
 workflow-type: tm+mt
 source-wordcount: '288'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -19,17 +19,17 @@ Einige allgemeine Tipps, die Ihnen bei der Fehlerbehebung mit Asset Compute Serv
 * Stellen Sie sicher, dass alle Fehler, die von der Bereinigung eines Fehlers herrühren können, keine eigenen Fehler erzeugen, die das ursprüngliche Problem verdecken.
 
 * Beim erstmaligen Starten des Entwickler-Tools mit einer neuen [!DNL Asset Compute Service]-Integration kann es vorkommen, dass die erste Verarbeitungsanfrage fehlschlägt, da das Asset Compute-Ereignisjournal möglicherweise nicht vollständig eingerichtet wurde. Warten Sie einige Zeit, bis das Journal eingerichtet ist, bevor Sie eine weitere Anfrage senden.
-* Wenn beim Senden von Asset compute- `/register`- oder `/process`-Anforderungen Fehler auftreten, stellen Sie sicher, dass alle erforderlichen APIs dem [!DNL Adobe I/O]-Projekt und Arbeitsbereich hinzugefügt werden, d. h. Asset compute, [!DNL Adobe I/O]-Ereignis, [!DNL Adobe I/O]-Ereignisse-Management und [!DNL Adobe I/O]-Laufzeit.
+* Wenn beim Senden von `/register`- oder `/process`-Anfragen in Asset Compute Fehler auftreten, stellen Sie sicher, dass alle erforderlichen APIs zum [!DNL Adobe I/O]-Projekt und -Arbeitsbereich hinzugefügt werden, d. h. Asset Compute, [!DNL Adobe I/O] Events, [!DNL Adobe I/O] Events Management und [!DNL Adobe I/O] Runtime.
 
-## Anmeldungsprobleme über [!DNL Adobe I/O] CLI {#login-via-aio-cli}
+## Anmeldeprobleme über [!DNL Adobe I/O] CLI {#login-via-aio-cli}
 
-Wenn Sie Probleme haben, sich [!DNL Adobe Developer Console][über CLI [!DNL Adobe I/O]  bei ](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#3-signing-in-from-cli) anzumelden, fügen Sie manuell die Anmeldeinformationen hinzu, die zum Entwickeln, Testen und Bereitstellen Ihrer benutzerdefinierten Anwendung erforderlich sind:
+Wenn Sie Probleme haben, sich [!DNL Adobe Developer Console] [über CLI [!DNL Adobe I/O]  bei](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#3-signing-in-from-cli) anzumelden, fügen Sie manuell die Anmeldeinformationen hinzu, die zum Entwickeln, Testen und Bereitstellen Ihrer benutzerdefinierten Anwendung erforderlich sind:
 
 1. Navigieren Sie in der [Adobe Developer Console](https://console.adobe.io/) zu Ihrem Firefly-Projekt und Arbeitsbereich und klicken Sie oben rechts auf **[!UICONTROL Download]**. Öffnen Sie diese Datei und speichern Sie diese JSON an einem sicheren Ort auf Ihrem Computer.
 
 1. Navigieren Sie in Ihrer Firefly-Anwendung zur ENV-Datei.
 
-1. hinzufügen Sie die Laufzeitberechtigungen [!DNL Adobe I/O]. Rufen Sie die [!DNL Adobe I/O]-Laufzeitberechtigungen vom heruntergeladenen JSON ab. Die Anmeldeinformationen finden Sie unter `project.workspace.services.runtime`. hinzufügen Sie die Laufzeitberechtigungen für [!DNL Adobe I/O] in den Variablen `AIO_runtime_XXX` an:
+1. Fügen Sie die [!DNL Adobe I/O] Runtime-Anmeldeinformationen hinzu. Rufen Sie die [!DNL Adobe I/O] Runtime-Anmeldeinformationen von der heruntergeladenen JSON ab. Die Anmeldeinformationen finden Sie unter `project.workspace.services.runtime`. Fügen Sie die [!DNL Adobe I/O] Runtime-Anmeldeinformationen in den `AIO_runtime_XXX`-Variablen hinzu:
 
    ```json
    AIO_runtime_auth=
