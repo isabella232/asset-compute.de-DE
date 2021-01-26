@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
 workflow-type: tm+mt
 source-wordcount: '787'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Mit dem Asset Compute-Test-Framework für Anwendungskomponenten können Sie Anwe
 
 ### Hinzufügen von Tests {#add-tests}
 
-Tests werden im Ordner `test` auf der Stammebene des Projekts [!DNL Adobe I/O] erwartet. Die Testfälle für jede Anwendung sollten sich im Pfad `test/asset-compute/<worker-name>` befinden, wobei für jeden Testfall ein Ordner vorhanden sein muss:
+Tests werden im `test`-Ordner auf der Stammebene des [!DNL Adobe I/O]-Projekts erwartet. Die Testfälle für jede Anwendung sollten sich im Pfad `test/asset-compute/<worker-name>` befinden, wobei für jeden Testfall ein Ordner vorhanden sein muss:
 
 ```yaml
 action/
