@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
 workflow-type: tm+mt
 source-wordcount: '2906'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -412,9 +412,9 @@ Das PNG-Format wird für Wasserzeichen verwendet.
 
 ## Asynchrone Ereignisse {#asynchronous-events}
 
-Nach Abschluss der Verarbeitung einer Darstellung oder bei Auftreten eines Fehlers wird ein Ereignis an ein [[!DNL Adobe I/O] Ereignisses-Protokoll](https://www.adobe.io/apis/experienceplatform/events/documentation.html#!adobedocs/adobeio-events/master/intro/journaling_api.md) gesendet. Clients müssen die Journal-URL abrufen, die über [/register](#register) bereitgestellt wird. Die Journalantwort enthält ein `event`-Array, das aus einem Objekt für jedes Ereignis besteht, von dem das `event`-Feld die tatsächliche Ereignis-Payload enthält.
+Sobald die Verarbeitung einer Ausgabedarstellung abgeschlossen ist oder ein Fehler auftritt, wird ein Ereignis an ein [[!DNL Adobe I/O] -Ereignisjournal](https://www.adobe.io/apis/experienceplatform/events/documentation.html#!adobedocs/adobeio-events/master/intro/journaling_api.md) gesendet. Clients müssen die Journal-URL abrufen, die über [/register](#register) bereitgestellt wird. Die Journalantwort enthält ein `event`-Array, das aus einem Objekt für jedes Ereignis besteht, von dem das `event`-Feld die tatsächliche Ereignis-Payload enthält.
 
-Der [!DNL Adobe I/O]-Ereignistyp für alle Ereignis von [!DNL Asset Compute Service] ist `asset_compute`. Das Protokoll wird automatisch nur für diesen Ereignistyp abonniert und es besteht keine weitere Filterpflicht, die auf dem [!DNL Adobe I/O]-Ereignistyp basiert. Die Service-spezifischen Ereignistypen stehen in der `type`-Eigenschaft des Ereignisses zur Verfügung.
+Der [!DNL Adobe I/O]-Ereignistyp für alle Ereignisse von [!DNL Asset Compute Service] ist `asset_compute`. Das Journal wird automatisch nur für diesen Ereignistyp abonniert und es ist nicht mehr erforderlich, basierend auf dem [!DNL Adobe I/O]-Ereignistyp zu filtern. Die Service-spezifischen Ereignistypen stehen in der `type`-Eigenschaft des Ereignisses zur Verfügung.
 
 ### Ereignistypen {#event-types}
 
