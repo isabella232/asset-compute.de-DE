@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
 workflow-type: tm+mt
 source-wordcount: '203'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -22,11 +22,11 @@ Detaillierte Richtlinien finden Sie in den [Beitragsrichtlinien](https://github.
 
 ## Verfügbare Ressourcen und Bibliotheken {#available-resources}
 
-Weitere Informationen finden Sie in dieser Liste von [Open-Source-Bibliotheken](https://github.com/adobe/asset-compute-sdk#available-resources-and-libraries) für [!DNL Asset Compute Service]. Darüber hinaus stehen die folgenden [!DNL Adobe I/O]-Ressourcen zur Laufzeit und zu OpenWhisk zur Verfügung:
+Weitere Informationen finden Sie in dieser Liste von [Open-Source-Bibliotheken](https://github.com/adobe/asset-compute-sdk#available-resources-and-libraries) für [!DNL Asset Compute Service]. Darüber hinaus stehen folgende [!DNL Adobe I/O] Runtime- und OpenWhisk-Ressourcen zur Verfügung:
 
 * [Erste Schritte mit Apache OpenWhisk](https://github.com/apache/incubator-openwhisk/tree/master/docs#getting-started-with-openwhisk).
-* [Lab: Erstellen Sie  [!DNL Adobe Sensei] functions and [!DNL Adobe I/O] mit Runtime](https://opensource.adobe.com/adobe-sensei-ai-functions/index.html) eine Composable AI.
-* [[!DNL Adobe I/O] Häufig gestellte Fragen zur Laufzeit](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/resources/faq.md)
+* [Übung: Erstellen einer zusammenstellbaren KI mit [!DNL Adobe Sensei] functions and [!DNL Adobe I/O] Runtime](https://opensource.adobe.com/adobe-sensei-ai-functions/index.html).
+* Häufig gestellte Fragen zu [[!DNL Adobe I/O] Runtime](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/resources/faq.md)
 
 <!-- **TBD** for post-release:
 * Link to Firefly open-source components.
