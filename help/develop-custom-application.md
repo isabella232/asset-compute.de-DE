@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
 workflow-type: tm+mt
 source-wordcount: '1562'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -121,7 +121,7 @@ Fügen Sie der ENV-Datei im Stammverzeichnis Ihres Firefly-Projekts die folgende
 
 Bevor Sie die Anwendung mit dem Asset Compute-Entwickler-Tool ausführen, müssen Sie die [Anmeldeinformationen](#developer-tool-credentials) ordnungsgemäß konfigurieren.
 
-Um die Anwendung im Entwickler-Tool auszuführen, verwenden Sie den Befehl `aio app run`. Es stellt die Aktion für die [!DNL Adobe I/O]-Laufzeit bereit und Beginn das Entwicklungstool auf Ihrem lokalen Computer. Dieses Tool wird zum Testen von Anwendungsanforderungen während der Entwicklung verwendet. Hier finden Sie ein Beispiel für eine Ausgabedarstellungsanforderung:
+Um die Anwendung im Entwickler-Tool auszuführen, verwenden Sie den Befehl `aio app run`. Die Aktion wird in [!DNL Adobe I/O] Runtime bereitgestellt und das Entwickler-Tool wird auf Ihrem lokalen Computer gestartet. Dieses Tool wird zum Testen von Anwendungsanforderungen während der Entwicklung verwendet. Hier finden Sie ein Beispiel für eine Ausgabedarstellungsanforderung:
 
 ```json
 "renditions": [
@@ -266,7 +266,7 @@ const key = params.secretKey;
 
 ## Dimensionieren von Anwendungen {#sizing-workers}
 
-Eine Anwendung wird in einem Container in [!DNL Adobe I/O] Laufzeit mit [limits](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) ausgeführt, der über `manifest.yml` konfiguriert werden kann:
+Eine Anwendung wird in einem Container in [!DNL Adobe I/O] Runtime mit [Beschränkungen](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) ausgeführt, die über `manifest.yml` konfiguriert werden können:
 
 ```yaml
     actions:
@@ -282,7 +282,7 @@ Aufgrund der umfangreicheren Verarbeitung, die normalerweise von Asset Compute-A
 
 Der Standard-Timeout für Aktionen in Runtime ist eine Minute, kann jedoch durch Setzen der `timeout`-Beschränkung (in Millisekunden) erhöht werden. Wenn Sie mit der Verarbeitung größerer Dateien rechnen, erhöhen Sie diese Zeit. Berücksichtigen Sie die Gesamtzeit, die zum Herunterladen der Quelle, zum Verarbeiten der Datei und zum Hochladen der Ausgabedarstellung erforderlich ist. Wenn eine Aktion eine Zeitüberschreitung aufweist, d. h. die Aktivierung nicht vor der angegebenen Timeout-Beschränkung zurückgibt, verwirft Runtime den Container und verwendet ihn nicht erneut.
 
-Asset compute-Anwendungen sind naturgemäß eher an Netzwerk- und Festplatteneingabe oder -ausgabe gebunden. Die Quelldatei muss zuerst heruntergeladen werden, die Verarbeitung ist häufig ressourcenintensiv und die resultierenden Darstellungen werden dann erneut hochgeladen.
+Asset Compute-Anwendungen sind von Natur aus eher an Netzwerk- und Datenträger-E/A-Vorgänge gebunden. Die Quelldatei muss zuerst heruntergeladen werden, die Verarbeitung ist häufig ressourcenintensiv und die resultierenden Ausgabedarstellungen werden dann wieder hochgeladen.
 
 Der für einen Aktions-Container verfügbare Speicher wird über `memorySize` in MB angegeben. Derzeit wird hiermit auch festgelegt, wie viel CPU-Zugriff der Container erhält. Vor allem ist dies ein Schlüsselelement der Kosten für die Verwendung von Runtime (größere Container kosten mehr). Verwenden Sie hier einen größeren Wert, wenn Ihre Verarbeitung mehr Speicher oder CPU erfordert. Achten Sie jedoch darauf, keine Ressourcen zu verschwenden, da der Gesamtdurchsatz umso geringer ist, je größer die Container sind.
 
