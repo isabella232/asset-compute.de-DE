@@ -1,9 +1,9 @@
 ---
 title: Tragen Sie zu den Open-Source-Komponenten von  [!DNL Asset Compute Service] bei
 description: Tragen Sie zu den Open-Source-Komponenten von  [!DNL Asset Compute Service] bei.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '203'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Beitragen {#contribute}
 
-Die Erweiterbarkeit von [!DNL Asset Compute Service] wird im Rahmen eines offenen Entwicklungsmodells auf [github.com/adobe](https://github.com/adobe) entwickelt. Adobe begrüßt Beiträge von Erweiterungsentwicklern. Alle Komponenten, die für die Entwicklung, Erstellung und Prüfung von benutzerdefinierten Anwendungen relevant sind, sind Open Source. Einige Vorschläge, wie Sie einen Beitrag leisten können:
+Die Erweiterbarkeit von [!DNL Asset Compute Service] wird im Rahmen eines offenen Entwicklungsmodells auf [github.com/adobe](https://github.com/adobe) entwickelt. Adobe begrüßt Beiträge von Erweiterungsentwicklern. Alle Komponenten, die für die Entwicklung, Erstellung und Prüfung von benutzerdefinierten Programmen relevant sind, sind Open Source. Einige Vorschläge, wie Sie einen Beitrag leisten können:
 
 * Feedback geben: Erstellen Sie ein GitHub-Problem im entsprechenden Repository, um Fehler in Produkten oder in der Dokumentation zu melden oder Verbesserungen und neue Funktionen anzufordern. Wenn Sie nicht sicher sind, in welchem Repository Sie Ihr Problem einreichen sollen, melden Sie ein Problem im [Asset Compute-SDK-Repository](https://github.com/adobe/asset-compute-sdk), damit es ordnungsgemäß weitergeleitet wird.
 
