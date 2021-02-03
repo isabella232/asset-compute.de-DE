@@ -1,11 +1,11 @@
 ---
 title: Legen Sie die erforderliche Entwicklungsumgebung für  [!DNL Asset Compute Service] fest
 description: Einrichten einer Entwicklungsumgebung für  [!DNL Asset Compute Service] , um benutzerdefinierten Code zu erstellen und zu testen.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '372'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Befolgen Sie diese Anforderungen und Anweisungen, um eine Entwicklungsumgebung f
    * [Docker Desktop](https://www.docker.com/get-started).
    * [NodeJS](https://nodejs.org) (Versionen 10 bis 12 LTS, ungerade Versionen werden nicht empfohlen) und [NPM](https://www.npmjs.com). Benutzer von OSX HomeBrew können `brew install node` ausführen, um beide zu installieren. Andernfalls laden Sie das Tool von der [NodeJS-Download-Seite](https://nodejs.org/de/) herunter.
    * Als IDE, die für NodeJS geeignet ist, empfehlen wir [Visual Studio Code (VS Code)](https://code.visualstudio.com), da dies die unterstützte IDE für den Debugger ist. Sie können jede andere IDE als Code-Editor verwenden, die erweiterte Verwendung (z. B. Debugger) wird jedoch noch nicht unterstützt.
-   * [[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli) (`aio`) - Installation mit  `npm install -g @adobe/aio-cli`.
+   * [[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli) (`aio`) – Installieren Sie mithilfe von `npm install -g @adobe/aio-cli`.
 
 1. Stellen Sie sicher, dass Sie die [Voraussetzungen](/help/understand-extensibility.md#prerequisites-and-provisioning) erfüllen.
 
@@ -36,11 +36,11 @@ Befolgen Sie diese Anforderungen und Anweisungen, um eine Entwicklungsumgebung f
 
 1. [Erstellen Sie ein Firefly-Projekt](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/getting_started/first_app.md). Klicken Sie auf **[!UICONTROL Create new project]** > **[!UICONTROL Project from Template]**. Wählen Sie „Firefly“ aus. Ein neues Firefly-Projekt mit zwei Arbeitsbereichen wird erstellt: `Production` und `Stage`. Fügen Sie bei Bedarf zusätzliche Arbeitsbereiche hinzu, z. B. `Development`.
 
-1. Wählen Sie im Firefly-Projekt einen Arbeitsbereich aus und abonnieren Sie die Services, die für Asset Compute erforderlich sind. Klicken Sie auf **Add to Project** > **API** und fügen Sie die Services `Asset Compute`, `IO Events` und `IO Events Management` hinzu. Beim Hinzufügen der ersten API werden Sie aufgefordert, einen privaten Schlüssel zu erstellen. Speichern Sie diese Informationen auf Ihrem Computer, da Sie diesen Schlüssel zum Testen Ihrer benutzerdefinierten Anwendung mit dem Entwickler-Tool benötigen.
+1. Wählen Sie im Firefly-Projekt einen Arbeitsbereich aus und abonnieren Sie die Services, die für Asset Compute erforderlich sind. Klicken Sie auf **Add to Project** > **API** und fügen Sie die Services `Asset Compute`, `IO Events` und `IO Events Management` hinzu. Beim Hinzufügen der ersten API werden Sie aufgefordert, einen privaten Schlüssel zu erstellen. Speichern Sie diese Informationen auf Ihrem Computer, da Sie diesen Schlüssel zum Testen Ihrer benutzerdefinierten Programme mit dem Entwickler-Tool benötigen.
 
 ## Nächster Schritt {#next-step}
 
-Nachdem Sie Ihre Umgebung eingerichtet haben, können Sie [eine benutzerdefinierte Anwendung erstellen](develop-custom-application.md).
+Nachdem Sie Ihre Umgebung eingerichtet haben, können Sie [ein benutzerdefiniertes Programm erstellen](develop-custom-application.md).
 
 <!-- TBD items for later:
  
