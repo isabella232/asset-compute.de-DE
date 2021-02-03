@@ -1,9 +1,9 @@
 ---
-title: Versionshinweise zu [!DNL Asset Compute Service]
+title: Versionshinweise zu  [!DNL Asset Compute Service]
 description: Neue Funktionen, Verbesserungen und bekannte Probleme in  [!DNL Asset Compute Service].
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '191'
 ht-degree: 100%
 
@@ -31,14 +31,14 @@ Zurzeit kann [!DNL Asset Compute Service] nur in [!DNL Experience Manager] as a 
 
 ## Einschränkungen und bekannte Probleme {#known-limitations}
 
-Um Ihre benutzerdefinierte Anwendung mit dem [Entwickler-Tool](https://github.com/adobe/asset-compute-devtool) zu testen, benötigen Sie Zugriff auf einen [Cloud-Speicher-Container](https://github.com/adobe/asset-compute-devtool#prerequisites).
+Um Ihr benutzerdefiniertes Programm mit dem [Entwickler-Tool](https://github.com/adobe/asset-compute-devtool) zu testen, benötigen Sie Zugriff auf einen [Cloud-Speicher-Container](https://github.com/adobe/asset-compute-devtool#prerequisites).
 
-* Der Zugriff auf den Cloud-Speicher (anders als auf den [!DNL Experience Manager]-Blob-Speicher) ist nur für das Entwickler-Tool erforderlich. Sie können benutzerdefinierte Anwendungen auch ohne das Entwickler-Tool erstellen, testen und bereitstellen.
+* Der Zugriff auf den Cloud-Speicher (anders als auf den [!DNL Experience Manager]-Blob-Speicher) ist nur für das Entwickler-Tool erforderlich. Sie können benutzerdefinierte Programme auch ohne das Entwickler-Tool erstellen, testen und bereitstellen.
 * Es kann sich um einen freigegebenen Container handeln, der von mehreren Entwicklern in verschiedenen Projekten verwendet wird.
 
 ## Beitragen {#contribute-open-source}
 
-Die Erweiterbarkeit von [!DNL Asset Compute Service] wird im Rahmen eines offenen Entwicklungsmodells auf [github.com/adobe](https://github.com/adobe) entwickelt, das Beiträge von Erweiterungsentwicklern begrüßt. Alle Komponenten, die für die Entwicklung, Erstellung, Prüfung und Bereitstellung von benutzerdefinierten Anwendungen relevant sind, sind Open Source. Erfahren Sie, [wie und wo Sie zu Compute Service beitragen können](contribute-to-compute-service.md).
+Die Erweiterbarkeit von [!DNL Asset Compute Service] wird im Rahmen eines offenen Entwicklungsmodells auf [github.com/adobe](https://github.com/adobe) entwickelt, das Beiträge von Erweiterungsentwicklern begrüßt. Alle Komponenten, die für die Entwicklung, Erstellung, Prüfung und Bereitstellung von benutzerdefinierten Programmen relevant sind, sind Open Source. Erfahren Sie, [wie und wo Sie zu Compute Service beitragen können](contribute-to-compute-service.md).
 
 <!-- **TBD:**
 * Are we versioning the releases?
