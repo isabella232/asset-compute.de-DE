@@ -10,12 +10,12 @@ breadcrumb-title: Handbuch zu Asset Compute Service
 breadcrumb-url: /docs/asset-compute/using/home.html
 solution-title: AEM Assets
 solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=de
-getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html
+getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=de
 tutorials-title: AEM-Tutorials
 tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=de
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '120'
 ht-degree: 100%
 
@@ -33,10 +33,10 @@ ht-degree: 100%
 + Erweitern von Asset Compute Service {#extend}
    + [Über das Erweitern von Compute Service](understand-extensibility.md)
    + [Einrichten der Umgebung](setup-environment.md)
-   + [Die internen Konzepte einer Anwendung](custom-application-internals.md)
-   + [Entwickeln einer benutzerdefinierten Anwendung](develop-custom-application.md)
-   + [Testen einer benutzerdefinierten Anwendung](test-custom-application.md)
-   + [Bereitstellen einer benutzerdefinierten Anwendung](deploy-custom-application.md)
+   + [Die internen Konzepte eines Programms](custom-application-internals.md)
+   + [Entwickeln eines benutzerdefinierten Programms](develop-custom-application.md)
+   + [Testen eines benutzerdefinierten Programms](test-custom-application.md)
+   + [Bereitstellen eines benutzerdefinierten Programms](deploy-custom-application.md)
    + [Integration und Verwendung in  [!DNL Experience Manager]  as a  [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=de)
 + [Fehlerbehebung](troubleshooting.md)
 + [Beiträge zum Open-Source-Projekt](contribute-to-compute-service.md)
