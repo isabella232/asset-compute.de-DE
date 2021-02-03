@@ -1,34 +1,34 @@
 ---
 title: Entwickeln für  [!DNL Asset Compute Service]
-description: Erstellen Sie benutzerdefinierte Anwendungen mit  [!DNL Asset Compute Service].
-translation-type: tm+mt
+description: Erstellen Sie benutzerdefinierte Programme mit  [!DNL Asset Compute Service].
+translation-type: ht
 source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1562'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# Entwickeln einer benutzerdefinierten Anwendung {#develop}
+# Entwickeln eines benutzerdefinierten Programms {#develop}
 
-Bevor Sie mit der Entwicklung einer benutzerdefinierten Anwendung beginnen:
+Bevor Sie mit der Entwicklung eines benutzerdefinierten Programms beginnen:
 
 * Stellen Sie sicher, dass alle [Voraussetzungen](/help/understand-extensibility.md#prerequisites-and-provisioning) erfüllt sind.
 * Installieren Sie die [erforderlichen Softwaretools](/help/setup-environment.md#create-dev-environment).
-* Lesen Sie auch den Abschnitt [Einrichten der Umgebung](setup-environment.md), um sicherzustellen, dass Sie bereit für die Erstellung einer benutzerdefinierten Anwendung sind.
+* Lesen Sie auch den Abschnitt [Einrichten der Umgebung](setup-environment.md), um sicherzustellen, dass Sie bereit für die Erstellung eines benutzerdefinierten Programms sind.
 
-## Erstellen einer benutzerdefinierten Anwendung {#create-custom-application}
+## Erstellen eines benutzerdefinierten Programms {#create-custom-application}
 
 Stellen Sie sicher, dass [[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli) lokal installiert ist.
 
-1. [Erstellen Sie eine Firefly-App](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#4-bootstrapping-new-app-using-the-cli), um eine benutzerdefinierte Anwendung zu erstellen. Führen Sie dazu im Terminal `aio app init <app-name>` aus.
+1. [Erstellen Sie eine Firefly-App](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#4-bootstrapping-new-app-using-the-cli), um ein benutzerdefiniertes Programm zu erstellen. Führen Sie dazu im Terminal `aio app init <app-name>` aus.
 
    Wenn Sie sich noch nicht angemeldet haben, fordert Sie dieser Befehl in einem Browser auf, sich mit Ihrer Adobe ID bei der [Adobe Developer Console](https://console.adobe.io/) anzumelden. Weitere Informationen zum Anmelden von der CLI finden Sie [hier](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#3-signing-in-from-cli).
 
    Adobe empfiehlt, dass Sie sich anmelden. Sollten Sie Probleme haben, befolgen Sie die Anweisungen [zum Erstellen einer App, ohne sich anzumelden](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user).
 
-1. Befolgen Sie nach dem Anmelden die Anweisungen in der CLI und wählen Sie die Parameter `Organization`, `Project` und `Workspace` für die Anwendung aus. Wählen Sie das Projekt und den Arbeitsbereich aus, die Sie beim [Einrichten der Umgebung](setup-environment.md) erstellt haben.
+1. Befolgen Sie nach dem Anmelden die Anweisungen in der CLI und wählen Sie die Parameter `Organization`, `Project` und `Workspace` für das Programm aus. Wählen Sie das Projekt und den Arbeitsbereich aus, die Sie beim [Einrichten der Umgebung](setup-environment.md) erstellt haben.
 
    ```sh
    $ aio app init <app-name>
@@ -59,17 +59,17 @@ Stellen Sie sicher, dass [[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli
    ◯ Generic
    ```
 
-1. Befolgen Sie die restlichen Anweisungen und öffnen Sie die neue Anwendung in Visual Studio Code (oder Ihrem bevorzugten Code-Editor). Sie enthält die Strukturvorlage und den Beispiel-Code für eine benutzerdefinierte Anwendung.
+1. Befolgen Sie die restlichen Anweisungen und öffnen Sie das neue Programm in Visual Studio Code (oder Ihrem bevorzugten Code-Editor). Sie enthält die Strukturvorlage und den Beispiel-Code für ein benutzerdefiniertes Programm.
 
    Hier finden Sie weitere Informationen zu den [Hauptkomponenten einer Firefly-App](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application).
 
-   Die Vorlagenanwendung nutzt unser [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk#asset-compute-sdk) für das Hochladen, Herunterladen und Orchestrieren von Anwendungsdarstellungen, sodass die Entwickler nur die benutzerdefinierte Anwendungslogik implementieren müssen. Innerhalb des Ordners `actions/<worker-name>` befindet sich die Datei `index.js`, in der der benutzerdefinierte Anwendungs-Code eingefügt werden kann.
+   Das Vorlagenprogramm nutzt unser [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk#asset-compute-sdk) für das Hochladen, Herunterladen und Orchestrieren von Programmdarstellungen, sodass die Entwickler nur die benutzerdefinierte Programmlogik implementieren müssen. Innerhalb des Ordners `actions/<worker-name>` befindet sich die Datei `index.js`, in der der benutzerdefinierte Programm-Code eingefügt werden kann.
 
-Beispiele und Ideen für benutzerdefinierte Anwendungen finden Sie unter [Beispiele für benutzerdefinierte Anwendungen](#try-sample).
+Beispiele und Ideen für benutzerdefinierte Programme finden Sie unter [Beispiele für benutzerdefinierte Programme](#try-sample).
 
 ### Hinzufügen von Anmeldeinformationen {#add-credentials}
 
-Während Sie sich beim Erstellen der Anwendung anmelden, werden die meisten Firefly-Anmeldeinformationen in Ihrer ENV-Datei erfasst. Die Verwendung des Entwickler-Tools erfordert jedoch zusätzliche Anmeldeinformationen.
+Während Sie sich beim Erstellen des Programms anmelden, werden die meisten Firefly-Anmeldeinformationen in Ihrer ENV-Datei erfasst. Die Verwendung des Entwickler-Tools erfordert jedoch zusätzliche Anmeldeinformationen.
 
 <!-- TBD: Check if manual setup of credentials is required.
 Manual set up of credentials is removed from troubleshooting and best practices page. Link was broken.
@@ -78,7 +78,7 @@ If you did not log in, refer to our troubleshooting guide to [set up credentials
 
 #### Anmeldeinformationen für die Datenspeicherung des Entwickler-Tools {#developer-tool-credentials}
 
-Das Entwickler-Tool zum Testen benutzerdefinierter Anwendungen mit dem eigentlichen [!DNL Asset Compute service] benötigt einen Cloud-Speicher-Container für das Hosting von Testdateien und den Empfang und die Anzeige von Ausgabedarstellungsversionen, die von den Anwendungen generiert werden.
+Das Entwickler-Tool zum Testen benutzerdefinierter Programme mit dem eigentlichen [!DNL Asset Compute service] benötigt einen Cloud-Speicher-Container für das Hosting von Testdateien und den Empfang und die Anzeige von Ausgabedarstellungsversionen, die von den Programmen generiert werden.
 
 >[!NOTE]
 >
@@ -117,11 +117,11 @@ Fügen Sie der ENV-Datei im Stammverzeichnis Ihres Firefly-Projekts die folgende
    AZURE_STORAGE_CONTAINER_NAME=
    ```
 
-## Ausführen der Anwendung {#run-custom-application}
+## Ausführen des Programms {#run-custom-application}
 
-Bevor Sie die Anwendung mit dem Asset Compute-Entwickler-Tool ausführen, müssen Sie die [Anmeldeinformationen](#developer-tool-credentials) ordnungsgemäß konfigurieren.
+Bevor Sie das Programm mit dem Asset Compute-Entwickler-Tool ausführen, müssen Sie die [Anmeldeinformationen](#developer-tool-credentials) ordnungsgemäß konfigurieren.
 
-Um die Anwendung im Entwickler-Tool auszuführen, verwenden Sie den Befehl `aio app run`. Die Aktion wird in [!DNL Adobe I/O] Runtime bereitgestellt und das Entwickler-Tool wird auf Ihrem lokalen Computer gestartet. Dieses Tool wird zum Testen von Anwendungsanforderungen während der Entwicklung verwendet. Hier finden Sie ein Beispiel für eine Ausgabedarstellungsanforderung:
+Um das Programm im Entwickler-Tool auszuführen, verwenden Sie den Befehl `aio app run`. Die Aktion wird in [!DNL Adobe I/O] Runtime bereitgestellt und das Entwickler-Tool wird auf Ihrem lokalen Computer gestartet. Dieses Tool wird zum Testen von Programmanforderungen während der Entwicklung verwendet. Hier finden Sie ein Beispiel für eine Ausgabedarstellungsanforderung:
 
 ```json
 "renditions": [
@@ -134,24 +134,24 @@ Um die Anwendung im Entwickler-Tool auszuführen, verwenden Sie den Befehl `aio 
 
 >[!NOTE]
 >
->Verwenden Sie das Flag `--local` nicht mit dem Befehl `run`. Es funktioniert nicht mit benutzerdefinierten [!DNL Asset Compute]-Anwendungen und dem Asset Compute-Entwickler-Tool. Benutzerdefinierte Anwendungen werden vom [!DNL Asset Compute Service] aufgerufen, der nicht auf Aktionen zugreifen kann, die auf den lokalen Computern des Entwicklers ausgeführt werden.
+>Verwenden Sie das Flag `--local` nicht mit dem Befehl `run`. Es funktioniert nicht mit benutzerdefinierten [!DNL Asset Compute]-Programmen und dem Asset Compute-Entwickler-Tool. Benutzerdefinierte Programme werden vom [!DNL Asset Compute Service] aufgerufen, der nicht auf Aktionen zugreifen kann, die auf den lokalen Computern des Entwicklers ausgeführt werden.
 
-Weitere Informationen zum Testen und Debuggen Ihrer Anwendung finden Sie [hier](test-custom-application.md). Wenn Sie mit der Entwicklung Ihrer benutzerdefinierten Anwendung fertig sind, [stellen Sie Ihre benutzerdefinierte Anwendung](deploy-custom-application.md) bereit.
+Weitere Informationen zum Testen und Debuggen Ihres Programms finden Sie [hier](test-custom-application.md). Wenn Sie mit der Entwicklung Ihres benutzerdefinierten Programms fertig sind, [stellen Sie Ihr benutzerdefiniertes Programm](deploy-custom-application.md) bereit.
 
-## Testen der von Adobe bereitgestellten Beispielanwendung {#try-sample}
+## Testen des von Adobe bereitgestellten Beispielprogramms {#try-sample}
 
-Im Folgenden finden Sie Beispiele für benutzerdefinierte Anwendungen:
+Im Folgenden finden Sie Beispiele für benutzerdefinierte Programme:
 
 * [worker-basic](https://github.com/adobe/asset-compute-example-workers/tree/master/projects/worker-basic)
 * [worker-animal-pictures](https://github.com/adobe/asset-compute-example-workers/tree/master/projects/worker-animal-pictures)
 
-### Benutzerdefinierte Vorlagenanwendung {#template-custom-application}
+### Benutzerdefiniertes Vorlagenprogramm {#template-custom-application}
 
-[worker-basic](https://github.com/adobe/asset-compute-example-workers/tree/master/projects/worker-basic) ist eine Vorlagenanwendung. Durch einfaches Kopieren der Quelldatei wird eine Ausgabedarstellung generiert. Der Inhalt dieser Anwendung ist die Vorlage, die Sie bei der Erstellung der aio-App erhalten, wenn Sie `Adobe Asset Compute` auswählen.
+[worker-basic](https://github.com/adobe/asset-compute-example-workers/tree/master/projects/worker-basic) ist ein Vorlagenprogramm. Durch einfaches Kopieren der Quelldatei wird eine Ausgabedarstellung generiert. Der Inhalt dieses Programms ist die Vorlage, die Sie bei der Erstellung der aio-App erhalten, wenn Sie `Adobe Asset Compute` auswählen.
 
-Die Anwendungsdatei [`worker-basic.js`](https://github.com/adobe/asset-compute-example-workers/blob/master/projects/worker-basic/worker-basic.js) verwendet das [`asset-compute-sdk`](https://github.com/adobe/asset-compute-sdk#overview), um die Quelldatei herunterzuladen, die jeweilige Ausgabedarstellungsverarbeitung zu koordinieren und die resultierenden Ausgabedarstellungen zurück in den Cloud-Speicher hochzuladen.
+Die Programmdatei [`worker-basic.js`](https://github.com/adobe/asset-compute-example-workers/blob/master/projects/worker-basic/worker-basic.js) verwendet das [`asset-compute-sdk`](https://github.com/adobe/asset-compute-sdk#overview), um die Quelldatei herunterzuladen, die jeweilige Ausgabedarstellungsverarbeitung zu koordinieren und die resultierenden Ausgabedarstellungen zurück in den Cloud-Speicher hochzuladen.
 
-In dem im Anwendungs-Code definierten [`renditionCallback`](https://github.com/adobe/asset-compute-sdk#rendition-callback-for-worker-required) wird die gesamte Anwendungsverarbeitungslogik ausgeführt. Der Ausgabedarstellungs-Callback in `worker-basic` kopiert einfach den Inhalt der Quelldatei in die Ausgabedarstellungsdatei.
+In dem im Programm-Code definierten [`renditionCallback`](https://github.com/adobe/asset-compute-sdk#rendition-callback-for-worker-required) wird die gesamte Programmverarbeitungslogik ausgeführt. Der Ausgabedarstellungs-Callback in `worker-basic` kopiert einfach den Inhalt der Quelldatei in die Ausgabedarstellungsdatei.
 
 ```javascript
 const { worker } = require('@adobe/asset-compute-sdk');
@@ -165,7 +165,7 @@ exports.main = worker(async (source, rendition) => {
 
 ## Aufrufen einer externen API {#call-external-api}
 
-Im Anwendungs-Code können Sie externe API-Aufrufe durchführen, um die Anwendungsverarbeitung zu unterstützen. Nachfolgend finden Sie ein Beispiel für eine Anwendungsdatei, die eine externe API aufruft.
+Im Programm-Code können Sie externe API-Aufrufe durchführen, um die Programmverarbeitung zu unterstützen. Nachfolgend finden Sie ein Beispiel für eine Programmdatei, die eine externe API aufruft.
 
 ```javascript
 exports.main = worker(async function (source, rendition) {
@@ -187,7 +187,7 @@ Beispielsweise sendet [`worker-animal-pictures`](https://github.com/adobe/asset-
 
 ### Übergeben benutzerdefinierter Parameter {#pass-custom-parameters}
 
-Sie können benutzerdefinierte Parameter über die Ausgabedarstellungsobjekte übergeben. Sie können innerhalb der Anwendung in [`rendition` Anweisungen](https://github.com/adobe/asset-compute-sdk#rendition) referenziert werden. Hier finden Sie ein Beispiel für ein Ausgabedarstellungsobjekt:
+Sie können benutzerdefinierte Parameter über die Ausgabedarstellungsobjekte übergeben. Sie können innerhalb des Programms in [`rendition` Anweisungen](https://github.com/adobe/asset-compute-sdk#rendition) referenziert werden. Hier finden Sie ein Beispiel für ein Ausgabedarstellungsobjekt:
 
 ```json
 "renditions": [
@@ -199,7 +199,7 @@ Sie können benutzerdefinierte Parameter über die Ausgabedarstellungsobjekte ü
 ]
 ```
 
-Ein Beispiel für eine Anwendungsdatei, die auf benutzerdefinierte Parameter zugreift:
+Ein Beispiel für eine Programmdatei, die auf benutzerdefinierte Parameter zugreift:
 
 ```javascript
 exports.main = worker(async function (source, rendition) {
@@ -214,14 +214,14 @@ exports.main = worker(async function (source, rendition) {
 
 ## Unterstützung bei Authentifizierung und Autorisierung {#authentication-authorization-support}
 
-Standardmäßig werden benutzerdefinierte Asset Compute-Anwendungen mit Autorisierungs- und Authentifizierungsprüfungen für Firefly-Anwendungen bereitgestellt. Dies wird aktiviert, indem `require-adobe-auth` in der Datei `manifest.yml` auf `true` gesetzt wird.
+Standardmäßig werden benutzerdefinierte Asset Compute-Programme mit Autorisierungs- und Authentifizierungsprüfungen für Firefly-Programme bereitgestellt. Dies wird aktiviert, indem `require-adobe-auth` in der Datei `manifest.yml` auf `true` gesetzt wird.
 
 ### Zugriff auf andere Adobe-APIs {#access-adobe-apis}
 
 <!-- TBD: Revisit this section. Where do we document console workspace creation?
 -->
 
-Fügen Sie die API-Services dem bei der Einrichtung erstellten [!DNL Asset Compute]-Console-Arbeitsbereich hinzu. Diese Services sind Teil des JWT-Zugriffs-Tokens, das von [!DNL Asset Compute Service] erstellt wird. Auf das Token und andere Anmeldeinformationen kann innerhalb des Anwendungsaktionsobjekts `params` zugegriffen werden.
+Fügen Sie die API-Services dem bei der Einrichtung erstellten [!DNL Asset Compute]-Console-Arbeitsbereich hinzu. Diese Services sind Teil des JWT-Zugriffs-Tokens, das von [!DNL Asset Compute Service] erstellt wird. Auf das Token und andere Anmeldeinformationen kann innerhalb des Programmaktionsobjekts `params` zugegriffen werden.
 
 ```javascript
 const accessToken = params.auth.accessToken; // JWT token for Technical Account with entitlements from the console workspace to the API service
@@ -258,15 +258,15 @@ Während der Entwicklung kann der Wert in der lokalen ENV-Datei festgelegt werde
 SECRET_KEY=secret-value
 ```
 
-Bei der Produktionsimplementierung können die Umgebungsvariablen im CI-System festgelegt werden, z. B. mithilfe von Geheimnissen in GitHub-Aktionen. Greifen Sie auf die Standardparameter in der Anwendung als solche zu:
+Bei der Produktionsimplementierung können die Umgebungsvariablen im CI-System festgelegt werden, z. B. mithilfe von Geheimnissen in GitHub-Aktionen. Greifen Sie auf die Standardparameter im Programm als solche zu:
 
 ```javascript
 const key = params.secretKey;
 ```
 
-## Dimensionieren von Anwendungen {#sizing-workers}
+## Dimensionieren von Programmen {#sizing-workers}
 
-Eine Anwendung wird in einem Container in [!DNL Adobe I/O] Runtime mit [Beschränkungen](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) ausgeführt, die über `manifest.yml` konfiguriert werden können:
+Ein Programm wird in einem Container in [!DNL Adobe I/O] Runtime mit [Beschränkungen](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) ausgeführt, die über `manifest.yml` konfiguriert werden können:
 
 ```yaml
     actions:
@@ -278,14 +278,14 @@ Eine Anwendung wird in einem Container in [!DNL Adobe I/O] Runtime mit [Beschrä
           concurrency: 1
 ```
 
-Aufgrund der umfangreicheren Verarbeitung, die normalerweise von Asset Compute-Anwendungen ausgeführt wird, ist es wahrscheinlicher, dass diese Beschränkungen angepasst werden müssen, um eine optimale Leistung (groß genug für binäre Assets) und Effizienz (keine Ressourcenverschwendung durch ungenutzten Container-Speicherplatz) zu erzielen.
+Aufgrund der umfangreicheren Verarbeitung, die normalerweise von Asset Compute-Programmen ausgeführt wird, ist es wahrscheinlicher, dass diese Beschränkungen angepasst werden müssen, um eine optimale Leistung (groß genug für binäre Assets) und Effizienz (keine Ressourcenverschwendung durch ungenutzten Container-Speicherplatz) zu erzielen.
 
 Der Standard-Timeout für Aktionen in Runtime ist eine Minute, kann jedoch durch Setzen der `timeout`-Beschränkung (in Millisekunden) erhöht werden. Wenn Sie mit der Verarbeitung größerer Dateien rechnen, erhöhen Sie diese Zeit. Berücksichtigen Sie die Gesamtzeit, die zum Herunterladen der Quelle, zum Verarbeiten der Datei und zum Hochladen der Ausgabedarstellung erforderlich ist. Wenn eine Aktion eine Zeitüberschreitung aufweist, d. h. die Aktivierung nicht vor der angegebenen Timeout-Beschränkung zurückgibt, verwirft Runtime den Container und verwendet ihn nicht erneut.
 
-Asset Compute-Anwendungen sind von Natur aus eher an Netzwerk- und Datenträger-E/A-Vorgänge gebunden. Die Quelldatei muss zuerst heruntergeladen werden, die Verarbeitung ist häufig ressourcenintensiv und die resultierenden Ausgabedarstellungen werden dann wieder hochgeladen.
+Asset Compute-Programme sind von Natur aus eher an Netzwerk- und Datenträger-E/A-Vorgänge gebunden. Die Quelldatei muss zuerst heruntergeladen werden, die Verarbeitung ist häufig ressourcenintensiv und die resultierenden Ausgabedarstellungen werden dann wieder hochgeladen.
 
 Der für einen Aktions-Container verfügbare Speicher wird über `memorySize` in MB angegeben. Derzeit wird hiermit auch festgelegt, wie viel CPU-Zugriff der Container erhält. Vor allem ist dies ein Schlüsselelement der Kosten für die Verwendung von Runtime (größere Container kosten mehr). Verwenden Sie hier einen größeren Wert, wenn Ihre Verarbeitung mehr Speicher oder CPU erfordert. Achten Sie jedoch darauf, keine Ressourcen zu verschwenden, da der Gesamtdurchsatz umso geringer ist, je größer die Container sind.
 
-Darüber hinaus ist es möglich, die Parallelität von Aktionen innerhalb eines Containers mithilfe der Einstellung `concurrency` zu steuern. Dies ist die Anzahl der gleichzeitigen Aktivierungen (derselben Aktion), die ein einzelner Container erhält. In diesem Modell ähnelt der Aktions-Container einem Node.js-Server, der bis zu diesem Grenzwert mehrere gleichzeitige Anfragen empfängt. Wenn nicht festgelegt, ist der Standardwert in Runtime 200, was für kleinere Firefly-Aktionen ideal ist. Für Asset Compute-Anwendungen ist dieser Wert jedoch aufgrund ihrer intensiveren lokalen Verarbeitung und Festplattenaktivität normalerweise zu groß. Einige Anwendungen funktionieren je nach Implementierung möglicherweise auch bei gleichzeitigen Aktivitäten nicht gut. Das Asset Compute-SDK stellt sicher, dass Aktivierungen getrennt werden, indem Dateien in verschiedene eindeutige Ordner geschrieben werden.
+Darüber hinaus ist es möglich, die Parallelität von Aktionen innerhalb eines Containers mithilfe der Einstellung `concurrency` zu steuern. Dies ist die Anzahl der gleichzeitigen Aktivierungen (derselben Aktion), die ein einzelner Container erhält. In diesem Modell ähnelt der Aktions-Container einem Node.js-Server, der bis zu diesem Grenzwert mehrere gleichzeitige Anfragen empfängt. Wenn nicht festgelegt, ist der Standardwert in Runtime 200, was für kleinere Firefly-Aktionen ideal ist. Für Asset Compute-Programme ist dieser Wert jedoch aufgrund ihrer intensiveren lokalen Verarbeitung und Festplattenaktivität normalerweise zu groß. Einige Programme funktionieren je nach Implementierung möglicherweise auch bei gleichzeitigen Aktivitäten nicht gut. Das Asset Compute-SDK stellt sicher, dass Aktivierungen getrennt werden, indem Dateien in verschiedene eindeutige Ordner geschrieben werden.
 
-Testen Sie die Anwendungen, um die optimalen Werte für `concurrency` und `memorySize` zu finden. Größere Container (= höhere Speicherbeschränkung) könnten mehr Parallelität ermöglichen, aber bei geringerem Traffic zu unnötigen Ausgaben führen.
+Testen Sie die Programme, um die optimalen Werte für `concurrency` und `memorySize` zu finden. Größere Container (= höhere Speicherbeschränkung) könnten mehr Parallelität ermöglichen, aber bei geringerem Traffic zu unnötigen Ausgaben führen.
