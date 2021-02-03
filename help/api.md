@@ -1,18 +1,18 @@
 ---
-title: '[!DNL Asset Compute Service] HTTP-API'
-description: '[!DNL Asset Compute Service] HTTP-API zum Erstellen benutzerdefinierter Anwendungen.'
-translation-type: tm+mt
+title: '[!DNL Asset Compute Service]-HTTP-API'
+description: '[!DNL Asset Compute Service]-HTTP-API zum Erstellen benutzerdefinierter Programme.'
+translation-type: ht
 source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2906'
 ht-degree: 100%
 
 ---
 
 
-# [!DNL Asset Compute Service] HTTP-API {#asset-compute-http-api}
+# [!DNL Asset Compute Service]-HTTP-API {#asset-compute-http-api}
 
-Die Verwendung der API ist auf Entwicklungszwecke beschränkt. Die API wird bei der Entwicklung benutzerdefinierter Anwendungen als Kontext bereitgestellt. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] verwendet die API, um die Verarbeitungsinformationen an eine benutzerdefinierte Anwendung zu übergeben. Weitere Informationen finden Sie unter [Verwenden von Asset-Microservices und Verarbeitungsprofilen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=de).
+Die Verwendung der API ist auf Entwicklungszwecke beschränkt. Die API wird bei der Entwicklung benutzerdefinierter Programme als Kontext bereitgestellt. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] verwendet die API, um die Verarbeitungsinformationen an ein benutzerdefiniertes Programm zu übergeben. Weitere Informationen finden Sie unter [Verwenden von Asset-Microservices und Verarbeitungsprofilen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=de).
 
 >[!NOTE]
 >
@@ -183,7 +183,7 @@ Die Status-Codes sind:
    }
    ```
 
-* **429 Zu viele Anfragen**: Tritt auf, wenn das System überlastet ist. Clients sollten es mit einem [exponentiellen Backoff](https://en.wikipedia.org/wiki/Exponential_backoff) erneut versuchen. Der Hauptteil ist leer.
+* **429 Zu viele Anfragen**: Tritt auf, wenn das System überlastet ist. Clients sollten es mit einem [exponentiellen Backoff](https://de.wikipedia.org/wiki/Binary_Exponential_Backoff) erneut versuchen. Der Hauptteil ist leer.
 
 * **4xx-Fehler**: Tritt auf, wenn ein anderer Client-Fehler aufgetreten ist und die Aufhebung der Registrierung fehlgeschlagen ist. Normalerweise wird eine JSON-Antwort wie diese zurückgegeben, obwohl dies nicht für alle Fehler garantiert ist:
 
@@ -322,7 +322,7 @@ Status-Codes:
 
 * **401 Nicht autorisiert**: Wenn die Anfrage keine gültige [Authentifizierung](#authentication-and-authorization) aufweist. Ein Beispiel könnte ein ungültiges Zugriffs-Token oder ein ungültiger API-Schlüssel sein.
 * **403 Verboten**: Wenn die Anfrage keine gültige [Autorisierung](#authentication-and-authorization) aufweist. Beispielsweise könnte ein gültiges Zugriffs-Token vorliegen, aber das Adobe Developer Console-Projekt (technisches Konto) hat nicht alle erforderlichen Services abonniert.
-* **429 Zu viele Anfragen**: Wenn das System durch diesen Client oder allgemein überlastet ist. Die Clients können es mit einem [exponentiellen Backoff](https://en.wikipedia.org/wiki/Exponential_backoff) erneut versuchen. Der Hauptteil ist leer.
+* **429 Zu viele Anfragen**: Wenn das System durch diesen Client oder allgemein überlastet ist. Die Clients können es mit einem [exponentiellen Backoff](https://de.wikipedia.org/wiki/Binary_Exponential_Backoff) erneut versuchen. Der Hauptteil ist leer.
 * **4xx-Fehler**: Wenn ein anderer Client-Fehler aufgetreten ist. Normalerweise wird eine JSON-Antwort wie diese zurückgegeben, obwohl dies nicht für alle Fehler garantiert ist:
 
    ```json
@@ -343,13 +343,13 @@ Status-Codes:
    }
    ```
 
-Die meisten Clients neigen wahrscheinlich dazu, genau dieselbe Anfrage mit [exponentiellem Backoff](https://en.wikipedia.org/wiki/Exponential_backoff) bei Fehlern zu wiederholen, mit *Ausnahme* von Konfigurationsproblemen wie 401 oder 403 oder ungültigen Anfragen wie 400. Abgesehen von der regulären Ratenbegrenzung über 429-Antworten kann ein vorübergehender Service-Ausfall oder eine vorübergehende Service-Beschränkung zu 5xx-Fehlern führen. Es wäre dann ratsam, es nach einer gewissen Zeit erneut zu versuchen.
+Die meisten Clients neigen wahrscheinlich dazu, genau dieselbe Anfrage mit [exponentiellem Backoff](https://de.wikipedia.org/wiki/Binary_Exponential_Backoff) bei Fehlern zu wiederholen, mit *Ausnahme* von Konfigurationsproblemen wie 401 oder 403 oder ungültigen Anfragen wie 400. Abgesehen von der regulären Ratenbegrenzung über 429-Antworten kann ein vorübergehender Service-Ausfall oder eine vorübergehende Service-Beschränkung zu 5xx-Fehlern führen. Es wäre dann ratsam, es nach einer gewissen Zeit erneut zu versuchen.
 
 Alle JSON-Antworten (sofern vorhanden) enthalten die `requestId`, die dem Wert der `X-Request-Id`-Kopfzeile entspricht. Es wird empfohlen, aus der Kopfzeile zu lesen, da diese immer vorhanden ist. Die `requestId` wird auch in allen Ereignissen, die mit Verarbeitungsanfragen zusammenhängen, als `requestId` zurückgegeben. Kunden dürfen keine Annahmen über das Format dieser Zeichenfolge treffen, es handelt sich um eine undurchsichtige Zeichenfolgenkennung.
 
 ## Aktivieren der Nachbearbeitung {#opt-in-to-post-processing}
 
-Das [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk) unterstützt eine Reihe grundlegender Optionen für die Nachbearbeitung von Bildern. Benutzerdefinierte Sekundäranwendungen können sich explizit für die Nachbearbeitung entscheiden, indem sie das Feld `postProcess` im Ausgabedarstellungsobjekt auf `true` setzen.
+Das [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk) unterstützt eine Reihe grundlegender Optionen für die Nachbearbeitung von Bildern. Benutzerdefinierte Sekundärprogramme können sich explizit für die Nachbearbeitung entscheiden, indem sie das Feld `postProcess` im Ausgabedarstellungsobjekt auf `true` setzen.
 
 Folgende Anwendungsfälle werden unterstützt:
 
@@ -364,7 +364,7 @@ Folgende Anwendungsfälle werden unterstützt:
 
 Das [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk) unterstützt das Hinzufügen eines Wasserzeichens zu PNG-, JPEG-, TIFF- und GIF-Bilddateien. Das Wasserzeichen wird der Ausgabedarstellung entsprechend den Ausgabedarstellungsanweisungen im `watermark`-Objekt hinzugefügt.
 
-Das Wasserzeichen wird während der Nachbearbeitung der Ausgabedarstellung hinzugefügt. Um Assets mit Wasserzeichen zu versehen, [aktiviert die benutzerdefinierte Sekundäranwendung die Nachbearbeitung](#opt-in-to-post-processing), indem es das Feld `postProcess` im Ausgabedarstellungsobjekt auf `true` setzt. Wenn sich die Sekundäranwendung nicht dafür entscheidet, wird das Wasserzeichen nicht hinzugefügt, auch wenn das Wasserzeichenobjekt im Ausgabedarstellungsobjekt in der Anfrage gesetzt ist.
+Das Wasserzeichen wird während der Nachbearbeitung der Ausgabedarstellung hinzugefügt. Um Assets mit Wasserzeichen zu versehen, [aktiviert das benutzerdefinierte Sekundärprogramm die Nachbearbeitung](#opt-in-to-post-processing), indem es das Feld `postProcess` im Ausgabedarstellungsobjekt auf `true` setzt. Wenn sich das Sekundärprogramm nicht dafür entscheidet, wird das Wasserzeichen nicht hinzugefügt, auch wenn das Wasserzeichenobjekt im Ausgabedarstellungsobjekt in der Anfrage gesetzt ist.
 
 ## Ausgabedarstellungsanweisungen {#rendition-instructions}
 
@@ -375,18 +375,18 @@ Dies sind die verfügbaren Optionen für das `renditions`-Array in [/process](#p
 | Name | Typ | Beschreibung | Beispiel |
 |-------------------|----------|-------------|---------|
 | `fmt` | `string` | Das Zielformat der Ausgabedarstellung kann auch `text` zum Extrahieren von Text und `xmp` zum Extrahieren von XMP-Metadaten als XML sein. Siehe [Unterstützte Formate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=de). | `png` |
-| `worker` | `string` | URL einer [benutzerdefinierten Anwendung](develop-custom-application.md). Muss eine `https://`-URL sein. Wenn dieses Feld vorhanden ist, wird die Ausgabedarstellung von einer benutzerdefinierten Anwendung erstellt. Jedes andere festgelegte Ausgabedarstellungsfeld wird dann in der benutzerdefinierten Anwendung verwendet. | `"https://1234.adobeioruntime.net`<br>`/api/v1/web`<br>`/example-custom-worker-master/worker"` |
+| `worker` | `string` | URL eines [benutzerdefinierten Programms](develop-custom-application.md). Muss eine `https://`-URL sein. Wenn dieses Feld vorhanden ist, wird die Ausgabedarstellung von einem benutzerdefinierten Programm erstellt. Jedes andere festgelegte Ausgabedarstellungsfeld wird dann im benutzerdefinierten Programm verwendet. | `"https://1234.adobeioruntime.net`<br>`/api/v1/web`<br>`/example-custom-worker-master/worker"` |
 | `target` | `string` | URL, auf die die generierte Ausgabedarstellung mit HTTP-PUT hochgeladen werden soll. | `http://w.com/img.jpg` |
 | `target` | `object` | Mehrteilige vorsignierte URL-Upload-Informationen für die generierte Ausgabedarstellung. Dies gilt für den [direkten binären AEM-/Oak-Upload](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) mit diesem [mehrteiligen Upload-Verhalten](http://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html).<br>Felder:<ul><li>`urls`: Array von Zeichenfolgen, eine für jede vorsignierte Teil-URL</li><li>`minPartSize`: die Mindestgröße für eine Teil-URL</li><li>`maxPartSize`: die Maximalgröße für eine Teil-URL</li></ul> | `{ "urls": [ "https://part1...", "https://part2..." ], "minPartSize": 10000, "maxPartSize": 100000 }` |
-| `userData` | `object` | Optionaler reservierter Speicherplatz, der vom Client gesteuert und unverändert an Ausgabedarstellungsereignisse weitergeleitet wird. Ermöglicht Clients das Hinzufügen benutzerdefinierter Informationen zum Identifizieren von Ausgabedarstellungsereignissen. Darf in benutzerdefinierten Anwendungen nicht geändert oder verwendet werden, da Clients ihn jederzeit ändern können. | `{ ... }` |
+| `userData` | `object` | Optionaler reservierter Speicherplatz, der vom Client gesteuert und unverändert an Ausgabedarstellungsereignisse weitergeleitet wird. Ermöglicht Clients das Hinzufügen benutzerdefinierter Informationen zum Identifizieren von Ausgabedarstellungsereignissen. Darf in benutzerdefinierten Programmen nicht geändert oder verwendet werden, da Clients ihn jederzeit ändern können. | `{ ... }` |
 
 ### Ausgabedarstellungsspezifische Felder {#rendition-specific-fields}
 
-Eine Liste der derzeit unterstützten Dateiformate finden Sie unter [Unterstützte Dateiformate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html).
+Eine Liste der derzeit unterstützten Dateiformate finden Sie unter [Unterstützte Dateiformate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=de).
 
 | Name | Typ | Beschreibung | Beispiel |
 |-------------------|----------|-------------|---------|
-| `*` | `*` | Erweiterte, benutzerdefinierte Felder können hinzugefügt werden, die eine [benutzerdefinierte Anwendung](develop-custom-application.md) versteht. |  |
+| `*` | `*` | Erweiterte, benutzerdefinierte Felder können hinzugefügt werden, die ein [benutzerdefiniertes Programm](develop-custom-application.md) versteht. |  |
 | `embedBinaryLimit` | `number` in Byte | Wenn dieser Wert festgelegt ist und die Dateigröße der Ausgabedarstellung kleiner als dieser ist, wird die Ausgabedarstellung in das Ereignis eingebettet, das nach Abschluss der Ausgabedarstellungsgenerierung gesendet wird. Die maximal zulässige Größe für die Einbettung beträgt 32 KB (32 x 1024 Byte). Wenn eine Ausgabedarstellung größer als das `embedBinaryLimit`-Limit ist, wird sie an einem Ort im Cloud-Speicher abgelegt und nicht in das Ereignis eingebettet. | `3276` |
 | `width` | `number` | Breite in Pixel. Nur für Bilddarstellungen. | `200` |
 | `height` | `number` | Höhe in Pixel. Nur für Bilddarstellungen. | `200` |
