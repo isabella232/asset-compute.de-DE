@@ -1,26 +1,26 @@
 ---
-title: Machen Sie sich mit der Funktionsweise einer benutzerdefinierten Anwendung vertraut
-description: Interne Funktionsweise einer benutzerdefinierten  [!DNL Asset Compute Service] -Anwendung, um deren Funktionsweise besser zu verstehen.
-translation-type: tm+mt
+title: Machen Sie sich mit der Funktionsweise eines benutzerdefinierten Programms vertraut
+description: Interne Funktionsweise eines benutzerdefinierten  [!DNL Asset Compute Service] -Programms, um dessen Funktionsweise besser zu verstehen.
+translation-type: ht
 source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '751'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 
-# Interne Funktionsweise einer benutzerdefinierten Anwendung {#how-custom-application-works}
+# Interne Funktionsweise eines benutzerdefinierten Programms {#how-custom-application-works}
 
-Verwenden Sie die folgende Abbildung, um den durchgängigen Workflow zu verstehen, wenn ein digitales Asset mithilfe einer benutzerdefinierten Anwendung von einem Client verarbeitet wird.
+Verwenden Sie die folgende Abbildung, um den durchgängigen Workflow zu verstehen, wenn ein digitales Asset mithilfe einem benutzerdefinierten Programm von einem Client verarbeitet wird.
 
-![Workflow für benutzerdefinierte Anwendungen](assets/customworker.png)
+![Workflow für benutzerdefinierte Programme](assets/customworker.png)
 
 *Abbildung: Schritte zur Verarbeitung eines Assets mit [!DNL Asset Compute Service].*
 
 ## Registrierung {#registration}
 
-Der Client muss [`/register`](api.md#register) einmal vor der ersten Anforderung an [`/process`](api.md#process-request) aufrufen, um die Protokoll-URL für den Empfang von [!DNL Adobe I/O]-Ereignissen für die Adobe-Asset compute einzurichten und abzurufen.
+Der Client muss [`/register`](api.md#register) vor der ersten Anfrage an [`/process`](api.md#process-request) einmal aufrufen, um die Journal-URL für den Empfang von [!DNL Adobe I/O]-Ereignissen für Adobe Asset Compute einzurichten und abzurufen.
 
 ```sh
 curl -X POST \
@@ -31,7 +31,7 @@ curl -X POST \
   -H "x-api-key: $API_KEY"
 ```
 
-Die JavaScript-Bibliothek [`@adobe/asset-compute-client`](https://github.com/adobe/asset-compute-client#usage) kann in NodeJS-Anwendungen verwendet werden, um alle erforderlichen Schritte von der Registrierung über die Verarbeitung bis zur asynchronen Ereignisbehandlung auszuführen. Weitere Informationen zu den erforderlichen Kopfzeilen finden Sie unter [Authentifizierung und Autorisierung](api.md).
+Die JavaScript-Bibliothek [`@adobe/asset-compute-client`](https://github.com/adobe/asset-compute-client#usage) kann in NodeJS-Programmen verwendet werden, um alle erforderlichen Schritte von der Registrierung über die Verarbeitung bis zur asynchronen Ereignisbehandlung auszuführen. Weitere Informationen zu den erforderlichen Kopfzeilen finden Sie unter [Authentifizierung und Autorisierung](api.md).
 
 ## Verarbeitung {#processing}
 
@@ -47,11 +47,11 @@ curl -X POST \
   -d "<RENDITION_JSON>
 ```
 
-Der Client ist für die korrekte Formatierung der Ausgabedarstellungen mit vorab signierten URLs verantwortlich. Die JavaScript-Bibliothek [`@adobe/node-cloud-blobstore-wrapper`](https://github.com/adobe/node-cloud-blobstore-wrapper#presigned-urls) kann in NodeJS-Anwendungen zum Vorsignieren von URLs verwendet werden. Derzeit unterstützt die Bibliothek nur Azure Blob-Speicher und AWS S3-Container.
+Der Client ist für die korrekte Formatierung der Ausgabedarstellungen mit vorab signierten URLs verantwortlich. Die JavaScript-Bibliothek [`@adobe/node-cloud-blobstore-wrapper`](https://github.com/adobe/node-cloud-blobstore-wrapper#presigned-urls) kann in NodeJS-Programmen zum Vorsignieren von URLs verwendet werden. Derzeit unterstützt die Bibliothek nur Azure Blob-Speicher und AWS S3-Container.
 
-Die Verarbeitungsanforderung gibt ein `requestId` zurück, das für die Abfrage von [!DNL Adobe I/O]-Ereignissen verwendet werden kann.
+Die Verarbeitungsanfrage gibt eine `requestId` zurück, die für die Abfrage von [!DNL Adobe I/O]-Ereignissen verwendet werden kann.
 
-Nachfolgend finden Sie eine Beispielanfrage zur Verarbeitung benutzerdefinierter Anwendungen.
+Nachfolgend finden Sie eine Beispielanfrage zur Verarbeitung benutzerdefinierter Programme.
 
 ```json
 {
@@ -69,15 +69,15 @@ Nachfolgend finden Sie eine Beispielanfrage zur Verarbeitung benutzerdefinierter
 }
 ```
 
-[!DNL Asset Compute Service] sendet die Ausgabedarstellungsanfragen für die benutzerdefinierte Anwendung an die benutzerdefinierte Anwendung. Es wird ein HTTP-POST an die angegebene Anwendungs-URL verwendet, bei der es sich um die gesicherte Web-Aktions-URL von Project Firefly handelt. Alle Anfragen verwenden das HTTPS-Protokoll, um die Datensicherheit zu maximieren.
+[!DNL Asset Compute Service] sendet die Ausgabedarstellungsanfragen für das benutzerdefinierte Programm an das benutzerdefinierte Programm. Es wird ein HTTP-POST an die angegebene Programm-URL verwendet, bei der es sich um die gesicherte Web-Aktions-URL von Project Firefly handelt. Alle Anfragen verwenden das HTTPS-Protokoll, um die Datensicherheit zu maximieren.
 
-Das von einer benutzerdefinierten Anwendung verwendete [Asset Compute-SDK](https://github.com/adobe/asset-compute-sdk#adobe-asset-compute-worker-sdk) verarbeitet die HTTP-POST-Anfrage. Es verarbeitet auch das Herunterladen der Quelle, das Hochladen von Darstellungen, das Senden von [!DNL Adobe I/O]-Ereignissen und die Fehlerbehandlung.
+Das von einem benutzerdefinierten Programm verwendete [Asset Compute-SDK](https://github.com/adobe/asset-compute-sdk#adobe-asset-compute-worker-sdk) verarbeitet die HTTP-POST-Anfrage. Es übernimmt auch das Herunterladen der Quelle, das Hochladen von Ausgabedarstellungen, das Senden von [!DNL Adobe I/O]-Ereignissen und die Fehlerbehandlung.
 
 <!-- TBD: Add the application diagram. -->
 
-### Anwendungs-Code {#application-code}
+### Programm-Code {#application-code}
 
-Benutzerdefinierter Code muss nur einen Callback bereitstellen, der die lokal verfügbare Quelldatei (`source.path`) akzeptiert. `rendition.path` ist der Speicherort, an dem das Endergebnis einer Asset-Verarbeitungsanfrage platziert werden soll. Die benutzerdefinierte Anwendung verwendet den Callback, um die lokal verfügbaren Quelldateien unter Verwendung des in (`rendition.path`) angegebenen Namens in eine Ausgabedarstellungsdatei umzuwandeln. Eine benutzerdefinierte Anwendung muss in `rendition.path` schreiben, um eine Ausgabedarstellung zu erstellen:
+Benutzerdefinierter Code muss nur einen Callback bereitstellen, der die lokal verfügbare Quelldatei (`source.path`) akzeptiert. `rendition.path` ist der Speicherort, an dem das Endergebnis einer Asset-Verarbeitungsanfrage platziert werden soll. Das benutzerdefinierte Programm verwendet den Callback, um die lokal verfügbaren Quelldateien unter Verwendung des in (`rendition.path`) angegebenen Namens in eine Ausgabedarstellungsdatei umzuwandeln. Ein benutzerdefiniertes Programm muss in `rendition.path` schreiben, um eine Ausgabedarstellung zu erstellen:
 
 ```javascript
 const { worker } = require('@adobe/asset-compute-sdk');
@@ -97,31 +97,31 @@ exports.main = worker(async (source, rendition) => {
 
 ### Herunterladen von Quelldateien {#download-source}
 
-Eine benutzerdefinierte Anwendung behandelt nur lokale Dateien. Das Herunterladen der Quelldatei erfolgt über das [Asset Compute-SDK](https://github.com/adobe/asset-compute-sdk#adobe-asset-compute-worker-sdk).
+Ein benutzerdefiniertes Programm behandelt nur lokale Dateien. Das Herunterladen der Quelldatei erfolgt über das [Asset Compute-SDK](https://github.com/adobe/asset-compute-sdk#adobe-asset-compute-worker-sdk).
 
 ### Erstellen von Ausgabedarstellungen {#rendition-creation}
 
 Das SDK ruft für jede Ausgabedarstellung eine asynchrone [Ausgabedarstellungs-Callback-Funktion](https://github.com/adobe/asset-compute-sdk#rendition-callback-for-worker-required) auf.
 
-Die Callback-Funktion hat Zugriff auf die [Quell](https://github.com/adobe/asset-compute-sdk#source)- und [Ausgabedarstellungsobjekte](https://github.com/adobe/asset-compute-sdk#rendition). `source.path` ist bereits vorhanden und ist der Pfad zur lokalen Kopie der Quelldatei. `rendition.path` ist der Pfad, in dem die verarbeitete Ausgabedarstellung gespeichert werden muss. Sofern das [Flag disableSourceDownload](https://github.com/adobe/asset-compute-sdk#worker-options-optional) nicht gesetzt ist, muss die Anwendung den genauen Pfad `rendition.path` verwenden. Andernfalls kann das SDK die Ausgabedarstellungsdatei nicht finden oder identifizieren und schlägt fehl.
+Die Callback-Funktion hat Zugriff auf die [Quell](https://github.com/adobe/asset-compute-sdk#source)- und [Ausgabedarstellungsobjekte](https://github.com/adobe/asset-compute-sdk#rendition). `source.path` ist bereits vorhanden und ist der Pfad zur lokalen Kopie der Quelldatei. `rendition.path` ist der Pfad, in dem die verarbeitete Ausgabedarstellung gespeichert werden muss. Sofern das [Flag disableSourceDownload](https://github.com/adobe/asset-compute-sdk#worker-options-optional) nicht gesetzt ist, muss ds Programm den genauen Pfad `rendition.path` verwenden. Andernfalls kann das SDK die Ausgabedarstellungsdatei nicht finden oder identifizieren und schlägt fehl.
 
-Die übermäßige Vereinfachung des Beispiels dient dazu, die Anatomie einer benutzerdefinierten Anwendung zu illustrieren und sich darauf zu konzentrieren. Die Anwendung kopiert die Quelldatei einfach in das Ausgabedarstellungsziel.
+Die übermäßige Vereinfachung des Beispiels dient dazu, die Anatomie eines benutzerdefinierten Programms zu illustrieren und sich darauf zu konzentrieren. Das Programm kopiert die Quelldatei einfach in das Ausgabedarstellungsziel.
 
 Weitere Informationen zu den Callback-Parametern für Ausgabedarstellungen finden Sie unter [Asset Compute-SDK-API](https://github.com/adobe/asset-compute-sdk#api-details).
 
 ### Hochladen von Ausgabedarstellungen {#upload-rendition}
 
-Nachdem jede Ausgabedarstellung erstellt und in einer Datei mit dem in `rendition.path` angegebenen Pfad gespeichert wurde, lädt das [Asset Compute-SDK](https://github.com/adobe/asset-compute-sdk#adobe-asset-compute-worker-sdk) jede Ausgabedarstellung in einen Cloud-Speicher hoch (entweder AWS oder Azure). Eine benutzerdefinierte Anwendung erhält genau dann mehrere Ausgabedarstellungen gleichzeitig, wenn die eingehende Anfrage mehrere Ausgabedarstellungen enthält, die auf dieselbe Anwendungs-URL verweisen. Der Upload in den Cloud-Speicher erfolgt nach jeder Ausgabedarstellung und vor dem Ausführen des Callback für die nächste Ausgabedarstellung.
+Nachdem jede Ausgabedarstellung erstellt und in einer Datei mit dem in `rendition.path` angegebenen Pfad gespeichert wurde, lädt das [Asset Compute-SDK](https://github.com/adobe/asset-compute-sdk#adobe-asset-compute-worker-sdk) jede Ausgabedarstellung in einen Cloud-Speicher hoch (entweder AWS oder Azure). Ein benutzerdefiniertes Programm erhält genau dann mehrere Ausgabedarstellungen gleichzeitig, wenn die eingehende Anfrage mehrere Ausgabedarstellungen enthält, die auf dieselbe Programm-URL verweisen. Der Upload in den Cloud-Speicher erfolgt nach jeder Ausgabedarstellung und vor dem Ausführen des Callback für die nächste Ausgabedarstellung.
 
 Das Verhalten von `batchWorker()` unterscheidet sich, da sie tatsächlich alle Ausgabedarstellungen verarbeitet und diese erst hochlädt, nachdem alle verarbeitet wurden.
 
 ## [!DNL Adobe I/O] Ereignisse {#aio-events}
 
-Das SDK sendet [!DNL Adobe I/O]-Ereignis für jede Darstellung. Diese Ereignisse sind je nach Ergebnis entweder vom Typ `rendition_created` oder `rendition_failed`. Weitere Informationen zu Ereignissen finden Sie unter [Asynchrone Asset Compute-Ereignisse](api.md#asynchronous-events).
+Das SDK sendet [!DNL Adobe I/O]-Ereignisse für jede Ausgabedarstellung. Diese Ereignisse sind je nach Ergebnis entweder vom Typ `rendition_created` oder `rendition_failed`. Weitere Informationen zu Ereignissen finden Sie unter [Asynchrone Asset Compute-Ereignisse](api.md#asynchronous-events).
 
-## [!DNL Adobe I/O] Ereignis {#receive-aio-events} empfangen
+## [!DNL Adobe I/O]-Ereignisse empfangen {#receive-aio-events}
 
-Der Client fragt das [[!DNL Adobe I/O] Ereignisses-Protokoll](https://www.adobe.io/apis/experienceplatform/events/ioeventsapi.html#/Journaling) gemäß seiner Verbrauchslogik ab. Die anfängliche Journal-URL ist die in der `/register`-API-Antwort angegebene. Ereignisse können mit der in den Ereignissen vorhandenen `requestId` identifiziert werden, die mit der in `/process` zurückgegebenen übereinstimmt. Jede Ausgabedarstellung verfügt über ein separates Ereignis, das gesendet wird, sobald die Ausgabedarstellung hochgeladen wurde (oder fehlgeschlagen ist). Sobald der Client ein passendes Ereignis erhält, kann er die resultierenden Ausgabedarstellungen anzeigen oder anderweitig verarbeiten.
+Der Client fragt das [[!DNL Adobe I/O] -Ereignisjournal](https://www.adobe.io/apis/experienceplatform/events/ioeventsapi.html#/Journaling) gemäß seiner Verbrauchslogik ab. Die anfängliche Journal-URL ist die in der `/register`-API-Antwort angegebene. Ereignisse können mit der in den Ereignissen vorhandenen `requestId` identifiziert werden, die mit der in `/process` zurückgegebenen übereinstimmt. Jede Ausgabedarstellung verfügt über ein separates Ereignis, das gesendet wird, sobald die Ausgabedarstellung hochgeladen wurde (oder fehlgeschlagen ist). Sobald der Client ein passendes Ereignis erhält, kann er die resultierenden Ausgabedarstellungen anzeigen oder anderweitig verarbeiten.
 
 Die JavaScript-Bibliothek [`asset-compute-client`](https://github.com/adobe/asset-compute-client#usage) vereinfacht die Journalabfrage mithilfe der `waitActivation()`-Methode zum Abrufen aller Ereignisse.
 
@@ -141,7 +141,7 @@ await Promise.all(events.map(event => {
 }));
 ```
 
-Weitere Informationen zum Abrufen von Protokoll-Ereignissen finden Sie unter [[!DNL Adobe I/O] Ereignisses-API](https://www.adobe.io/apis/experienceplatform/events/ioeventsapi.html#!adobedocs/adobeio-events/master/events-api-reference.yaml).
+Weitere Informationen zum Abrufen von Journalereignissen finden Sie unter [[!DNL Adobe I/O]  Events-API](https://www.adobe.io/apis/experienceplatform/events/ioeventsapi.html#!adobedocs/adobeio-events/master/events-api-reference.yaml).
 
 <!-- TBD:
 * Illustration of the controls/data flow.
