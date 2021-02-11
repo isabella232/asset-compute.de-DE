@@ -1,11 +1,11 @@
 ---
 title: Entwickeln für  [!DNL Asset Compute Service]
 description: Erstellen Sie benutzerdefinierte Programme mit  [!DNL Asset Compute Service].
-translation-type: ht
-source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
-workflow-type: ht
-source-wordcount: '1562'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 33b72b164faeda2dd425656209790f019ccec96e
+workflow-type: tm+mt
+source-wordcount: '1615'
+ht-degree: 94%
 
 ---
 
@@ -96,11 +96,14 @@ Fügen Sie der ENV-Datei im Stammverzeichnis Ihres Firefly-Projekts die folgende
    ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=
    ```
 
-1. Wenn sich die `console.json`-Datei nicht direkt im Stammverzeichnis Ihrer Firefly-App befindet, fügen Sie den absoluten Pfad zur JSON-Integrationsdatei für die Adobe Developer Console hinzu. Hierbei handelt es sich um dieselbe [`console.json`](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user)-Datei, die Sie in Ihrem Projektarbeitsbereich heruntergeladen haben. Alternativ können Sie auch den Befehl `aio app use <path_to_console_json>` verwenden, anstatt den Pfad zu Ihrer ENV-Datei hinzuzufügen.
+1. Laden Sie die Datei über die Adobe Developer Console herunter. Gehen Sie zum Stammverzeichnis des Projekts und klicken Sie auf &quot;Alle herunterladen&quot; in der oberen rechten Ecke. Die Datei wird mit `<namespace>-<workspace>.json` als Dateiname heruntergeladen. Führen Sie einen der folgenden Schritte aus:
 
-   ```conf
-   ASSET_COMPUTE_INTEGRATION_FILE_PATH=
-   ```
+   * Benennen Sie die Datei als `config.json` um und verschieben Sie sie in den Stammordner Ihres Projekts.
+   * Optional können Sie den absoluten Pfad zur JSON-Integrationsdatei der Adobe Developer Console hinzufügen. Hierbei handelt es sich um dieselbe [`console.json`](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user)-Datei, die Sie in Ihrem Projektarbeitsbereich heruntergeladen haben.
+
+      ```conf
+      ASSET_COMPUTE_INTEGRATION_FILE_PATH=
+      ```
 
 1. Fügen Sie entweder S3- oder Azure-Speicheranmeldeinformationen hinzu. Sie benötigen nur Zugriff auf eine Cloud-Speicherlösung.
 
@@ -116,6 +119,10 @@ Fügen Sie der ENV-Datei im Stammverzeichnis Ihres Firefly-Projekts die folgende
    AZURE_STORAGE_KEY=
    AZURE_STORAGE_CONTAINER_NAME=
    ```
+
+>[!TIP]
+>
+>Die Datei `config.json` enthält Anmeldeinformationen. Fügen Sie innerhalb des Projekts die JSON-Datei zu Ihrer `.gitignore`-Datei hinzu, um die Freigabe zu verhindern. Dasselbe gilt für die .env- und .aio-Dateien.
 
 ## Ausführen des Programms {#run-custom-application}
 
