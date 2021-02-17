@@ -1,11 +1,11 @@
 ---
 title: Entwickeln für  [!DNL Asset Compute Service]
 description: Erstellen Sie benutzerdefinierte Programme mit  [!DNL Asset Compute Service].
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 33b72b164faeda2dd425656209790f019ccec96e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1615'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -96,10 +96,10 @@ Fügen Sie der ENV-Datei im Stammverzeichnis Ihres Firefly-Projekts die folgende
    ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=
    ```
 
-1. Laden Sie die Datei über die Adobe Developer Console herunter. Gehen Sie zum Stammverzeichnis des Projekts und klicken Sie auf &quot;Alle herunterladen&quot; in der oberen rechten Ecke. Die Datei wird mit `<namespace>-<workspace>.json` als Dateiname heruntergeladen. Führen Sie einen der folgenden Schritte aus:
+1. Laden Sie die Datei über die Adobe Developer Console herunter. Gehen Sie zum Stammverzeichnis des Projekts und klicken Sie in der rechten oberen Ecke auf „Alle herunterladen“. Die Datei wird mit `<namespace>-<workspace>.json` als Dateiname heruntergeladen. Führen Sie einen der folgenden Schritte aus:
 
-   * Benennen Sie die Datei als `config.json` um und verschieben Sie sie in den Stammordner Ihres Projekts.
-   * Optional können Sie den absoluten Pfad zur JSON-Integrationsdatei der Adobe Developer Console hinzufügen. Hierbei handelt es sich um dieselbe [`console.json`](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user)-Datei, die Sie in Ihrem Projektarbeitsbereich heruntergeladen haben.
+   * Benennen Sie die Datei in `config.json` um und verschieben Sie sie in den Stammordner Ihres Projekts.
+   * Optional können Sie den absoluten Pfad der JSON-Datei für die Adobe Developer Console-Integration hinzufügen. Hierbei handelt es sich um dieselbe Datei [`console.json`](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user), die Sie in Ihrem Projektarbeitsbereich heruntergeladen haben.
 
       ```conf
       ASSET_COMPUTE_INTEGRATION_FILE_PATH=
@@ -122,7 +122,7 @@ Fügen Sie der ENV-Datei im Stammverzeichnis Ihres Firefly-Projekts die folgende
 
 >[!TIP]
 >
->Die Datei `config.json` enthält Anmeldeinformationen. Fügen Sie innerhalb des Projekts die JSON-Datei zu Ihrer `.gitignore`-Datei hinzu, um die Freigabe zu verhindern. Dasselbe gilt für die .env- und .aio-Dateien.
+>Die Datei `config.json` enthält Anmeldeinformationen. Fügen Sie die JSON-Datei innerhalb des Projekts zu Ihrer Datei `.gitignore` hinzu, um die Freigabe zu verhindern. Dasselbe gilt für die .env- und .aio-Dateien.
 
 ## Ausführen des Programms {#run-custom-application}
 
