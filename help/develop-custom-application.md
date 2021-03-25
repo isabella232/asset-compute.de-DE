@@ -1,9 +1,9 @@
 ---
 title: Entwickeln für  [!DNL Asset Compute Service]
 description: Erstellen Sie benutzerdefinierte Programme mit  [!DNL Asset Compute Service].
-translation-type: ht
-source-git-commit: 33b72b164faeda2dd425656209790f019ccec96e
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 7ae47fdb7ff91e1388d2037d90abe35fe5218216
+workflow-type: tm+mt
 source-wordcount: '1615'
 ht-degree: 100%
 
@@ -98,7 +98,7 @@ Fügen Sie der ENV-Datei im Stammverzeichnis Ihres Firefly-Projekts die folgende
 
 1. Laden Sie die Datei über die Adobe Developer Console herunter. Gehen Sie zum Stammverzeichnis des Projekts und klicken Sie in der rechten oberen Ecke auf „Alle herunterladen“. Die Datei wird mit `<namespace>-<workspace>.json` als Dateiname heruntergeladen. Führen Sie einen der folgenden Schritte aus:
 
-   * Benennen Sie die Datei in `config.json` um und verschieben Sie sie in den Stammordner Ihres Projekts.
+   * Benennen Sie die Datei in `console.json` um und verschieben Sie sie in den Stammordner Ihres Projekts.
    * Optional können Sie den absoluten Pfad der JSON-Datei für die Adobe Developer Console-Integration hinzufügen. Hierbei handelt es sich um dieselbe Datei [`console.json`](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user), die Sie in Ihrem Projektarbeitsbereich heruntergeladen haben.
 
       ```conf
