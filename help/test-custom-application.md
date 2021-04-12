@@ -1,14 +1,14 @@
 ---
 title: Testen und Debuggen von benutzerdefinierten  [!DNL Asset Compute Service] -Programmen
 description: Testen und Debuggen von benutzerdefinierten  [!DNL Asset Compute Service] -Programmen.
-translation-type: ht
-source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
-workflow-type: ht
-source-wordcount: '787'
-ht-degree: 100%
+exl-id: c2534904-0a07-465e-acea-3cb578d3bc08
+translation-type: tm+mt
+source-git-commit: 9bc1534671c81a05798f98ae556d348bc771d975
+workflow-type: tm+mt
+source-wordcount: '782'
+ht-degree: 96%
 
 ---
-
 
 # Testen und Debuggen eines benutzerdefinierten Programms {#test-debug-custom-worker}
 
@@ -21,7 +21,7 @@ $ aio app test
 ```
 
 <!-- TBD
-To run tests for a custom application, run `adobe-asset-compute test-worker` command in the root of the custom application application application.
+To run tests for a custom application, run `aio asset-compute test-worker` command at the root of the custom application application.
 
 Document interactively running `adobe-asset-compute` commands `test-worker` and `run-worker`.
 -->
@@ -173,8 +173,8 @@ Viele dieser Schritte werden in der Regel von `aio` standardmäßig automatisier
 1. Fügen Sie Folgendes zu Ihrer JSON-Datei mit den Benutzereinstellungen hinzu. Damit wird weiterhin der alte VS-Code-Debugger verwendet, da der neue [einige Probleme](https://github.com/apache/openwhisk-wskdebug/issues/74) mit wskdebug hat: `"debug.javascript.usePreview": false`.
 1. Schließen Sie alle Instanzen von Apps, die über `aio app run` geöffnet sind.
 1. Stellen Sie den neuesten Code mit `aio app deploy` bereit.
-1. Führen Sie nur das Asset Compute-Entwickler-Tool mit `npx adobe-asset-compute devtool` aus. Lassen Sie es geöffnet.
-1. Fügen Sie im VS-Code-Editor die folgende Debug-Konfiguration zu Ihrer `launch.json` hinzu:
+1. Führen Sie nur das Asset compute Developer Tool mit `aio asset-compute devtool` aus. Lassen Sie es geöffnet.
+1. Fügen Sie im VS-Code-Editor Ihrer `launch.json` die folgende Debugkonfiguration hinzu:
 
    ```json
    {
@@ -195,7 +195,7 @@ Viele dieser Schritte werden in der Regel von `aio` standardmäßig automatisier
    }
    ```
 
-   Rufen Sie den Aktionsnamen (ACTION NAME) aus der Ausgabe von `aio app deploy` ab. Er sieht so aus: `Your deployed actions -> TypicalCoffeeCat-0.0.1/__secured_worker`.
+   Rufen Sie das `ACTION NAME` aus der Ausgabe von `aio app deploy` ab.
 
 1. Wählen Sie `wskdebug worker` in der Ausführungs-/Debug-Konfiguration aus und klicken Sie auf das Wiedergabesymbol. Warten Sie auf den Start, bis die Meldung **[!UICONTROL Ready for activations]** im Fenster der **[!UICONTROL Debug Console]** angezeigt wird.
 
