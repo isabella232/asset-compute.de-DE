@@ -3,9 +3,9 @@ title: Testen und Debuggen von benutzerdefinierten  [!DNL Asset Compute Service]
 description: Testen und Debuggen von benutzerdefinierten  [!DNL Asset Compute Service] -Programmen.
 exl-id: c2534904-0a07-465e-acea-3cb578d3bc08
 source-git-commit: ebc0d717b3f6fc4518f4a79cd44ebe8fdcf9ec6a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '811'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -135,11 +135,11 @@ tests/
 
 ### Testen erwarteter Fehler {#test-unexpected-errors}
 
-Fehlertestfälle sollten keine erwartete `rendition.*`-Datei enthalten und die erwarteten Werte `errorReason` in der `params.json`-Datei definieren.
+Fehlertestfälle sollten keine erwartete `rendition.*`-Datei enthalten und den erwarteten `errorReason` in der `params.json`-Datei definieren.
 
 >[!NOTE]
 >
->Wenn ein Testfall keine erwartete `rendition.*`-Datei enthält und nicht die erwartete `errorReason`-Datei innerhalb der `params.json`-Datei definiert, wird davon ausgegangen, dass es sich um einen Fehlerfall mit einem `errorReason` handelt.
+>Wenn ein Testfall keine erwartete `rendition.*`-Datei enthält und nicht den erwarteten `errorReason` in der `params.json`-Datei definiert, wird davon ausgegangen, dass es sich um einen Fehlerfall mit einem beliebigen `errorReason` handelt.
 
 Struktur von Fehlertestfällen:
 
