@@ -10,12 +10,11 @@ breadcrumb-title: Handbuch zu Asset Compute Service
 breadcrumb-url: /docs/asset-compute/using/home.html
 solution-title: AEM Assets
 solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=de
-getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=de
+getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html
 tutorials-title: AEM-Tutorials
 tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=de
-translation-type: ht
 source-git-commit: 3f306f2006ba1520ea5266a93a7912720f96b412
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 100%
 
@@ -25,7 +24,7 @@ ht-degree: 100%
 # Benutzerhandbuch zu Asset Compute Service {#using}
 
 + [Benutzerhandbuch zu Asset Compute Service](home.md)
-+ [Übersicht](introduction.md)
++ [Überblick](introduction.md)
 + [Versionshinweise](release-notes.md)
 + [Unterstützte Dateiformate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=de)
 + [Architektur](architecture.md)
