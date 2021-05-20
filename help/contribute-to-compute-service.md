@@ -1,14 +1,13 @@
 ---
 title: Tragen Sie zu den Open-Source-Komponenten von  [!DNL Asset Compute Service] bei
 description: Tragen Sie zu den Open-Source-Komponenten von  [!DNL Asset Compute Service] bei.
-translation-type: ht
-source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
-workflow-type: ht
+exl-id: 99a4b4d9-4709-4f8e-9f8c-96ba1783c4c3
+source-git-commit: 187a788d036f33b361a0fd1ca34a854daeb4a101
+workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 100%
 
 ---
-
 
 # Beitragen {#contribute}
 
