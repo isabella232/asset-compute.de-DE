@@ -1,14 +1,13 @@
 ---
 title: Architektur von  [!DNL Asset Compute Service]
 description: So arbeiten  [!DNL Asset Compute Service] -API, Programme und SDK zusammen, um einen Cloud-nativen Asset-Verarbeitungs-Service bereitzustellen.
-translation-type: ht
-source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
-workflow-type: ht
+exl-id: 658ee4b7-5eb1-4109-b263-1b7d705e49d6
+source-git-commit: 187a788d036f33b361a0fd1ca34a854daeb4a101
+workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 100%
 
 ---
-
 
 # Architektur von [!DNL Asset Compute Service] {#overview}
 
