@@ -1,14 +1,13 @@
 ---
 title: '[!DNL Asset Compute Service]-HTTP-API'
 description: '[!DNL Asset Compute Service]-HTTP-API zum Erstellen benutzerdefinierter Programme.'
-translation-type: ht
-source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
-workflow-type: ht
+exl-id: 4b63fdf9-9c0d-4af7-839d-a95e07509750
+source-git-commit: 187a788d036f33b361a0fd1ca34a854daeb4a101
+workflow-type: tm+mt
 source-wordcount: '2906'
 ht-degree: 100%
 
 ---
-
 
 # [!DNL Asset Compute Service]-HTTP-API {#asset-compute-http-api}
 
@@ -183,7 +182,7 @@ Die Status-Codes sind:
    }
    ```
 
-* **429 Zu viele Anfragen**: Tritt auf, wenn das System überlastet ist. Clients sollten es mit einem [exponentiellen Backoff](https://de.wikipedia.org/wiki/Binary_Exponential_Backoff) erneut versuchen. Der Hauptteil ist leer.
+* **429 Zu viele Anfragen**: Tritt auf, wenn das System überlastet ist. Clients sollten es mit einem [exponentiellen Backoff](https://en.wikipedia.org/wiki/Exponential_backoff) erneut versuchen. Der Hauptteil ist leer.
 
 * **4xx-Fehler**: Tritt auf, wenn ein anderer Client-Fehler aufgetreten ist und die Aufhebung der Registrierung fehlgeschlagen ist. Normalerweise wird eine JSON-Antwort wie diese zurückgegeben, obwohl dies nicht für alle Fehler garantiert ist:
 
@@ -322,7 +321,7 @@ Status-Codes:
 
 * **401 Nicht autorisiert**: Wenn die Anfrage keine gültige [Authentifizierung](#authentication-and-authorization) aufweist. Ein Beispiel könnte ein ungültiges Zugriffs-Token oder ein ungültiger API-Schlüssel sein.
 * **403 Verboten**: Wenn die Anfrage keine gültige [Autorisierung](#authentication-and-authorization) aufweist. Beispielsweise könnte ein gültiges Zugriffs-Token vorliegen, aber das Adobe Developer Console-Projekt (technisches Konto) hat nicht alle erforderlichen Services abonniert.
-* **429 Zu viele Anfragen**: Wenn das System durch diesen Client oder allgemein überlastet ist. Die Clients können es mit einem [exponentiellen Backoff](https://de.wikipedia.org/wiki/Binary_Exponential_Backoff) erneut versuchen. Der Hauptteil ist leer.
+* **429 Zu viele Anfragen**: Wenn das System durch diesen Client oder allgemein überlastet ist. Die Clients können es mit einem [exponentiellen Backoff](https://en.wikipedia.org/wiki/Exponential_backoff) erneut versuchen. Der Hauptteil ist leer.
 * **4xx-Fehler**: Wenn ein anderer Client-Fehler aufgetreten ist. Normalerweise wird eine JSON-Antwort wie diese zurückgegeben, obwohl dies nicht für alle Fehler garantiert ist:
 
    ```json
@@ -343,7 +342,7 @@ Status-Codes:
    }
    ```
 
-Die meisten Clients neigen wahrscheinlich dazu, genau dieselbe Anfrage mit [exponentiellem Backoff](https://de.wikipedia.org/wiki/Binary_Exponential_Backoff) bei Fehlern zu wiederholen, mit *Ausnahme* von Konfigurationsproblemen wie 401 oder 403 oder ungültigen Anfragen wie 400. Abgesehen von der regulären Ratenbegrenzung über 429-Antworten kann ein vorübergehender Service-Ausfall oder eine vorübergehende Service-Beschränkung zu 5xx-Fehlern führen. Es wäre dann ratsam, es nach einer gewissen Zeit erneut zu versuchen.
+Die meisten Clients neigen wahrscheinlich dazu, genau dieselbe Anfrage mit [exponentiellem Backoff](https://en.wikipedia.org/wiki/Exponential_backoff) bei Fehlern zu wiederholen, mit *Ausnahme* von Konfigurationsproblemen wie 401 oder 403 oder ungültigen Anfragen wie 400. Abgesehen von der regulären Ratenbegrenzung über 429-Antworten kann ein vorübergehender Service-Ausfall oder eine vorübergehende Service-Beschränkung zu 5xx-Fehlern führen. Es wäre dann ratsam, es nach einer gewissen Zeit erneut zu versuchen.
 
 Alle JSON-Antworten (sofern vorhanden) enthalten die `requestId`, die dem Wert der `X-Request-Id`-Kopfzeile entspricht. Es wird empfohlen, aus der Kopfzeile zu lesen, da diese immer vorhanden ist. Die `requestId` wird auch in allen Ereignissen, die mit Verarbeitungsanfragen zusammenhängen, als `requestId` zurückgegeben. Kunden dürfen keine Annahmen über das Format dieser Zeichenfolge treffen, es handelt sich um eine undurchsichtige Zeichenfolgenkennung.
 
@@ -382,7 +381,7 @@ Dies sind die verfügbaren Optionen für das `renditions`-Array in [/process](#p
 
 ### Ausgabedarstellungsspezifische Felder {#rendition-specific-fields}
 
-Eine Liste der derzeit unterstützten Dateiformate finden Sie unter [Unterstützte Dateiformate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=de).
+Eine Liste der derzeit unterstützten Dateiformate finden Sie unter [Unterstützte Dateiformate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html).
 
 | Name | Typ | Beschreibung | Beispiel |
 |-------------------|----------|-------------|---------|
@@ -436,7 +435,7 @@ Der [!DNL Adobe I/O]-Ereignistyp für alle Ereignisse von [!DNL Asset Compute Se
 | `errorReason` | `string` | `rendition_failed` | [Grund](#error-reasons) für den einen Fehler bei der Ausgabedarstellung, falls vorhanden. |
 | `errorMessage` | `string` | `rendition_failed` | Text mit detaillierteren Informationen zu einem eventuellen Fehler bei der Ausgabedarstellung. |
 
-### Metadaten {#metadata}
+### Metadaten   {#metadata}
 
 | Eigenschaft | Beschreibung |
 |--------|-------------|
