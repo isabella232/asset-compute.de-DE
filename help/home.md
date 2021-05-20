@@ -1,14 +1,13 @@
 ---
 title: '[!DNL Adobe Asset Compute Service]-Benutzerhandbuch'
 description: In dieser Dokumentation werden Aufgaben, wie z. B. die Einführung, Entwicklung, Verwaltung, Bereitstellung und Fehlerbehebung von benutzerdefiniertem Code, in  [!DNL Asset Compute Service]  behandelt.
-translation-type: ht
-source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
-workflow-type: ht
+exl-id: 5acf87d1-a391-4802-bfce-e367fc8564df
+source-git-commit: 187a788d036f33b361a0fd1ca34a854daeb4a101
+workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 100%
 
 ---
-
 
 # Info [!DNL Asset Compute Service]
 
