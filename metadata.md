@@ -1,20 +1,19 @@
 ---
 cloud: Experience Cloud
-solution-title: Asset Compute Service
+solution-title: Experience Manager, Experience Manager als Cloud Service, Experience Manager-Assets
 solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=de
 solution-icon: assets/experience-cloud-logo-24.png
 getting-started-title: Erste Schritte
-getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=de
+getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html
 tutorials-title: Tutorials
 tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=de
 mini-toc-levels: 2
 git-repo: https://git.corp.adobe.com/AdobeDocs/asset-compute.de-DE
 index: y
-translation-type: ht
-source-git-commit: 1cf682be00c984fa523963f5d4358575efffb50b
-workflow-type: ht
-source-wordcount: '154'
-ht-degree: 100%
+source-git-commit: 5f987f28fdf8d074ceb6226d21a5f64aad67bf04
+workflow-type: tm+mt
+source-wordcount: '162'
+ht-degree: 93%
 
 ---
 
@@ -35,7 +34,7 @@ Die metadata.md-Datei enthält Metadaten auf Repo-Ebene, die über die TOC.md-Da
 
 In der Datei TOC.md
 
-| metadata | Funktion |
+| Metadaten | Funktion |
 |--- |--- |
 | user-guide-title | Wird in der Artikelkopfzeile als Link verwendet |
 | user-guide-url | Öffnet die helpx-Hub-Seite |
