@@ -2,10 +2,10 @@
 title: '[!DNL Asset Compute Service]-HTTP-API'
 description: '[!DNL Asset Compute Service]-HTTP-API zum Erstellen benutzerdefinierter Programme.'
 exl-id: 4b63fdf9-9c0d-4af7-839d-a95e07509750
-source-git-commit: 187a788d036f33b361a0fd1ca34a854daeb4a101
+source-git-commit: 780ddb7e119a28a1f8cc555ed2f1d3cee543b73f
 workflow-type: tm+mt
 source-wordcount: '2906'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -376,7 +376,7 @@ Dies sind die verfügbaren Optionen für das `renditions`-Array in [/process](#p
 | `fmt` | `string` | Das Zielformat der Ausgabedarstellung kann auch `text` zum Extrahieren von Text und `xmp` zum Extrahieren von XMP-Metadaten als XML sein. Siehe [Unterstützte Formate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=de). | `png` |
 | `worker` | `string` | URL eines [benutzerdefinierten Programms](develop-custom-application.md). Muss eine `https://`-URL sein. Wenn dieses Feld vorhanden ist, wird die Ausgabedarstellung von einem benutzerdefinierten Programm erstellt. Jedes andere festgelegte Ausgabedarstellungsfeld wird dann im benutzerdefinierten Programm verwendet. | `"https://1234.adobeioruntime.net`<br>`/api/v1/web`<br>`/example-custom-worker-master/worker"` |
 | `target` | `string` | URL, auf die die generierte Ausgabedarstellung mit HTTP-PUT hochgeladen werden soll. | `http://w.com/img.jpg` |
-| `target` | `object` | Mehrteilige vorsignierte URL-Upload-Informationen für die generierte Ausgabedarstellung. Dies gilt für den [direkten binären AEM-/Oak-Upload](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) mit diesem [mehrteiligen Upload-Verhalten](http://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html).<br>Felder:<ul><li>`urls`: Array von Zeichenfolgen, eine für jede vorsignierte Teil-URL</li><li>`minPartSize`: die Mindestgröße für eine Teil-URL</li><li>`maxPartSize`: die Maximalgröße für eine Teil-URL</li></ul> | `{ "urls": [ "https://part1...", "https://part2..." ], "minPartSize": 10000, "maxPartSize": 100000 }` |
+| `target` | `object` | Mehrteilige vorsignierte URL-Upload-Informationen für die generierte Ausgabedarstellung. Dies gilt für den [direkten binären AEM-/Oak-Upload](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) mit diesem [mehrteiligen Upload-Verhalten](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html).<br>Felder:<ul><li>`urls`: Array von Zeichenfolgen, eine für jede vorsignierte Teil-URL</li><li>`minPartSize`: die Mindestgröße für eine Teil-URL</li><li>`maxPartSize`: die Maximalgröße für eine Teil-URL</li></ul> | `{ "urls": [ "https://part1...", "https://part2..." ], "minPartSize": 10000, "maxPartSize": 100000 }` |
 | `userData` | `object` | Optionaler reservierter Speicherplatz, der vom Client gesteuert und unverändert an Ausgabedarstellungsereignisse weitergeleitet wird. Ermöglicht Clients das Hinzufügen benutzerdefinierter Informationen zum Identifizieren von Ausgabedarstellungsereignissen. Darf in benutzerdefinierten Programmen nicht geändert oder verwendet werden, da Clients ihn jederzeit ändern können. | `{ ... }` |
 
 ### Ausgabedarstellungsspezifische Felder {#rendition-specific-fields}
@@ -435,7 +435,7 @@ Der [!DNL Adobe I/O]-Ereignistyp für alle Ereignisse von [!DNL Asset Compute Se
 | `errorReason` | `string` | `rendition_failed` | [Grund](#error-reasons) für den einen Fehler bei der Ausgabedarstellung, falls vorhanden. |
 | `errorMessage` | `string` | `rendition_failed` | Text mit detaillierteren Informationen zu einem eventuellen Fehler bei der Ausgabedarstellung. |
 
-### Metadaten   {#metadata}
+### Metadaten {#metadata}
 
 | Eigenschaft | Beschreibung |
 |--------|-------------|
