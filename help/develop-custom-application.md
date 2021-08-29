@@ -2,10 +2,10 @@
 title: Entwickeln für  [!DNL Asset Compute Service]
 description: Erstellen Sie benutzerdefinierte Programme mit  [!DNL Asset Compute Service].
 exl-id: a0c59752-564b-4bb6-9833-ab7c58a7f38e
-source-git-commit: 187a788d036f33b361a0fd1ca34a854daeb4a101
+source-git-commit: eed9da4b20fe37a4e44ba270c197505b50cfe77f
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 100%
+source-wordcount: '1605'
+ht-degree: 97%
 
 ---
 
@@ -21,11 +21,11 @@ Bevor Sie mit der Entwicklung eines benutzerdefinierten Programms beginnen:
 
 Stellen Sie sicher, dass [[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli) lokal installiert ist.
 
-1. [Erstellen Sie eine Firefly-App](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#4-bootstrapping-new-app-using-the-cli), um ein benutzerdefiniertes Programm zu erstellen. Führen Sie dazu im Terminal `aio app init <app-name>` aus.
+1. [Erstellen Sie eine Firefly-App](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#4-bootstrapping-new-app-using-the-cli), um ein benutzerdefiniertes Programm zu erstellen. Führen Sie dazu im Terminal `aio app init <app-name>` aus.
 
-   Wenn Sie sich noch nicht angemeldet haben, fordert Sie dieser Befehl in einem Browser auf, sich mit Ihrer Adobe ID bei der [Adobe Developer Console](https://console.adobe.io/) anzumelden. Weitere Informationen zum Anmelden von der CLI finden Sie [hier](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#3-signing-in-from-cli).
+   Wenn Sie sich noch nicht angemeldet haben, fordert Sie dieser Befehl in einem Browser auf, sich mit Ihrer Adobe ID bei der [Adobe Developer Console](https://console.adobe.io/) anzumelden. Weitere Informationen zum Anmelden von der CLI finden Sie [hier](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#3-signing-in-from-cli).
 
-   Adobe empfiehlt, dass Sie sich anmelden. Sollten Sie Probleme haben, befolgen Sie die Anweisungen [zum Erstellen einer App, ohne sich anzumelden](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user).
+   Adobe empfiehlt, dass Sie sich anmelden. Sollten Sie Probleme haben, befolgen Sie die Anweisungen [zum Erstellen einer App, ohne sich anzumelden](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user).
 
 1. Befolgen Sie nach dem Anmelden die Anweisungen in der CLI und wählen Sie die Parameter `Organization`, `Project` und `Workspace` für das Programm aus. Wählen Sie das Projekt und den Arbeitsbereich aus, die Sie beim [Einrichten der Umgebung](setup-environment.md) erstellt haben.
 
@@ -60,7 +60,7 @@ Stellen Sie sicher, dass [[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli
 
 1. Befolgen Sie die restlichen Anweisungen und öffnen Sie das neue Programm in Visual Studio Code (oder Ihrem bevorzugten Code-Editor). Sie enthält die Strukturvorlage und den Beispiel-Code für ein benutzerdefiniertes Programm.
 
-   Hier finden Sie weitere Informationen zu den [Hauptkomponenten einer Firefly-App](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application).
+   Hier finden Sie weitere Informationen zu den [Hauptkomponenten einer Firefly-App](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#5-anatomy-of-a-project-firefly-application).
 
    Das Vorlagenprogramm nutzt unser [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk#asset-compute-sdk) für das Hochladen, Herunterladen und Orchestrieren von Programmdarstellungen, sodass die Entwickler nur die benutzerdefinierte Programmlogik implementieren müssen. Innerhalb des Ordners `actions/<worker-name>` befindet sich die Datei `index.js`, in der der benutzerdefinierte Programm-Code eingefügt werden kann.
 
@@ -98,7 +98,7 @@ Fügen Sie der ENV-Datei im Stammverzeichnis Ihres Firefly-Projekts die folgende
 1. Laden Sie die Datei über die Adobe Developer Console herunter. Gehen Sie zum Stammverzeichnis des Projekts und klicken Sie in der rechten oberen Ecke auf „Alle herunterladen“. Die Datei wird mit `<namespace>-<workspace>.json` als Dateiname heruntergeladen. Führen Sie einen der folgenden Schritte aus:
 
    * Benennen Sie die Datei in `console.json` um und verschieben Sie sie in den Stammordner Ihres Projekts.
-   * Optional können Sie den absoluten Pfad der JSON-Datei für die Adobe Developer Console-Integration hinzufügen. Hierbei handelt es sich um dieselbe Datei [`console.json`](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user), die Sie in Ihrem Projektarbeitsbereich heruntergeladen haben.
+   * Optional können Sie den absoluten Pfad der JSON-Datei für die Adobe Developer Console-Integration hinzufügen. Hierbei handelt es sich um dieselbe Datei [`console.json`](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user), die Sie in Ihrem Projektarbeitsbereich heruntergeladen haben.
 
       ```conf
       ASSET_COMPUTE_INTEGRATION_FILE_PATH=

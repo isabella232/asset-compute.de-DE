@@ -2,10 +2,10 @@
 title: Lernen Sie, wie Sie  [!DNL Asset Compute Service] erweitern
 description: Wann und wie die Funktionalität von  [!DNL Asset Compute Service]  für die Verarbeitung benutzerdefinierter Assets erweitert wird.
 exl-id: 3b903364-34cc-44d5-9a03-24a0102cf85d
-source-git-commit: 187a788d036f33b361a0fd1ca34a854daeb4a101
+source-git-commit: eed9da4b20fe37a4e44ba270c197505b50cfe77f
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 100%
+source-wordcount: '254'
+ht-degree: 94%
 
 ---
 
@@ -24,9 +24,9 @@ Bei den benutzerdefinierten Programmen handelt es sich um Headless-[Project Fire
 Stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
 * Auf Ihrem Computer sind die Project Firefly-Tools installiert.
-* Eine [!DNL Experience Cloud]-Organisation. Weitere Informationen finden Sie [hier](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/setup.md#acquire-access-and-credentials).
+* Eine [!DNL Experience Cloud]-Organisation. Weitere Informationen finden Sie [hier](https://www.adobe.io/project-firefly/docs/getting_started/#acquire-access-and-credentials).
 * [!DNL Experience Manager] as a [!DNL Cloud Service] muss für die Experience-Organisation aktiviert sein.
-* Die [!DNL Adobe Experience Cloud]-Organisation ist Teil des Developer Preview-Programms von [!DNL Project Firefly]. Lernen Sie, [wie Sie den Zugriff beantragen](https://github.com/AdobeDocs/project-firefly/blob/master/overview/getting_access.md).
+* Die [!DNL Adobe Experience Cloud]-Organisation ist Teil des Developer Preview-Programms von [!DNL Project Firefly]. Lernen Sie, [wie Sie den Zugriff beantragen](https://www.adobe.io/project-firefly/docs/overview/getting_access/).
 * Stellen Sie für den Entwickler eine Entwicklerrolle oder Administratorberechtigungen in der Organisation sicher.
 * Stellen Sie sicher, dass [[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli) lokal installiert ist.
 
