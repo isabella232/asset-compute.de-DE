@@ -1,11 +1,11 @@
 ---
 title: Legen Sie die erforderliche Entwicklungsumgebung für  [!DNL Asset Compute Service] fest
-description: Einrichten einer Entwicklungsumgebung für  [!DNL Asset Compute Service] , um benutzerdefinierten Code zu erstellen und zu testen.
+description: Einrichten einer Entwicklungsumgebung für [!DNL Asset Compute Service] , um benutzerdefinierten Code zu erstellen und zu testen.
 exl-id: 91c12889-01d8-4757-9bdd-f73c491cd9d5
 source-git-commit: 9404ffcc66a3b6ba206155d1b1a5c16a43e22a39
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '370'
+ht-degree: 96%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Befolgen Sie diese Anforderungen und Anweisungen, um eine Entwicklungsumgebung für [!DNL Asset Compute Service] einzurichten.
 
-1. [Erhalten Sie Zugriff und ](https://www.adobe.io/project-firefly/docs/getting_started/#acquire-access-and-credentials) Berechtigungen für  [!DNL Project Firefly].
+1. [Erhalten Sie Zugriff auf und Anmeldeinformationen](https://www.adobe.io/project-firefly/docs/getting_started/#acquire-access-and-credentials) für [!DNL Project Firefly].
 
 1. [Richten Sie die lokale Umgebung](https://www.adobe.io/project-firefly/docs/getting_started/#local-environment-set-up) und die erforderlichen Tools ein.
 
@@ -33,11 +33,11 @@ Befolgen Sie diese Anforderungen und Anweisungen, um eine Entwicklungsumgebung f
 
 ## Einrichten eines Firefly-Projekts {#create-firefly-project}
 
-1. Stellen Sie die Systemadministrator- oder Entwicklerrolle in der [!DNL Experience Cloud] -Organisation sicher. Dies wird von einem Systemadministrator in der Admin Console [a1/> eingerichtet.](https://adminconsole.adobe.com/overview)
+1. Stellen Sie sicher, dass Sie über die Systemadministrator- oder Entwicklerrolle in der [!DNL Experience Cloud] -Organisation verfügen. Diese wird von einem Systemadministrator in der [Admin Console](https://adminconsole.adobe.com/overview) eingerichtet.
 
-1. Melden Sie sich bei der [Adobe Developer Console](https://console.adobe.io/) an. Stellen Sie sicher, dass Sie Teil derselben [!DNL Experience Cloud] -Organisation sind wie die [!DNL Experience Manager] -Integration mit [!DNL Cloud Service] . Weitere Informationen zur Adobe Developer Console finden Sie in der [Dokumentation zur Console](https://www.adobe.io/apis/experienceplatform/console/docs.html).
+1. Melden Sie sich bei der [Adobe Developer Console](https://console.adobe.io/) an. [!DNL Experience Cloud]Stellen Sie sicher, dass Sie Teil derselben Organisation sind wie die [!DNL Experience Manager] as a [!DNL Cloud Service]-Integration. Weitere Informationen zur Adobe Developer Console finden Sie in der [Dokumentation zur Console](https://www.adobe.io/apis/experienceplatform/console/docs.html).
 
-1. [Erstellen Sie ein Firefly-Projekt](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/getting_started/first_app.md). Klicken Sie auf **[!UICONTROL Create new project]** > **[!UICONTROL Project from Template]**. Wählen Sie „Firefly“ aus. Ein neues Firefly-Projekt mit zwei Arbeitsbereichen wird erstellt: `Production` und `Stage`. Fügen Sie bei Bedarf zusätzliche Arbeitsbereiche hinzu, z. B. `Development`.
+1. [Erstellen Sie ein Firefly-Projekt](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/getting_started/first_app.md). Klicken Sie auf **[!UICONTROL Create new project]** > **[!UICONTROL Project from Template]**. Wählen Sie „Firefly“ aus. Ein neues Firefly-Projekt mit zwei Arbeitsbereichen wird erstellt: `Production` und `Stage`. Fügen Sie bei Bedarf zusätzliche Arbeitsbereiche hinzu, z. B. `Development`.
 
 1. Wählen Sie im Firefly-Projekt einen Arbeitsbereich aus und abonnieren Sie die Services, die für Asset Compute erforderlich sind. Klicken Sie auf **Add to Project** > **API** und fügen Sie die Services `Asset Compute`, `IO Events` und `IO Events Management` hinzu. Beim Hinzufügen der ersten API werden Sie aufgefordert, einen privaten Schlüssel zu erstellen. Speichern Sie diese Informationen auf Ihrem Computer, da Sie diesen Schlüssel zum Testen Ihrer benutzerdefinierten Programme mit dem Entwickler-Tool benötigen.
 
