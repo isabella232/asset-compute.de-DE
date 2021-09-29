@@ -3,9 +3,9 @@ title: Legen Sie die erforderliche Entwicklungsumgebung für  [!DNL Asset Comput
 description: Einrichten einer Entwicklungsumgebung für [!DNL Asset Compute Service] , um benutzerdefinierten Code zu erstellen und zu testen.
 exl-id: 91c12889-01d8-4757-9bdd-f73c491cd9d5
 source-git-commit: 9404ffcc66a3b6ba206155d1b1a5c16a43e22a39
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '370'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Befolgen Sie diese Anforderungen und Anweisungen, um eine Entwicklungsumgebung f
 
 >[!NOTE]
 >
->Verwenden Sie zunächst [!DNL Adobe I/O] CLI v7.1.0 von und verwenden Sie nicht [!DNL Adobe I/O] CLI v8.
+>Verwenden Sie vorerst [!DNL Adobe I/O] CLI 7.1.0 und nicht [!DNL Adobe I/O] CLI 8.
 
 ## Einrichten eines Firefly-Projekts {#create-firefly-project}
 
