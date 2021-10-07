@@ -2,10 +2,10 @@
 title: '[!DNL Adobe Asset Compute Service]-Benutzerhandbuch'
 description: In dieser Dokumentation werden Aufgaben, wie z. B. die Einführung, Entwicklung, Verwaltung, Bereitstellung und Fehlerbehebung von benutzerdefiniertem Code, in  [!DNL Asset Compute Service]  behandelt.
 exl-id: 5acf87d1-a391-4802-bfce-e367fc8564df
-source-git-commit: a2460a0719f8c585ed72e44c904aa0df33301032
+source-git-commit: daa13e422e16f5832ad3275e310bd98aa34f6c2f
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -18,6 +18,8 @@ In dieser Dokumentation werden Themen, wie z. B. die Entwicklung, Verwaltung, Be
 [!DNL Asset Compute Service] unterstützt die Konvertierung vieler Dateiformate und die Nutzung mit vielen Adobe-Services. Weitere Informationen finden Sie in der Liste der [unterstützten Dateiformate und Service-Integrationen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=de).
 
 Hier erhalten Sie eine Übersicht über die [Funktionen der Asset-Microservices, die in  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] verfügbar sind](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=de), und über die Verwendung der Microservices in [!DNL Experience Manager].
+
+Die Erweiterbarkeit von [!DNL Asset Compute Service] wird im Rahmen eines offenen Entwicklungsmodells auf [github.com/adobe](https://github.com/adobe) entwickelt, das Beiträge von Erweiterungsentwicklern begrüßt. Alle Komponenten, die für die Entwicklung, Erstellung, Prüfung und Bereitstellung von benutzerdefinierten Programmen relevant sind, sind Open Source. Erfahren Sie, [wie und wo Sie zu Compute Service beitragen können](contribute-to-compute-service.md).
 
 <!--
 Possible to record the below info here in this landing page to centralize the miscellaneous info about Asset Compute Service?
