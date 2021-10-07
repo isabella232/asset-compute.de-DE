@@ -7,9 +7,9 @@ role: Developer
 user-guide-title: Handbuch zu Asset Compute Service
 user-guide-description: In dieser Dokumentation werden Aufgaben, wie z. B. die Entwicklung, Verwaltung, Bereitstellung und Fehlerbehebung von benutzerdefiniertem Code, in  [!DNL Asset Compute Service]  behandelt.
 breadcrumb-title: Handbuch zu Asset Compute Service
-source-git-commit: c4f224a2ee99e78018a7a3f43ec59907f05ea4ef
+source-git-commit: a2460a0719f8c585ed72e44c904aa0df33301032
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '96'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,6 @@ ht-degree: 100%
 
 + [Benutzerhandbuch zu Asset Compute Service](home.md)
 + [Übersicht](introduction.md)
-+ [Versionshinweise](release-notes.md)
 + [Unterstützte Dateiformate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=de)
 + [Architektur](architecture.md)
 + [API-Referenzen](api.md)

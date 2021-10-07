@@ -2,9 +2,9 @@
 title: Einführung in  [!DNL Asset Compute Service]
 description: '[!DNL Asset Compute Service] ist ein Cloud-nativer Asset-Verarbeitungs-Service, der die Komplexität reduziert und die Skalierbarkeit verbessert.'
 exl-id: f8c89f65-5a94-44f3-aaac-4612ae291101
-source-git-commit: 187a788d036f33b361a0fd1ca34a854daeb4a101
+source-git-commit: a2460a0719f8c585ed72e44c904aa0df33301032
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '307'
 ht-degree: 100%
 
 ---
@@ -47,7 +47,6 @@ Sie können den Webservice [!DNL Asset Compute] verwenden, um Miniaturansichten 
 >* [Übersicht über die Asset-Verarbeitung mit Asset-Microservices in  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=de).
 >* [Dokumentation zu Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html).
 >* [Für die Verarbeitung unterstützte Dateiformate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html).
->* [Versionshinweise zu Asset Compute Service](release-notes.md)
 
 
 <!-- **TBD:**
