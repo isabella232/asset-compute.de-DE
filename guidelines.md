@@ -1,8 +1,8 @@
 ---
 source-git-commit: c0fd9623ad09443a99695352743a165744961758
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '648'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 # Richtlinien für Beiträge zur Dokumentation
@@ -31,7 +31,7 @@ Ausnahmen von dieser Regel sind die Versionshinweise, in denen bekannte Probleme
 
 Alle Ideen, die Sie möglicherweise zur Verbesserung der Dokumentation haben, sind als Beiträge willkommen. Kommentare, Probleme und Pull-Anforderungen sind jedoch nur für *Beiträge* vorgesehen. Sie sind nicht zur Beantwortung Ihrer Fragen über die Verwendung des Produkts, die Implementierung von Projekten oder zur Lösung technischer Probleme gedacht.
 
-Fragen zur Verwendung oder zu technischen Fehlern, die möglicherweise bei Ihnen auftreten, sollten entsprechend dem herkömmlichen Support-Vorgang über das [[!DNL Experience Manager] Kundenunterstützungsportal](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home) gemeldet oder in der [[!DNL Experience Manager] Community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) diskutiert werden.
+Fragen zur Verwendung oder zu technischen Fehlern, die möglicherweise bei Ihnen auftreten, sollten entsprechend dem herkömmlichen Support-Vorgang über das [[!DNL Experience Manager] -Enterprise-Support-Portal](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=de#home) gemeldet oder in der [[!DNL Experience Manager] -Community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) diskutiert werden.
 
 Dokumentationsbeiträge sind kein Ersatz für die Adobe-Kundenunterstützung und Beiträge, die Antworten auf Support-Fragen suchen, werden abgelehnt.
 
