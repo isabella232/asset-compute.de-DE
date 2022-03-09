@@ -1,9 +1,9 @@
 ---
 title: Einführung in  [!DNL Asset Compute Service]
-description: '"[!DNL Asset Compute Service] ist ein Cloud-nativer Asset-Verarbeitungs-Service, der die Komplexität reduziert und die Skalierbarkeit verbessert."'
+description: „[!DNL Asset Compute Service] ist ein Cloud-nativer Service zur Verarbeitung von Medienelementen, der die Komplexität reduziert und die Skalierbarkeit verbessert.“
 exl-id: f8c89f65-5a94-44f3-aaac-4612ae291101
 source-git-commit: 93d3b407c8875888f03bec673d0a677a3205cfbb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '307'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ Entwickler können benutzerdefinierte Asset-Programme (auch als benutzerdefinier
 
 [!DNL Asset Compute Service] unterstützt einige gängige Geschäftsanwendungsfälle wie die grundlegende Bildverarbeitung, Adobe-programmspezifische Konvertierungen und das Erstellen benutzerdefinierter Programme, die komplexe Geschäftsanforderungen koordinieren.
 
-Sie können den Webservice [!DNL Asset Compute] verwenden, um Miniaturansichten für verschiedene Dateitypen und hochwertige Bildwiedergaben für die [unterstützten Dateiformate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=de) zu generieren. Weitere Informationen finden Sie unter [Anwendungsfälle, die von der benutzerdefinierten Konfiguration unterstützt werden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html).
+Sie können den Webservice [!DNL Asset Compute] verwenden, um Miniaturansichten für verschiedene Dateitypen und hochwertige Bildwiedergaben für die [unterstützten Dateiformate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=de) zu generieren. Weitere Informationen finden Sie unter [Anwendungsfälle, die von der benutzerdefinierten Konfiguration unterstützt werden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=de).
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ Sie können den Webservice [!DNL Asset Compute] verwenden, um Miniaturansichten 
 >
 >* [Übersicht über die Asset-Verarbeitung mit Asset-Microservices in  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=de).
 >* [Dokumentation zu Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html).
->* [Für die Verarbeitung unterstützte Dateiformate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html).
+>* [Für die Verarbeitung unterstützte Dateiformate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=de).
 
 
 <!-- **TBD:**
