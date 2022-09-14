@@ -2,10 +2,10 @@
 title: Entwickeln für  [!DNL Asset Compute Service]
 description: Erstellen Sie benutzerdefinierte Programme mit  [!DNL Asset Compute Service].
 exl-id: a0c59752-564b-4bb6-9833-ab7c58a7f38e
-source-git-commit: eed9da4b20fe37a4e44ba270c197505b50cfe77f
-workflow-type: ht
-source-wordcount: '1605'
-ht-degree: 100%
+source-git-commit: a50a3bdb520cbe608c5710716df80ac6e3b486e5
+workflow-type: tm+mt
+source-wordcount: '1618'
+ht-degree: 92%
 
 ---
 
@@ -21,21 +21,23 @@ Bevor Sie mit der Entwicklung eines benutzerdefinierten Programms beginnen:
 
 Stellen Sie sicher, dass [[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli) lokal installiert ist.
 
-1. [Erstellen Sie eine Firefly-App](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#4-bootstrapping-new-app-using-the-cli), um ein benutzerdefiniertes Programm zu erstellen. Führen Sie dazu im Terminal `aio app init <app-name>` aus.
+1. So erstellen Sie ein benutzerdefiniertes Programm: [Erstellen eines App Builder-Projekts](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#4-bootstrapping-new-app-using-the-cli). Führen Sie dazu im Terminal `aio app init <app-name>` aus.
 
    Wenn Sie sich noch nicht angemeldet haben, fordert Sie dieser Befehl in einem Browser auf, sich mit Ihrer Adobe ID bei der [Adobe Developer Console](https://console.adobe.io/) anzumelden. Weitere Informationen zum Anmelden von der CLI finden Sie [hier](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#3-signing-in-from-cli).
 
    Adobe empfiehlt, dass Sie sich anmelden. Sollten Sie Probleme haben, befolgen Sie die Anweisungen [zum Erstellen einer App, ohne sich anzumelden](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user).
 
-1. Befolgen Sie nach dem Anmelden die Anweisungen in der CLI und wählen Sie die Parameter `Organization`, `Project` und `Workspace` für das Programm aus. Wählen Sie das Projekt und den Arbeitsbereich aus, die Sie beim [Einrichten der Umgebung](setup-environment.md) erstellt haben.
+1. Befolgen Sie nach dem Anmelden die Anweisungen in der CLI und wählen Sie die Parameter `Organization`, `Project` und `Workspace` für das Programm aus. Wählen Sie das Projekt und den Arbeitsbereich aus, die Sie beim [Einrichten der Umgebung](setup-environment.md) erstellt haben. Beantworten Sie die Frage `Which extension point(s) do you wish to implement ?` mit `DX Asset Compute Worker`:
 
    ```sh
    $ aio app init <app-name>
    Retrieving information from [!DNL Adobe I/O] Console.
    ? Select Org My Adobe Org
    ? Select Project MyFireflyProject
-   ? Select Workspace myworkspace
-   create console.json
+   ? Which extension point(s) do you wish to implement ? (Press <space> to select, <a>
+   to toggle all, <i> to invert selection)
+   ❯◯ DX Experience Cloud SPA
+   ◯ DX Asset Compute Worker
    ```
 
 1. Wenn `Which Adobe I/O App features do you want to enable for this project?` aufgefordert angezeigt wird, wählen Sie `Actions`. Deaktivieren Sie unbedingt die Option `Web Assets`, da Web-Assets andere Authentifizierungs- und Autorisierungsüberprüfungen verwenden.
@@ -60,7 +62,7 @@ Stellen Sie sicher, dass [[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli
 
 1. Befolgen Sie die restlichen Anweisungen und öffnen Sie das neue Programm in Visual Studio Code (oder Ihrem bevorzugten Code-Editor). Sie enthält die Strukturvorlage und den Beispiel-Code für ein benutzerdefiniertes Programm.
 
-   Hier finden Sie weitere Informationen zu den [Hauptkomponenten einer Firefly-App](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#5-anatomy-of-a-project-firefly-application).
+   Lesen Sie hier über die [Hauptkomponenten einer App Builder-App](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#5-anatomy-of-a-project-firefly-application).
 
    Das Vorlagenprogramm nutzt unser [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk#asset-compute-sdk) für das Hochladen, Herunterladen und Orchestrieren von Programmdarstellungen, sodass die Entwickler nur die benutzerdefinierte Programmlogik implementieren müssen. Innerhalb des Ordners `actions/<worker-name>` befindet sich die Datei `index.js`, in der der benutzerdefinierte Programm-Code eingefügt werden kann.
 
@@ -68,7 +70,7 @@ Beispiele und Ideen für benutzerdefinierte Programme finden Sie unter [Beispiel
 
 ### Hinzufügen von Anmeldeinformationen {#add-credentials}
 
-Während Sie sich beim Erstellen des Programms anmelden, werden die meisten Firefly-Anmeldeinformationen in Ihrer ENV-Datei erfasst. Die Verwendung des Entwickler-Tools erfordert jedoch zusätzliche Anmeldeinformationen.
+Während Sie sich beim Erstellen der Anwendung anmelden, werden die meisten App Builder-Anmeldedaten in Ihrer ENV-Datei erfasst. Die Verwendung des Entwickler-Tools erfordert jedoch zusätzliche Anmeldeinformationen.
 
 <!-- TBD: Check if manual setup of credentials is required.
 Manual set up of credentials is removed from troubleshooting and best practices page. Link was broken.
@@ -87,9 +89,9 @@ Stellen Sie sicher, dass Sie Zugriff auf einen [unterstützten Cloud-Speicher-Co
 
 #### Hinzufügen von Anmeldeinformationen zur ENV-Datei {#add-credentials-env-file}
 
-Fügen Sie der ENV-Datei im Stammverzeichnis Ihres Firefly-Projekts die folgenden Anmeldeinformationen für das Entwickler-Tool hinzu:
+Fügen Sie die folgenden Anmeldeinformationen für das Entwickler-Tool zur ENV-Datei im Stammverzeichnis Ihres App Builder-Projekts hinzu:
 
-1. Fügen Sie den absoluten Pfad zur privaten Schlüsseldatei hinzu, die beim Hinzufügen von Services zu Ihrem Firefly-Projekt erstellt wurde:
+1. Fügen Sie den absoluten Pfad zur privaten Schlüsseldatei hinzu, die beim Hinzufügen von Diensten zu Ihrem App Builder-Projekt erstellt wurde:
 
    ```conf
    ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=
@@ -220,7 +222,7 @@ exports.main = worker(async function (source, rendition) {
 
 ## Unterstützung bei Authentifizierung und Autorisierung {#authentication-authorization-support}
 
-Standardmäßig werden benutzerdefinierte Asset Compute-Programme mit Autorisierungs- und Authentifizierungsprüfungen für Firefly-Programme bereitgestellt. Dies wird aktiviert, indem `require-adobe-auth` in der Datei `manifest.yml` auf `true` gesetzt wird.
+Standardmäßig enthalten benutzerdefinierte Asset compute-Anwendungen Autorisierungs- und Authentifizierungsprüfungen für das App Builder-Projekt. Dies wird aktiviert, indem `require-adobe-auth` in der Datei `manifest.yml` auf `true` gesetzt wird.
 
 ### Zugriff auf andere Adobe-APIs {#access-adobe-apis}
 
@@ -292,6 +294,6 @@ Asset Compute-Programme sind von Natur aus eher an Netzwerk- und Datenträger-E/
 
 Der für einen Aktions-Container verfügbare Speicher wird über `memorySize` in MB angegeben. Derzeit wird hiermit auch festgelegt, wie viel CPU-Zugriff der Container erhält. Vor allem ist dies ein Schlüsselelement der Kosten für die Verwendung von Runtime (größere Container kosten mehr). Verwenden Sie hier einen größeren Wert, wenn Ihre Verarbeitung mehr Speicher oder CPU erfordert. Achten Sie jedoch darauf, keine Ressourcen zu verschwenden, da der Gesamtdurchsatz umso geringer ist, je größer die Container sind.
 
-Darüber hinaus ist es möglich, die Parallelität von Aktionen innerhalb eines Containers mithilfe der Einstellung `concurrency` zu steuern. Dies ist die Anzahl der gleichzeitigen Aktivierungen (derselben Aktion), die ein einzelner Container erhält. In diesem Modell ähnelt der Aktions-Container einem Node.js-Server, der bis zu diesem Grenzwert mehrere gleichzeitige Anfragen empfängt. Wenn nicht festgelegt, ist der Standardwert in Runtime 200, was für kleinere Firefly-Aktionen ideal ist. Für Asset Compute-Programme ist dieser Wert jedoch aufgrund ihrer intensiveren lokalen Verarbeitung und Festplattenaktivität normalerweise zu groß. Einige Programme funktionieren je nach Implementierung möglicherweise auch bei gleichzeitigen Aktivitäten nicht gut. Das Asset Compute-SDK stellt sicher, dass Aktivierungen getrennt werden, indem Dateien in verschiedene eindeutige Ordner geschrieben werden.
+Darüber hinaus ist es möglich, die Parallelität von Aktionen innerhalb eines Containers mithilfe der Einstellung `concurrency` zu steuern. Dies ist die Anzahl der gleichzeitigen Aktivierungen (derselben Aktion), die ein einzelner Container erhält. In diesem Modell ähnelt der Aktions-Container einem Node.js-Server, der bis zu diesem Grenzwert mehrere gleichzeitige Anfragen empfängt. Wenn sie nicht festgelegt ist, ist der Standardwert in Runtime 200. Dies eignet sich hervorragend für kleinere App Builder-Aktionen, ist jedoch aufgrund der intensiveren lokalen Verarbeitung und Festplattenaktivität für Asset compute-Anwendungen normalerweise zu groß. Einige Programme funktionieren je nach Implementierung möglicherweise auch bei gleichzeitigen Aktivitäten nicht gut. Das Asset Compute-SDK stellt sicher, dass Aktivierungen getrennt werden, indem Dateien in verschiedene eindeutige Ordner geschrieben werden.
 
 Testen Sie die Programme, um die optimalen Werte für `concurrency` und `memorySize` zu finden. Größere Container (= höhere Speicherbeschränkung) könnten mehr Parallelität ermöglichen, aber bei geringerem Traffic zu unnötigen Ausgaben führen.

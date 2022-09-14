@@ -2,10 +2,10 @@
 title: Machen Sie sich mit der Funktionsweise eines benutzerdefinierten Programms vertraut
 description: Interne Funktionsweise eines benutzerdefinierten  [!DNL Asset Compute Service] -Programms, um dessen Funktionsweise besser zu verstehen.
 exl-id: a3ee6549-9411-4839-9eff-62947d8f0e42
-source-git-commit: 187a788d036f33b361a0fd1ca34a854daeb4a101
+source-git-commit: 07e87c57e57f18f4d6e34ca8529d5598b0b12f3d
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -68,7 +68,7 @@ Nachfolgend finden Sie eine Beispielanfrage zur Verarbeitung benutzerdefinierter
 }
 ```
 
-[!DNL Asset Compute Service] sendet die Ausgabedarstellungsanfragen für das benutzerdefinierte Programm an das benutzerdefinierte Programm. Es wird ein HTTP-POST an die angegebene Programm-URL verwendet, bei der es sich um die gesicherte Web-Aktions-URL von Project Firefly handelt. Alle Anfragen verwenden das HTTPS-Protokoll, um die Datensicherheit zu maximieren.
+[!DNL Asset Compute Service] sendet die Ausgabedarstellungsanfragen für das benutzerdefinierte Programm an das benutzerdefinierte Programm. Es wird eine HTTP-POST zur bereitgestellten Anwendungs-URL verwendet, die die gesicherte Web-Aktions-URL aus dem Projekt-App-Builder ist. Alle Anfragen verwenden das HTTPS-Protokoll, um die Datensicherheit zu maximieren.
 
 Das von einem benutzerdefinierten Programm verwendete [Asset Compute-SDK](https://github.com/adobe/asset-compute-sdk#adobe-asset-compute-worker-sdk) verarbeitet die HTTP-POST-Anfrage. Es übernimmt auch das Herunterladen der Quelle, das Hochladen von Ausgabedarstellungen, das Senden von [!DNL Adobe I/O]-Ereignissen und die Fehlerbehandlung.
 
@@ -118,7 +118,7 @@ Das Verhalten von `batchWorker()` unterscheidet sich, da sie tatsächlich alle A
 
 Das SDK sendet [!DNL Adobe I/O]-Ereignisse für jede Ausgabedarstellung. Diese Ereignisse sind je nach Ergebnis entweder vom Typ `rendition_created` oder `rendition_failed`. Weitere Informationen zu Ereignissen finden Sie unter [Asynchrone Asset Compute-Ereignisse](api.md#asynchronous-events).
 
-## [!DNL Adobe I/O]-Ereignisse empfangen {#receive-aio-events}
+## [!DNL Adobe I/O]-Ereignisse empfangen  {#receive-aio-events}
 
 Der Client fragt das [[!DNL Adobe I/O] -Ereignisjournal](https://www.adobe.io/apis/experienceplatform/events/ioeventsapi.html#/Journaling) gemäß seiner Verbrauchslogik ab. Die anfängliche Journal-URL ist die in der `/register`-API-Antwort angegebene. Ereignisse können mit der in den Ereignissen vorhandenen `requestId` identifiziert werden, die mit der in `/process` zurückgegebenen übereinstimmt. Jede Ausgabedarstellung verfügt über ein separates Ereignis, das gesendet wird, sobald die Ausgabedarstellung hochgeladen wurde (oder fehlgeschlagen ist). Sobald der Client ein passendes Ereignis erhält, kann er die resultierenden Ausgabedarstellungen anzeigen oder anderweitig verarbeiten.
 
