@@ -2,10 +2,10 @@
 title: Entwickeln für  [!DNL Asset Compute Service]
 description: Erstellen Sie benutzerdefinierte Programme mit  [!DNL Asset Compute Service].
 exl-id: a0c59752-564b-4bb6-9833-ab7c58a7f38e
-source-git-commit: a50a3bdb520cbe608c5710716df80ac6e3b486e5
+source-git-commit: a121b48d480b45405259c2061ac86b9ab46b89cb
 workflow-type: tm+mt
 source-wordcount: '1618'
-ht-degree: 92%
+ht-degree: 89%
 
 ---
 
@@ -21,11 +21,11 @@ Bevor Sie mit der Entwicklung eines benutzerdefinierten Programms beginnen:
 
 Stellen Sie sicher, dass [[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli) lokal installiert ist.
 
-1. So erstellen Sie ein benutzerdefiniertes Programm: [Erstellen eines App Builder-Projekts](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#4-bootstrapping-new-app-using-the-cli). Führen Sie dazu im Terminal `aio app init <app-name>` aus.
+1. So erstellen Sie ein benutzerdefiniertes Programm: [Erstellen eines App Builder-Projekts](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#4-bootstrapping-new-app-using-the-cli). Führen Sie dazu im Terminal `aio app init <app-name>` aus.
 
-   Wenn Sie sich noch nicht angemeldet haben, fordert Sie dieser Befehl in einem Browser auf, sich mit Ihrer Adobe ID bei der [Adobe Developer Console](https://console.adobe.io/) anzumelden. Weitere Informationen zum Anmelden von der CLI finden Sie [hier](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#3-signing-in-from-cli).
+   Wenn Sie sich noch nicht angemeldet haben, fordert Sie dieser Befehl in einem Browser auf, sich mit Ihrer Adobe ID bei der [Adobe Developer Console](https://console.adobe.io/) anzumelden. Weitere Informationen zum Anmelden von der CLI finden Sie [hier](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#3-signing-in-from-cli).
 
-   Adobe empfiehlt, dass Sie sich anmelden. Sollten Sie Probleme haben, befolgen Sie die Anweisungen [zum Erstellen einer App, ohne sich anzumelden](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user).
+   Adobe empfiehlt, dass Sie sich anmelden. Sollten Sie Probleme haben, befolgen Sie die Anweisungen [zum Erstellen einer App, ohne sich anzumelden](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user).
 
 1. Befolgen Sie nach dem Anmelden die Anweisungen in der CLI und wählen Sie die Parameter `Organization`, `Project` und `Workspace` für das Programm aus. Wählen Sie das Projekt und den Arbeitsbereich aus, die Sie beim [Einrichten der Umgebung](setup-environment.md) erstellt haben. Beantworten Sie die Frage `Which extension point(s) do you wish to implement ?` mit `DX Asset Compute Worker`:
 
@@ -62,7 +62,7 @@ Stellen Sie sicher, dass [[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli
 
 1. Befolgen Sie die restlichen Anweisungen und öffnen Sie das neue Programm in Visual Studio Code (oder Ihrem bevorzugten Code-Editor). Sie enthält die Strukturvorlage und den Beispiel-Code für ein benutzerdefiniertes Programm.
 
-   Lesen Sie hier über die [Hauptkomponenten einer App Builder-App](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#5-anatomy-of-a-project-firefly-application).
+   Lesen Sie hier über die [Hauptkomponenten einer App Builder-App](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#5-anatomy-of-an-app-builder-application).
 
    Das Vorlagenprogramm nutzt unser [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk#asset-compute-sdk) für das Hochladen, Herunterladen und Orchestrieren von Programmdarstellungen, sodass die Entwickler nur die benutzerdefinierte Programmlogik implementieren müssen. Innerhalb des Ordners `actions/<worker-name>` befindet sich die Datei `index.js`, in der der benutzerdefinierte Programm-Code eingefügt werden kann.
 

@@ -2,10 +2,10 @@
 title: Legen Sie die erforderliche Entwicklungsumgebung für  [!DNL Asset Compute Service] fest
 description: Einrichten einer Entwicklungsumgebung für [!DNL Asset Compute Service] , um benutzerdefinierten Code zu erstellen und zu testen.
 exl-id: 91c12889-01d8-4757-9bdd-f73c491cd9d5
-source-git-commit: a50a3bdb520cbe608c5710716df80ac6e3b486e5
+source-git-commit: 2b690ce37c0bac58abcb745e0b82018541434659
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '357'
+ht-degree: 82%
 
 ---
 
@@ -21,7 +21,7 @@ Befolgen Sie diese Anforderungen und Anweisungen, um eine Entwicklungsumgebung f
 
    * [Git](https://git-scm.com/)
    * [Docker Desktop](https://www.docker.com/get-started)
-   * [NodeJS](https://nodejs.org) (Versionen 12 bis 14 LTS, ungerade Versionen werden nicht empfohlen) und [NPM](https://www.npmjs.com). Benutzer von OSX HomeBrew können `brew install node` ausführen, um beide zu installieren. Andernfalls laden Sie das Tool von der [NodeJS-Download-Seite](https://nodejs.org/de/) herunter
+   * [NodeJS](https://nodejs.org) (v14 LTS, ungerade Versionen werden nicht empfohlen) und [NPM](https://www.npmjs.com). Benutzer von OSX HomeBrew können `brew install node` ausführen, um beide zu installieren. Andernfalls laden Sie das Tool von der [NodeJS-Download-Seite](https://nodejs.org/de/) herunter
    * Als IDE, die für NodeJS geeignet ist, empfehlen wir [Visual Studio Code (VS Code)](https://code.visualstudio.com), da dies die unterstützte IDE für den Debugger ist. Sie können jede andere IDE als Code-Editor verwenden, die erweiterte Verwendung (z. B. Debugger) wird jedoch noch nicht unterstützt
    * Neueste Version installieren[[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli) (`aio`)
 
@@ -41,7 +41,7 @@ Befolgen Sie diese Anforderungen und Anweisungen, um eine Entwicklungsumgebung f
 
 1. Melden Sie sich bei der [Adobe Developer Console](https://console.adobe.io/) an. [!DNL Experience Cloud]Stellen Sie sicher, dass Sie Teil derselben Organisation sind wie die [!DNL Experience Manager] as a [!DNL Cloud Service]-Integration. Weitere Informationen zur Adobe Developer Console finden Sie in der [Dokumentation zur Console](https://www.adobe.io/apis/experienceplatform/console/docs.html).
 
-1. [App Builder-Projekt erstellen](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/getting_started/first_app.md). Klicken Sie auf **[!UICONTROL Create new project]** > **[!UICONTROL Project from Template]**. Wählen Sie App Builder aus. Es wird ein neues App Builder-Projekt mit zwei Arbeitsbereichen erstellt: `Production` und `Stage`. Fügen Sie bei Bedarf zusätzliche Arbeitsbereiche hinzu, z. B. `Development`.
+1. [App Builder-Projekt erstellen](https://developer.adobe.com/app-builder/docs/getting_started/first_app/). Klicken Sie auf **[!UICONTROL Create new project]** > **[!UICONTROL Project from Template]**. Wählen Sie App Builder aus. Es wird ein neues App Builder-Projekt mit zwei Arbeitsbereichen erstellt: `Production` und `Stage`. Fügen Sie bei Bedarf zusätzliche Arbeitsbereiche hinzu, z. B. `Development`.
 
 1. Wählen Sie im App Builder-Projekt einen Arbeitsbereich aus und abonnieren Sie die für das Asset compute erforderlichen Dienste. Klicken Sie auf **Add to Project** > **API** und fügen Sie die Services `Asset Compute`, `IO Events` und `IO Events Management` hinzu. Beim Hinzufügen der ersten API werden Sie aufgefordert, einen privaten Schlüssel zu erstellen. Speichern Sie diese Informationen auf Ihrem Computer, da Sie diesen Schlüssel zum Testen Ihrer benutzerdefinierten Programme mit dem Entwickler-Tool benötigen.
 
