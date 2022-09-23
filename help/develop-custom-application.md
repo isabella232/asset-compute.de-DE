@@ -5,7 +5,7 @@ exl-id: a0c59752-564b-4bb6-9833-ab7c58a7f38e
 source-git-commit: a121b48d480b45405259c2061ac86b9ab46b89cb
 workflow-type: tm+mt
 source-wordcount: '1618'
-ht-degree: 89%
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ Bevor Sie mit der Entwicklung eines benutzerdefinierten Programms beginnen:
 
 Stellen Sie sicher, dass [[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli) lokal installiert ist.
 
-1. So erstellen Sie ein benutzerdefiniertes Programm: [Erstellen eines App Builder-Projekts](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#4-bootstrapping-new-app-using-the-cli). Führen Sie dazu im Terminal `aio app init <app-name>` aus.
+1. Um ein benutzerdefiniertes Programm zu erstellen, [erstellen Sie ein App Builder-Projekt](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#4-bootstrapping-new-app-using-the-cli). Führen Sie dazu im Terminal `aio app init <app-name>` aus.
 
    Wenn Sie sich noch nicht angemeldet haben, fordert Sie dieser Befehl in einem Browser auf, sich mit Ihrer Adobe ID bei der [Adobe Developer Console](https://console.adobe.io/) anzumelden. Weitere Informationen zum Anmelden von der CLI finden Sie [hier](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#3-signing-in-from-cli).
 
@@ -70,7 +70,7 @@ Beispiele und Ideen für benutzerdefinierte Programme finden Sie unter [Beispiel
 
 ### Hinzufügen von Anmeldeinformationen {#add-credentials}
 
-Während Sie sich beim Erstellen der Anwendung anmelden, werden die meisten App Builder-Anmeldedaten in Ihrer ENV-Datei erfasst. Die Verwendung des Entwickler-Tools erfordert jedoch zusätzliche Anmeldeinformationen.
+Bei der Anmeldung während der Erstellung des Programms werden die meisten Anmeldeinformationen von App Builder in Ihrer ENV-Datei gesammelt. Die Verwendung des Entwickler-Tools erfordert jedoch zusätzliche Anmeldeinformationen.
 
 <!-- TBD: Check if manual setup of credentials is required.
 Manual set up of credentials is removed from troubleshooting and best practices page. Link was broken.
@@ -89,9 +89,9 @@ Stellen Sie sicher, dass Sie Zugriff auf einen [unterstützten Cloud-Speicher-Co
 
 #### Hinzufügen von Anmeldeinformationen zur ENV-Datei {#add-credentials-env-file}
 
-Fügen Sie die folgenden Anmeldeinformationen für das Entwickler-Tool zur ENV-Datei im Stammverzeichnis Ihres App Builder-Projekts hinzu:
+Die folgenden Anmeldeinformationen für das Entwickler-Tool werden der ENV-Datei im Stammverzeichnis Ihres App Builder-Projekts hinzugefügt:
 
-1. Fügen Sie den absoluten Pfad zur privaten Schlüsseldatei hinzu, die beim Hinzufügen von Diensten zu Ihrem App Builder-Projekt erstellt wurde:
+1. So fügen Sie den absoluten Pfad zu der privaten Schlüsseldatei hinzu, die beim Hinzufügen von Services zu Ihrem App Builder-Projekt erstellt wurde:
 
    ```conf
    ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=
@@ -222,7 +222,7 @@ exports.main = worker(async function (source, rendition) {
 
 ## Unterstützung bei Authentifizierung und Autorisierung {#authentication-authorization-support}
 
-Standardmäßig enthalten benutzerdefinierte Asset compute-Anwendungen Autorisierungs- und Authentifizierungsprüfungen für das App Builder-Projekt. Dies wird aktiviert, indem `require-adobe-auth` in der Datei `manifest.yml` auf `true` gesetzt wird.
+Standardmäßig werden benutzerdefinierte Asset Compute-Programme mit Autorisierungs- und Authentifizierungsprüfungen für das App Builder-Projekt bereitgestellt. Dies wird aktiviert, indem die Anmerkung `require-adobe-auth` in der Datei `manifest.yml` auf `true` gesetzt wird.
 
 ### Zugriff auf andere Adobe-APIs {#access-adobe-apis}
 
@@ -294,6 +294,6 @@ Asset Compute-Programme sind von Natur aus eher an Netzwerk- und Datenträger-E/
 
 Der für einen Aktions-Container verfügbare Speicher wird über `memorySize` in MB angegeben. Derzeit wird hiermit auch festgelegt, wie viel CPU-Zugriff der Container erhält. Vor allem ist dies ein Schlüsselelement der Kosten für die Verwendung von Runtime (größere Container kosten mehr). Verwenden Sie hier einen größeren Wert, wenn Ihre Verarbeitung mehr Speicher oder CPU erfordert. Achten Sie jedoch darauf, keine Ressourcen zu verschwenden, da der Gesamtdurchsatz umso geringer ist, je größer die Container sind.
 
-Darüber hinaus ist es möglich, die Parallelität von Aktionen innerhalb eines Containers mithilfe der Einstellung `concurrency` zu steuern. Dies ist die Anzahl der gleichzeitigen Aktivierungen (derselben Aktion), die ein einzelner Container erhält. In diesem Modell ähnelt der Aktions-Container einem Node.js-Server, der bis zu diesem Grenzwert mehrere gleichzeitige Anfragen empfängt. Wenn sie nicht festgelegt ist, ist der Standardwert in Runtime 200. Dies eignet sich hervorragend für kleinere App Builder-Aktionen, ist jedoch aufgrund der intensiveren lokalen Verarbeitung und Festplattenaktivität für Asset compute-Anwendungen normalerweise zu groß. Einige Programme funktionieren je nach Implementierung möglicherweise auch bei gleichzeitigen Aktivitäten nicht gut. Das Asset Compute-SDK stellt sicher, dass Aktivierungen getrennt werden, indem Dateien in verschiedene eindeutige Ordner geschrieben werden.
+Darüber hinaus ist es möglich, die Parallelität von Aktionen innerhalb eines Containers mithilfe der Einstellung `concurrency` zu steuern. Dies ist die Anzahl der gleichzeitigen Aktivierungen (derselben Aktion), die ein einzelner Container erhält. In diesem Modell ähnelt der Aktions-Container einem Node.js-Server, der bis zu diesem Grenzwert mehrere gleichzeitige Anfragen empfängt. Wenn nicht festgelegt, ist der Standardwert in Runtime 200, was für kleinere App Builder-Aktionen ideal ist. Für Asset Compute-Programme ist dieser Wert jedoch aufgrund ihrer intensiveren lokalen Verarbeitung und Festplattenaktivität normalerweise zu groß. Einige Programme funktionieren je nach Implementierung möglicherweise auch bei gleichzeitigen Aktivitäten nicht gut. Das Asset Compute-SDK stellt sicher, dass Aktivierungen getrennt werden, indem Dateien in verschiedene eindeutige Ordner geschrieben werden.
 
 Testen Sie die Programme, um die optimalen Werte für `concurrency` und `memorySize` zu finden. Größere Container (= höhere Speicherbeschränkung) könnten mehr Parallelität ermöglichen, aber bei geringerem Traffic zu unnötigen Ausgaben führen.

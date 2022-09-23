@@ -4,8 +4,8 @@ description: Interne Funktionsweise eines benutzerdefinierten  [!DNL Asset Compu
 exl-id: a3ee6549-9411-4839-9eff-62947d8f0e42
 source-git-commit: a121b48d480b45405259c2061ac86b9ab46b89cb
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -114,7 +114,7 @@ Nachdem jede Ausgabedarstellung erstellt und in einer Datei mit dem in `renditio
 
 Das Verhalten von `batchWorker()` unterscheidet sich, da sie tatsächlich alle Ausgabedarstellungen verarbeitet und diese erst hochlädt, nachdem alle verarbeitet wurden.
 
-## [!DNL Adobe I/O] Ereignisse {#aio-events}
+## [!DNL Adobe I/O]-Ereignisse {#aio-events}
 
 Das SDK sendet [!DNL Adobe I/O]-Ereignisse für jede Ausgabedarstellung. Diese Ereignisse sind je nach Ergebnis entweder vom Typ `rendition_created` oder `rendition_failed`. Weitere Informationen zu Ereignissen finden Sie unter [Asynchrone Asset Compute-Ereignisse](api.md#asynchronous-events).
 

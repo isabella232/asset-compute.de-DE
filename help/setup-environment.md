@@ -4,8 +4,8 @@ description: Einrichten einer Entwicklungsumgebung für [!DNL Asset Compute Serv
 exl-id: 91c12889-01d8-4757-9bdd-f73c491cd9d5
 source-git-commit: 2b690ce37c0bac58abcb745e0b82018541434659
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 82%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ Befolgen Sie diese Anforderungen und Anweisungen, um eine Entwicklungsumgebung f
    * [Docker Desktop](https://www.docker.com/get-started)
    * [NodeJS](https://nodejs.org) (v14 LTS, ungerade Versionen werden nicht empfohlen) und [NPM](https://www.npmjs.com). Benutzer von OSX HomeBrew können `brew install node` ausführen, um beide zu installieren. Andernfalls laden Sie das Tool von der [NodeJS-Download-Seite](https://nodejs.org/de/) herunter
    * Als IDE, die für NodeJS geeignet ist, empfehlen wir [Visual Studio Code (VS Code)](https://code.visualstudio.com), da dies die unterstützte IDE für den Debugger ist. Sie können jede andere IDE als Code-Editor verwenden, die erweiterte Verwendung (z. B. Debugger) wird jedoch noch nicht unterstützt
-   * Neueste Version installieren[[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli) (`aio`)
+   * Installieren Sie die neueste [[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli) (`aio`)
 
    <!-- - install using `npm install -g @adobe/aio-cli@7.1.0` -->
 
@@ -35,15 +35,15 @@ Befolgen Sie diese Anforderungen und Anweisungen, um eine Entwicklungsumgebung f
 >For now, use [!DNL Adobe I/O] CLI v7.1.0 of and do not use [!DNL Adobe I/O] CLI v8.
 -->
 
-## App Builder-Projekt einrichten {#create-App-Builder-project}
+## Einrichten eines App Builder-Projekts {#create-App-Builder-project}
 
 1. Stellen Sie sicher, dass Sie über die Systemadministrator- oder Entwicklerrolle in der [!DNL Experience Cloud] -Organisation verfügen. Diese wird von einem Systemadministrator in der [Admin Console](https://adminconsole.adobe.com/overview) eingerichtet.
 
-1. Melden Sie sich bei der [Adobe Developer Console](https://console.adobe.io/) an. [!DNL Experience Cloud]Stellen Sie sicher, dass Sie Teil derselben Organisation sind wie die [!DNL Experience Manager] as a [!DNL Cloud Service]-Integration. Weitere Informationen zur Adobe Developer Console finden Sie in der [Dokumentation zur Console](https://www.adobe.io/apis/experienceplatform/console/docs.html).
+1. Melden Sie sich bei der [Adobe Developer Console](https://console.adobe.io/) an. [!DNL Experience Cloud]Stellen Sie sicher, dass Sie Teil derselben Organisation sind wie die [!DNL Experience Manager] as a [!DNL Cloud Service]-Integration. Weitere Informationen zur Adobe-Entwicklerkonsole finden Sie in der [Dokumentation zur Konsole](https://www.adobe.io/apis/experienceplatform/console/docs.html).
 
-1. [App Builder-Projekt erstellen](https://developer.adobe.com/app-builder/docs/getting_started/first_app/). Klicken Sie auf **[!UICONTROL Create new project]** > **[!UICONTROL Project from Template]**. Wählen Sie App Builder aus. Es wird ein neues App Builder-Projekt mit zwei Arbeitsbereichen erstellt: `Production` und `Stage`. Fügen Sie bei Bedarf zusätzliche Arbeitsbereiche hinzu, z. B. `Development`.
+1. [Erstellen eines App Builder-Projekts](https://developer.adobe.com/app-builder/docs/getting_started/first_app/). Klicken Sie auf **[!UICONTROL Neues Projekt erstellen]** > **[!UICONTROL Projekt aus Vorlage]**. Wählen Sie App Builder aus. Ein neues App Builder-Projekt mit zwei Arbeitsbereichen wird erstellt: `Production` und `Stage`. Fügen Sie bei Bedarf zusätzliche Arbeitsbereiche hinzu, z. B. `Development`.
 
-1. Wählen Sie im App Builder-Projekt einen Arbeitsbereich aus und abonnieren Sie die für das Asset compute erforderlichen Dienste. Klicken Sie auf **Add to Project** > **API** und fügen Sie die Services `Asset Compute`, `IO Events` und `IO Events Management` hinzu. Beim Hinzufügen der ersten API werden Sie aufgefordert, einen privaten Schlüssel zu erstellen. Speichern Sie diese Informationen auf Ihrem Computer, da Sie diesen Schlüssel zum Testen Ihrer benutzerdefinierten Programme mit dem Entwickler-Tool benötigen.
+1. Wählen Sie im App Builder-Projekt einen Arbeitsbereich aus und abonnieren Sie die Services, die für Asset Compute erforderlich sind. Klicken Sie auf **Add to Project** > **API** und fügen Sie die Services `Asset Compute`, `IO Events` und `IO Events Management` hinzu. Beim Hinzufügen der ersten API werden Sie aufgefordert, einen privaten Schlüssel zu erstellen. Speichern Sie diese Informationen auf Ihrem Computer, da Sie diesen Schlüssel zum Testen Ihrer benutzerdefinierten Programme mit dem Entwickler-Tool benötigen.
 
 ## Nächster Schritt {#next-step}
 
