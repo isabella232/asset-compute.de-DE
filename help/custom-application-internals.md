@@ -3,9 +3,9 @@ title: Machen Sie sich mit der Funktionsweise eines benutzerdefinierten Programm
 description: Interne Funktionsweise eines benutzerdefinierten  [!DNL Asset Compute Service] -Programms, um dessen Funktionsweise besser zu verstehen.
 exl-id: a3ee6549-9411-4839-9eff-62947d8f0e42
 source-git-commit: a121b48d480b45405259c2061ac86b9ab46b89cb
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '751'
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ Nachfolgend finden Sie eine Beispielanfrage zur Verarbeitung benutzerdefinierter
 }
 ```
 
-[!DNL Asset Compute Service] sendet die Ausgabedarstellungsanfragen für das benutzerdefinierte Programm an das benutzerdefinierte Programm. Es wird eine HTTP-POST zur angegebenen Anwendungs-URL verwendet, bei der es sich um die gesicherte Web-Aktions-URL von App Builder handelt. Alle Anfragen verwenden das HTTPS-Protokoll, um die Datensicherheit zu maximieren.
+[!DNL Asset Compute Service] sendet die Ausgabedarstellungsanfragen für das benutzerdefinierte Programm an das benutzerdefinierte Programm. Der Service sendet eine HTTP-POST-Anfrage an die angegebene Programm-URL, bei der es sich um die gesicherte Web-Aktions-URL von App Builder handelt. Alle Anfragen verwenden das HTTPS-Protokoll, um die Datensicherheit zu maximieren.
 
 Das von einem benutzerdefinierten Programm verwendete [Asset Compute-SDK](https://github.com/adobe/asset-compute-sdk#adobe-asset-compute-worker-sdk) verarbeitet die HTTP-POST-Anfrage. Es übernimmt auch das Herunterladen der Quelle, das Hochladen von Ausgabedarstellungen, das Senden von [!DNL Adobe I/O]-Ereignissen und die Fehlerbehandlung.
 
