@@ -2,10 +2,10 @@
 title: Einführung in  [!DNL Asset Compute Service]
 description: „[!DNL Asset Compute Service] ist ein Cloud-nativer Service zur Verarbeitung von Medienelementen, der die Komplexität reduziert und die Skalierbarkeit verbessert.“
 exl-id: f8c89f65-5a94-44f3-aaac-4612ae291101
-source-git-commit: 93d3b407c8875888f03bec673d0a677a3205cfbb
-workflow-type: ht
-source-wordcount: '307'
-ht-degree: 100%
+source-git-commit: 2dde177933477dc9ac2ff5a55af1fd2366e18359
+workflow-type: tm+mt
+source-wordcount: '309'
+ht-degree: 95%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 100%
 
 [!DNL Asset Compute Service] ist ein skalierbarer und erweiterbarer Service von [!DNL Adobe Experience Cloud] zur Verarbeitung digitaler Assets. Sie können Bild-, Video-, Dokument- und andere Dateiformate in verschiedene Ausgabedarstellungen umwandeln, einschließlich Miniaturansichten, extrahiertem Text und Metadaten sowie Archiven.
 
-Entwickler können benutzerdefinierte Asset-Programme (auch als benutzerdefinierte Sekundärprogramme bezeichnet) hinzufügen, um benutzerdefinierte Anwendungsfälle zu bearbeiten. Der Service funktioniert zur Laufzeit von [!DNL Adobe I/O]. Er kann durch Headless-[!DNL Project Firefly]-Apps in Node.js erweitert werden. Diese können benutzerdefinierte Vorgänge ausführen, z. B. externe APIs aufrufen, um Bildvorgänge durchzuführen oder [!DNL Adobe Sensei] zu nutzen.
+Entwickler können benutzerdefinierte Asset-Programme (auch als benutzerdefinierte Sekundärprogramme bezeichnet) hinzufügen, um benutzerdefinierte Anwendungsfälle zu bearbeiten. Der Service funktioniert zur Laufzeit von [!DNL Adobe I/O]. Er kann durch Headless-[!DNL Adobe Developer App Builder]-Apps in Node.js erweitert werden. Diese können benutzerdefinierte Vorgänge ausführen, z. B. externe APIs aufrufen, um Bildvorgänge durchzuführen oder [!DNL Adobe Sensei] zu nutzen.
 
-[!DNL Project Firefly] ist ein Framework zum Erstellen und Bereitstellen benutzerdefinierter Web-Anwendungen zur Laufzeit von [!DNL Adobe I/O], um Adobe Experience Cloud-Lösungen zu erweitern. Um benutzerdefinierte Programme zu erstellen, können die Entwickler [!DNL React Spectrum] (das Toolkit von Adobe für Benutzeroberflächen) nutzen, Microservices erstellen, benutzerdefinierte Ereignisse erstellen und APIs koordinieren. Weitere Informationen finden Sie in der [Dokumentation zu Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html).
+[!DNL Adobe Developer App Builder] ist ein Framework zum Erstellen und Bereitstellen benutzerdefinierter Web-Anwendungen zur Laufzeit von [!DNL Adobe I/O], um Adobe Experience Cloud-Lösungen zu erweitern. Um benutzerdefinierte Programme zu erstellen, können die Entwickler [!DNL React Spectrum] (das Toolkit von Adobe für Benutzeroberflächen) nutzen, Microservices erstellen, benutzerdefinierte Ereignisse erstellen und APIs koordinieren. Siehe [Dokumentation zu Adobe Developer App Builder](https://developer.adobe.com/app-builder/docs/overview/).
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Sie können den Webservice [!DNL Asset Compute] verwenden, um Miniaturansichten 
 >[!MORELIKETHIS]
 >
 >* [Übersicht über die Asset-Verarbeitung mit Asset-Microservices in  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=de).
->* [Dokumentation zu Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html).
+>* [Dokumentation zu Adobe Developer App Builder](https://developer.adobe.com/app-builder/docs/overview).
 >* [Für die Verarbeitung unterstützte Dateiformate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=de).
 
 

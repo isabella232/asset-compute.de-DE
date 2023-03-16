@@ -2,10 +2,10 @@
 title: Lernen Sie, wie Sie  [!DNL Asset Compute Service] erweitern
 description: Wann und wie die Funktionalität von [!DNL Asset Compute Service] für die Verarbeitung benutzerdefinierter Assets erweitert wird.
 exl-id: 3b903364-34cc-44d5-9a03-24a0102cf85d
-source-git-commit: eed9da4b20fe37a4e44ba270c197505b50cfe77f
-workflow-type: ht
-source-wordcount: '254'
-ht-degree: 100%
+source-git-commit: 2dde177933477dc9ac2ff5a55af1fd2366e18359
+workflow-type: tm+mt
+source-wordcount: '260'
+ht-degree: 78%
 
 ---
 
@@ -17,16 +17,16 @@ Viele Ausgabedarstellungsanforderungen, wie die Konvertierung in Formate und die
 >
 >[!DNL Asset Compute Service] ist nur zur Verwendung mit [!DNL Experience Manager] as a [!DNL Cloud Service] verfügbar.
 
-Bei den benutzerdefinierten Programmen handelt es sich um Headless-[Project Firefly](https://github.com/AdobeDocs/project-firefly)-Apps. Die Erweiterung von [!DNL Asset Compute Service] mit benutzerdefinierten Programmen wird durch das [Asset Compute-SDK](https://github.com/adobe/asset-compute-sdk) und die Entwickler-Tools von Project Firefly vereinfacht. Dadurch können sich Entwickler auf Geschäftslogik konzentrieren. Das Erstellen benutzerdefinierter Programme ist so einfach wie das Erstellen einer Server-losen [!DNL Adobe I/O] Runtime-Aktion. Es handelt sich dabei um eine einzige JavaScript-Funktion von Node.js. Dies wird durch das [grundlegende Beispiel eines benutzerdefinierten Programms](https://github.com/adobe/asset-compute-example-workers/blob/master/projects/worker-basic/worker-basic.js) veranschaulicht.
+Benutzerdefinierte Programme sind Headless [Adobe Developer App Builder](https://github.com/AdobeDocs/app-builder) Apps. Erweitern [!DNL Asset Compute Service] mit benutzerdefinierten Anwendungen durch die [asset compute SDK](https://github.com/adobe/asset-compute-sdk) und die Entwicklertools von Adobe Developer App Builder. Dadurch können sich Entwickler auf Geschäftslogik konzentrieren. Das Erstellen benutzerdefinierter Programme ist so einfach wie das Erstellen einer Server-losen [!DNL Adobe I/O] Runtime-Aktion. Es handelt sich dabei um eine einzige JavaScript-Funktion von Node.js. Dies wird durch das [grundlegende Beispiel eines benutzerdefinierten Programms](https://github.com/adobe/asset-compute-example-workers/blob/master/projects/worker-basic/worker-basic.js) veranschaulicht.
 
 ## Voraussetzungen und Bereitstellungsanforderungen {#prerequisites-and-provisioning}
 
 Stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-* Auf Ihrem Computer sind die Project Firefly-Tools installiert.
-* Eine [!DNL Experience Cloud]-Organisation. Weitere Informationen finden Sie [hier](https://www.adobe.io/project-firefly/docs/getting_started/#acquire-access-and-credentials).
+* Die Adobe Developer App Builder-Tools sind auf Ihrem Computer installiert.
+* Eine [!DNL Experience Cloud]-Organisation. Weitere Informationen finden Sie [hier](https://developer.adobe.com/app-builder/docs/getting_started/#acquire-access-and-credentials).
 * [!DNL Experience Manager] as a [!DNL Cloud Service] muss für die Experience-Organisation aktiviert sein.
-* Die [!DNL Adobe Experience Cloud]-Organisation ist Teil des Developer Preview-Programms von [!DNL Project Firefly]. Lernen Sie, [wie Sie den Zugriff beantragen](https://www.adobe.io/project-firefly/docs/overview/getting_access/).
+* Die [!DNL Adobe Experience Cloud]-Organisation ist Teil des Developer Preview-Programms von [!DNL Adobe Developer App Builder]. Lernen Sie, [wie Sie den Zugriff beantragen](https://developer.adobe.com/app-builder/docs/overview/getting_access).
 * Stellen Sie für den Entwickler eine Entwicklerrolle oder Administratorberechtigungen in der Organisation sicher.
 * Stellen Sie sicher, dass [[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli) lokal installiert ist.
 

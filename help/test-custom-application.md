@@ -2,10 +2,10 @@
 title: Testen und Debuggen von benutzerdefinierten  [!DNL Asset Compute Service] -Programmen
 description: Testen und Debuggen von benutzerdefinierten  [!DNL Asset Compute Service] -Programmen.
 exl-id: c2534904-0a07-465e-acea-3cb578d3bc08
-source-git-commit: ebc0d717b3f6fc4518f4a79cd44ebe8fdcf9ec6a
+source-git-commit: 2dde177933477dc9ac2ff5a55af1fd2366e18359
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 100%
+source-wordcount: '812'
+ht-degree: 93%
 
 ---
 
@@ -66,7 +66,7 @@ Sehen Sie sich einige [Beispiele für benutzerdefinierte Programme](https://gith
 
 ### Testausgabe {#test-output}
 
-Die detaillierte Testausgabe einschließlich der Protokolle des benutzerdefinierten Programms wird im `build`-Ordner im Stammverzeichnis der Firefly-App bereitgestellt, wie in der Ausgabe `aio app test` gezeigt.
+Die detaillierte Testausgabe einschließlich der Protokolle des benutzerdefinierten Programms wird im Abschnitt `build` Ordner im Stammverzeichnis der Adobe Developer App Builder-App, wie in der `aio app test` Ausgabe.
 
 ### Nachahmen externer Services {#mock-external-services}
 
@@ -164,7 +164,7 @@ Sehen Sie dazu die vollständige Liste und Beschreibung der [Asset Compute-Fehle
 
 Die folgenden Schritte zeigen, wie Sie Ihr benutzerdefiniertes Programm mit Visual Studio Code debuggen können. Er ermöglicht die Anzeige von Live-Protokollen, das Auffinden von Haltepunkten und das Durchlaufen des Codes sowie das Live-Neuladen lokaler Code-Änderungen bei jeder Aktivierung.
 
-Viele dieser Schritte werden in der Regel von `aio` standardmäßig automatisiert. Weitere Informationen finden Sie im Abschnitt zum Debuggen eines Programms in der [Firefly-Dokumentation](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/getting_started/first_app.md). Die folgenden Schritte beinhalten vorerst eine Problemumgehung.
+Viele dieser Schritte werden normalerweise durch `aio` Informationen hierzu finden Sie im Abschnitt Debuggen der Anwendung im [Dokumentation zu Adobe Developer App Builder](https://developer.adobe.com/app-builder/docs/getting_started/first_app). Die folgenden Schritte beinhalten vorerst eine Problemumgehung.
 
 1. Installieren Sie die neuste Version von [wskdebug](https://github.com/apache/openwhisk-wskdebug) und optional [ngrok](https://www.npmjs.com/package/ngrok) von GitHub.
 

@@ -2,10 +2,10 @@
 title: Architektur von  [!DNL Asset Compute Service]
 description: So arbeiten [!DNL Asset Compute Service] -API, Programme und SDK zusammen, um einen Cloud-nativen Asset-Verarbeitungs-Service bereitzustellen.
 exl-id: 658ee4b7-5eb1-4109-b263-1b7d705e49d6
-source-git-commit: eed9da4b20fe37a4e44ba270c197505b50cfe77f
-workflow-type: ht
-source-wordcount: '485'
-ht-degree: 100%
+source-git-commit: 2dde177933477dc9ac2ff5a55af1fd2366e18359
+workflow-type: tm+mt
+source-wordcount: '486'
+ht-degree: 98%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 100%
 
 [!DNL Asset Compute Service] basiert auf der Server-losen [!DNL Adobe I/O] Runtime-Plattform. Der Service bietet Unterstützung mit Adobe Sensei-Inhalts-Services für Assets. Der aufrufende Client (es wird nur [!DNL Experience Manager] as a [!DNL Cloud Service] unterstützt) erhält die von Adobe Sensei generierten Informationen, nach denen er für das Asset gesucht hat. Die zurückgegebenen Informationen liegen im JSON-Format vor.
 
-[!DNL Asset Compute Service] kann erweitert werden, indem benutzerdefinierte Programme basierend auf [!DNL Project Firefly] erstellt werden. Diese benutzerdefinierten Programme sind Headless-[!DNL Project Firefly]-Apps und führen Aufgaben wie das Hinzufügen benutzerdefinierter Konvertierungs-Tools oder den Aufruf externer APIs durch, um Bildvorgänge auszuführen.
+[!DNL Asset Compute Service] kann erweitert werden, indem benutzerdefinierte Programme basierend auf [!DNL Project Adobe Developer App Builder] erstellt werden. Diese benutzerdefinierten Programme sind Headless-[!DNL Project Adobe Developer App Builder]-Apps und führen Aufgaben wie das Hinzufügen benutzerdefinierter Konvertierungs-Tools oder den Aufruf externer APIs durch, um Bildvorgänge auszuführen.
 
-[!DNL Project Firefly] ist ein Framework zum Erstellen und Bereitstellen von benutzerdefinierten Web-Anwendungen zur [!DNL Adobe I/O]-Laufzeit. Um benutzerdefinierte Programme zu erstellen, können die Entwickler [!DNL React Spectrum] (das Toolkit von Adobe für Benutzeroberflächen) nutzen, Microservices erstellen, benutzerdefinierte Ereignisse erstellen und APIs koordinieren. Weitere Informationen finden Sie in der [Dokumentation zu Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html).
+[!DNL Project Adobe Developer App Builder] ist ein Framework zum Erstellen und Bereitstellen von benutzerdefinierten Web-Anwendungen zur [!DNL Adobe I/O]-Laufzeit. Um benutzerdefinierte Programme zu erstellen, können die Entwickler [!DNL React Spectrum] (das Toolkit von Adobe für Benutzeroberflächen) nutzen, Microservices erstellen, benutzerdefinierte Ereignisse erstellen und APIs koordinieren. Siehe [Dokumentation zu Adobe Developer App Builder](https://developer.adobe.com/app-builder/docs/overview).
 
 Die Architektur basiert auf dem Folgenden:
 
@@ -40,7 +40,7 @@ Die Architektur besteht aus folgenden Teilen:
 <!-- TBD:
 
 * About the YAML file?
-* See [https://www.adobe.io/project-firefly/docs/getting_started/first_app/#5-anatomy-of-a-project-firefly-application](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#5-anatomy-of-a-project-firefly-application).
+* See [https://developer.adobe.com/app-builder/docs/getting_started/first_app/#5-anatomy-of-a-project-firefly-application](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#5-anatomy-of-a-project-firefly-application).
 
 * minimize description to custom applications
 * remove all internal stuff (e.g. Photoshop application, API Gateway) from text and diagram
