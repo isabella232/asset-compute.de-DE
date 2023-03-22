@@ -2,8 +2,8 @@
 title: Machen Sie sich mit der Funktionsweise eines benutzerdefinierten Programms vertraut
 description: Interne Funktionsweise eines benutzerdefinierten  [!DNL Asset Compute Service] -Programms, um dessen Funktionsweise besser zu verstehen.
 exl-id: a3ee6549-9411-4839-9eff-62947d8f0e42
-source-git-commit: a121b48d480b45405259c2061ac86b9ab46b89cb
-workflow-type: ht
+source-git-commit: 2af710443cdc2e5e25e105eca6e779eb58631ae9
+workflow-type: tm+mt
 source-wordcount: '751'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 Verwenden Sie die folgende Abbildung, um den durchgängigen Workflow zu verstehen, wenn ein digitales Asset mithilfe einem benutzerdefinierten Programm von einem Client verarbeitet wird.
 
-![Workflow für benutzerdefinierte Programme](assets/customworker.png)
+![Workflow für benutzerdefinierte Programme](assets/customworker.svg)
 
 *Abbildung: Schritte zur Verarbeitung eines Assets mit [!DNL Asset Compute Service].*
 
