@@ -3,9 +3,9 @@ title: Fehlerbehebung [!DNL Asset Compute Service]
 description: Fehlerbehebung und Debugging von benutzerdefinierten Programmen mit  [!DNL Asset Compute Service].
 exl-id: 017fff91-e5e9-4a30-babf-5faa1ebefc2f
 source-git-commit: 2dde177933477dc9ac2ff5a55af1fd2366e18359
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '291'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -22,11 +22,11 @@ Einige allgemeine Tipps, die Ihnen bei der Fehlerbehebung mit Asset Compute Serv
 
 ## Anmeldeprobleme über [!DNL Adobe I/O] CLI {#login-via-aio-cli}
 
-Wenn Sie Probleme haben, sich [!DNL Adobe Developer Console] [über CLI [!DNL Adobe I/O]  bei](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#3-signing-in-from-cli) anzumelden, fügen Sie manuell die Anmeldeinformationen hinzu, die zum Entwickeln, Testen und Bereitstellen Ihres benutzerdefinierten Programms erforderlich sind:
+Wenn Sie Probleme haben, sich [!DNL Adobe Developer Console] [über die  [!DNL Adobe I/O] -CLI](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#3-signing-in-from-cli) anzumelden, fügen Sie manuell die Anmeldeinformationen hinzu, die zum Entwickeln, Testen und Bereitstellen Ihres benutzerdefinierten Programms erforderlich sind:
 
-1. Navigieren Sie zu Ihrem Adobe Developer App Builder-Projekt und -Arbeitsbereich im [Adobe Developer-Konsole](https://console.adobe.io/) und Presse **[!UICONTROL Download]** oben rechts. Öffnen Sie diese Datei und speichern Sie diese JSON an einem sicheren Ort auf Ihrem Computer.
+1. Navigieren Sie zu Ihrem Adobe Developer App-Builder-Projekt und -Arbeitsbereich in der [Adobe-Entwicklerkonsole](https://console.adobe.io/) und klicken Sie oben rechts auf **[!UICONTROL Herunterladen]**. Öffnen Sie diese Datei und speichern Sie diese JSON an einem sicheren Ort auf Ihrem Computer.
 
-1. Navigieren Sie zur ENV-Datei in Ihrer Adobe Developer App Builder-Anwendung.
+1. Navigieren Sie zur ENV-Datei in Ihrem Adobe Developer App Builder-Programm.
 
 1. Fügen Sie die [!DNL Adobe I/O] Runtime-Anmeldeinformationen hinzu. Rufen Sie die [!DNL Adobe I/O] Runtime-Anmeldeinformationen von der heruntergeladenen JSON ab. Die Anmeldeinformationen finden Sie unter `project.workspace.services.runtime`. Fügen Sie die [!DNL Adobe I/O] Runtime-Anmeldeinformationen in den `AIO_runtime_XXX`-Variablen hinzu:
 
