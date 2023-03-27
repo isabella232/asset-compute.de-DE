@@ -3,9 +3,9 @@ title: Tragen Sie zu den Open-Source-Komponenten von  [!DNL Asset Compute Servic
 description: Tragen Sie zu den Open-Source-Komponenten von  [!DNL Asset Compute Service] bei.
 exl-id: 99a4b4d9-4709-4f8e-9f8c-96ba1783c4c3
 source-git-commit: 50f69e16772cee7f79a812f2b86f0ef0221db369
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '205'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Detaillierte Richtlinien finden Sie in den [Beitragsrichtlinien](https://github.
 Weitere Informationen finden Sie in dieser Liste von [Open-Source-Bibliotheken](https://github.com/adobe/asset-compute-sdk#available-resources-and-libraries) für [!DNL Asset Compute Service]. Darüber hinaus stehen folgende [!DNL Adobe I/O] Runtime- und OpenWhisk-Ressourcen zur Verfügung:
 
 * [Erste Schritte mit Apache OpenWhisk](https://github.com/apache/incubator-openwhisk/tree/master/docs#getting-started-with-openwhisk).
-* [Lab: Erstellen einer zusammenstellbaren KI mit [!DNL Adobe Sensei] Funktionen und [!DNL Adobe I/O] Laufzeit](https://opensource.adobe.com/adobe-sensei-ai-functions/index.html).
+* [Lab: Erstellen einer zusammenstellbaren KI mit  [!DNL Adobe Sensei] -Funktionen und  [!DNL Adobe I/O] Runtime](https://opensource.adobe.com/adobe-sensei-ai-functions/index.html).
 * Häufig gestellte Fragen zu [[!DNL Adobe I/O] Runtime](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/resources/faq.md)
 
 <!-- **TBD** for post-release:
