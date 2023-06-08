@@ -3,7 +3,7 @@ title: Testen und Debuggen von benutzerdefinierten  [!DNL Asset Compute Service]
 description: Testen und Debuggen von benutzerdefinierten  [!DNL Asset Compute Service] -Programmen.
 exl-id: c2534904-0a07-465e-acea-3cb578d3bc08
 source-git-commit: 5257e091730f3672c46dfbe45c3e697a6555e6b1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 100%
 

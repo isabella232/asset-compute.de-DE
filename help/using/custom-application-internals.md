@@ -3,7 +3,7 @@ title: Machen Sie sich mit der Funktionsweise eines benutzerdefinierten Programm
 description: Interne Funktionsweise eines benutzerdefinierten  [!DNL Asset Compute Service] -Programms, um dessen Funktionsweise besser zu verstehen.
 exl-id: a3ee6549-9411-4839-9eff-62947d8f0e42
 source-git-commit: 5257e091730f3672c46dfbe45c3e697a6555e6b1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '751'
 ht-degree: 100%
 

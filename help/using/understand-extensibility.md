@@ -3,7 +3,7 @@ title: Lernen Sie, wie Sie  [!DNL Asset Compute Service] erweitern
 description: Wann und wie die Funktionalität von [!DNL Asset Compute Service] für die Verarbeitung benutzerdefinierter Assets erweitert wird.
 exl-id: 3b903364-34cc-44d5-9a03-24a0102cf85d
 source-git-commit: 5257e091730f3672c46dfbe45c3e697a6555e6b1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 100%
 
