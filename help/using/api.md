@@ -3,7 +3,7 @@ title: „[!DNL Asset Compute Service] HTTP-API“
 description: „[!DNL Asset Compute Service] HTTP-API zum Erstellen benutzerdefinierter Programme“.
 exl-id: 4b63fdf9-9c0d-4af7-839d-a95e07509750
 source-git-commit: 5257e091730f3672c46dfbe45c3e697a6555e6b1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2906'
 ht-degree: 100%
 

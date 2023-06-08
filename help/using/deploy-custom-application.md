@@ -3,7 +3,7 @@ title: Bereitstellen eines benutzerdefinierten  [!DNL Asset Compute Service] -Pr
 description: Bereitstellen eines benutzerdefinierten  [!DNL Asset Compute Service] -Programms.
 exl-id: a68d4f59-8a8f-43b2-8bc6-19320ac8c9ef
 source-git-commit: 5257e091730f3672c46dfbe45c3e697a6555e6b1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 100%
 
