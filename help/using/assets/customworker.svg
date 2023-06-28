@@ -8,13 +8,13 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 308px; height: 1px; padding-top: 209px; margin-left: 281px;">
                         <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
                             <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
-                                3rd party Namespace (Adobe Developer App Builder)
+                                Drittanbieter-IO-Laufzeit-Namespace
                             </div>
                         </div>
                     </div>
                 </foreignObject>
                 <text x="435" y="221" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
-                    3rd party Namespace (Adobe Developer App Builder)
+                    Drittanbieter-IO-Laufzeit-Namespace
                 </text>
             </switch>
         </g>
@@ -25,13 +25,13 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 318px; height: 1px; padding-top: 42px; margin-left: 281px;">
                         <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
                             <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
-                                Asset Compute Service
+                                Asset Compute-Service
                             </div>
                         </div>
                     </div>
                 </foreignObject>
                 <text x="440" y="46" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
-                    Asset Compute Service
+                    Asset Compute-Service
                 </text>
             </switch>
         </g>
@@ -42,13 +42,13 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 308px; height: 1px; padding-top: 399px; margin-left: 291px;">
                         <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
                             <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; font-style: italic; white-space: normal; word-wrap: normal; ">
-                                3rd party IO Runtime Namespace
+                                Drittanbieter-IO-Laufzeit-Namespace
                             </div>
                         </div>
                     </div>
                 </foreignObject>
                 <text x="445" y="399" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" font-style="italic">
-                    3rd party IO Runtime Namespace
+                    Drittanbieter-IO-Laufzeit-Namespace
                 </text>
             </switch>
         </g>
@@ -62,13 +62,13 @@
                             <div style="display: inline-block; font-size: 11px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; background-color: #ffffff; white-space: nowrap; ">
                                 HTTP POST
                                 <br style="font-size: 11px"/>
-                                with authorization
+                                mit Autorisierung
                             </div>
                         </div>
                     </div>
                 </foreignObject>
                 <text x="191" y="16" fill="#000000" font-family="Helvetica" font-size="11px" text-anchor="middle">
-                    HTTP POST...
+                    HTTP POST mit Autorisierung
                 </text>
             </switch>
         </g>
@@ -87,7 +87,7 @@
                     </div>
                 </foreignObject>
                 <text x="60" y="46" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
-                    Client...
+                    Client (AEM Assets)
                 </text>
             </switch>
         </g>
@@ -100,16 +100,16 @@
                             <div style="display: inline-block; font-size: 11px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
                                 <font style="font-size: 11px">
                                     <font style="font-size: 11px">
-                                        Processing Request:
+                                        Verarbeitungsanfrage:
                                         <br style="font-size: 11px"/>
                                         <br style="font-size: 11px"/>
-                                        renditions
+                                        Ausgabedarstellungen
                                         <br style="font-size: 11px"/>
-                                        - fmt: png
+                                        - Fmt: png
                                         <br style="font-size: 11px"/>
-                                        - fmt: jpg
+                                        - Fmt: jpg
                                         <br style="font-size: 11px"/>
-                                        - worker:
+                                        - Sekundärprogramm:
                                         <br style="font-size: 11px"/>
                                     </font>
                                     <font color="#3399ff" style="font-size: 11px">
@@ -125,7 +125,7 @@
                     </div>
                 </foreignObject>
                 <text x="117" y="158" fill="#000000" font-family="Helvetica" font-size="11px">
-                    Processing Request:...
+                    Verarbeitungsanfrage:
                 </text>
             </switch>
         </g>
@@ -136,13 +136,13 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 254px; height: 1px; padding-top: 239px; margin-left: 316px;">
                         <div style="box-sizing: border-box; font-size: 0; text-align: left; ">
                             <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; font-style: italic; white-space: normal; word-wrap: normal; ">
-                                Headless Adobe Developer App Builder App
+                                Headless-App von Adobe Developer App Builder
                             </div>
                         </div>
                     </div>
                 </foreignObject>
                 <text x="316" y="251" fill="#000000" font-family="Helvetica" font-size="12px" font-style="italic">
-                    Headless Adobe Developer App Builder App
+                    Headless-App von Adobe Developer App Builder
                 </text>
             </switch>
         </g>
@@ -153,15 +153,15 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 148px; height: 1px; padding-top: 327px; margin-left: 381px;">
                         <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
                             <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #ffffff; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
-                                Custom Worker
+                                Benutzerdefiniertes Sekundärprogramm 
                                 <br/>
-                                (Web Action)
+                                (Web-Aktion)
                             </div>
                         </div>
                     </div>
                 </foreignObject>
                 <text x="455" y="331" fill="#ffffff" font-family="Helvetica" font-size="12px" text-anchor="middle">
-                    Custom Worker...
+                    Benutzerdefiniertes Sekundärprogramm (Web-Aktion)
                 </text>
             </switch>
         </g>
@@ -175,7 +175,7 @@
                             <div style="display: inline-block; font-size: 11px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; background-color: #ffffff; white-space: nowrap; ">
                                 HTTP POST
                                 <br style="font-size: 11px"/>
-                                with authorization
+                                mit Autorisierung
                                 <br style="font-size: 11px"/>
                                 <br style="font-size: 11px"/>
                                 <span style="font-size: 11px">
@@ -192,7 +192,7 @@
                     </div>
                 </foreignObject>
                 <text x="472" y="146" fill="#000000" font-family="Helvetica" font-size="11px">
-                    HTTP POST...
+                    HTTP POST mit Autorisierung
                 </text>
             </switch>
         </g>
@@ -204,13 +204,13 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 148px; height: 1px; padding-top: 277px; margin-left: 381px;">
                         <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
                             <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
-                                Asset Compute SDK
+                                Asset Compute-SDK
                             </div>
                         </div>
                     </div>
                 </foreignObject>
                 <text x="455" y="281" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
-                    Asset Compute SDK
+                    Asset Compute-SDK
                 </text>
             </switch>
         </g>
@@ -225,13 +225,13 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 339px; margin-left: 11px;">
                         <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
                             <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
-                                Cloud Blob Storage
+                                Cloud-Blob-Speicher
                             </div>
                         </div>
                     </div>
                 </foreignObject>
                 <text x="40" y="343" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
-                    Cloud Blob...
+                    Cloud-Blob-Speicher
                 </text>
             </switch>
         </g>
@@ -244,13 +244,13 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 282px; margin-left: 101px;">
                         <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
                             <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
-                                IO Events
+                                IO-Ereignisse
                             </div>
                         </div>
                     </div>
                 </foreignObject>
                 <text x="140" y="286" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
-                    IO Events
+                    IO-Ereignisse
                 </text>
             </switch>
         </g>
