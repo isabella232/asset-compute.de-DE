@@ -12,7 +12,7 @@ feature-set: Experience Manager Assets
 git-repo: https://github.com/AdobeDocs/asset-compute.de-DE
 index: y
 source-git-commit: 66bad4afdc7b08e1e91418ec320b061e47c3683d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 100%
 
