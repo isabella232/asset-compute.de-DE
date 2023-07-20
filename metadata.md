@@ -8,10 +8,11 @@ getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-
 tutorials-title: Tutorials
 tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html
 mini-toc-levels: 2
+feature-set: Experience Manager Assets
 git-repo: https://github.com/AdobeDocs/asset-compute.de-DE
 index: y
-source-git-commit: 5f987f28fdf8d074ceb6226d21a5f64aad67bf04
-workflow-type: tm+mt
+source-git-commit: 66bad4afdc7b08e1e91418ec320b061e47c3683d
+workflow-type: ht
 source-wordcount: '130'
 ht-degree: 100%
 
@@ -34,7 +35,7 @@ Die metadata.md-Datei enthält Metadaten auf Repo-Ebene, die über die TOC.md-Da
 
 In der Datei TOC.md
 
-| Metadaten | Funktion |
+| metadata | Funktion |
 |--- |--- |
 | user-guide-title | Wird in der Artikelkopfzeile als Link verwendet |
 | user-guide-url | Öffnet die helpx-Hub-Seite |
