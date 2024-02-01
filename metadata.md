@@ -13,7 +13,7 @@ git-repo: https://github.com/AdobeDocs/asset-compute.de-DE
 index: y
 recommendations: noDisplay
 source-git-commit: cb87ab6081d53610acf27419fa5103b3ae1ead03
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 100%
 
